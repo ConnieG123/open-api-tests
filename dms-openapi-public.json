@@ -1,0 +1,63 @@
+{
+    "openapi":"3.0.2",
+    "info": {
+        "title":"Indako DMS API (publik)",                
+        "version":"1.0.0",
+        "description":"Dokumentasi pemanfaatan API dari sistem Indako DMS",
+        "contact": {
+            "email": "darwin@indako.co.id"
+        }
+    },
+    "servers": [
+        {
+            "url":"https://dms.indako.co.id:8443",
+            "description": "DMS API Production Server"
+        }
+    ],
+    "tags": [
+        {
+            "name": "Administrasi",
+            "description": "Operasi yang berhubungan dengan akses dan otentikasi user"
+        },
+        {
+            "name": "Transaksi H1",
+            "description": "Operasi yang berhubungan dengan transaksi H1"
+        },
+        {
+            "name": "Transaksi H23",
+            "description": "Operasi yang berhubungan dengan transaksi Servis dan Suku Cadang"
+        },
+        {
+            "name": "Master",
+            "description": "Operasi yang berhubungan dengan data Master"
+        }
+    ],
+    "paths": {
+        "/customerh23/listbysession":{
+            "post":{
+                    "tags":["Master","Transaksi H23"],
+                    "description": "Anda dapat mengakses data master konsumen bengkel (H23) dengan batasan tanggal input dan edit",
+                    "parameters": [
+                        {
+                            "name": "tgl_awal",
+                            "description": "Batansan tanggal awal input data konsumen H23 atau tanggal awal edit data konsumen H23",
+                            "required": true,
+                            "explode": true,
+                            "schema":{
+                                "type": "string"
+                            }
+                        },
+                        {
+                            "name": "tgl_akhir",
+                            "description": "Batasan tanggal akhir input data konsumen H23 atau tanggal akhir edit data konsumen H23",
+                            "required": true,
+                            "explode": true,
+                            "schema":{
+                                "type": "string"
+                            }
+                        }
+                    ]
+            }
+        }
+    }
+}
