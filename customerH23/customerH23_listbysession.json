@@ -1,0 +1,111 @@
+{
+    "post": {
+        "tags": [
+            "Master",
+            "Transaksi H23"
+        ],
+        "description": "Anda dapat mengakses data master konsumen bengkel (H23) dengan batasan tanggal input dan edit",
+        "parameters": [
+            {
+                "name": "tgl_awal",
+                "in": "body",
+                "description": "Batasan tanggal awal input data konsumen H23 atau tanggal awal edit data konsumen H23",
+                "required": true,
+                "explode": false,
+                "schema": {
+                    "type": "string",
+                    "example": "2019-06-01"
+                }
+            },
+            {
+                "name": "tgl_akhir",
+                "in": "body",
+                "description": "Batasan tanggal akhir input data konsumen H23 atau tanggal akhir edit data konsumen H23",
+                "required": true,
+                "explode": false,
+                "schema": {
+                    "type": "string",
+                    "example": "2019-06-30"
+                }
+            }
+        ],
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "$ref": "../dms-openapi-public.json#/components/schemas/inParamDateStartEnd"
+                    }
+                }
+            }
+        },
+        "responses": {
+            "200": {
+                "description": "Success",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "../dms-openapi-public.json#/components/schemas/MasterCustomerH23"
+                        },
+                        "examples": {
+                            "Data Tersedia": {
+                                "value": {
+                                    "data": [
+                                        {
+                                            "vidcustomerh23": "H23CUST/BHA/000052",
+                                            "viddealer": "BHA",
+                                            "vnamacustomer": "GRACE N GIRSANG",
+                                            "valamat": "SALAK",
+                                            "valamat2": "-",
+                                            "vidalamat": "12.11.01.1005",
+                                            "vkelurahan": "KEL.  KUTA GAMBIR",
+                                            "vkecamatan": "KEC. SIDIKALANG",
+                                            "vidkota": "1210",
+                                            "vkota": "KAB. DAIRI",
+                                            "vidpos": "20000",
+                                            "vtempatlahir": "-",
+                                            "dtgllahir": "1995-11-12",
+                                            "vtelp": "01234",
+                                            "vhp": "01370340802",
+                                            "vjeniskelamin": "L",
+                                            "vktp": null,
+                                            "vnpwp": "00.000.000.0-000.000",
+                                            "vnopolisi": "BB 4087 ZC",
+                                            "vidtipe": "GW0",
+                                            "vidwarna": "WH",
+                                            "vengine": "JFS1E1020000",
+                                            "vframe": "MH1JFS119FK019935",
+                                            "dtglbeli": "2015-08-13",
+                                            "vthnrakit": "2015",
+                                            "vcreateby": "bengkel3.bha",
+                                            "dtglcreate": "2015-12-04 10:50:17",
+                                            "vmodiby": "FRONTDESK.BHA",
+                                            "dtglmodi": "2019-06-04 15:58:53"
+                                        }
+                                    ]
+                                }
+                            },
+                            "Tidak Ada Data": {
+                                "value": {
+                                    "data": "Tidak ada data"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "401": {
+                "description": "Unauthorized : Anda tidak memiliki izin akses atau token bearer anda salah",
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "name": "Unauthorized",
+                            "message": "Your request was made with invalid credentials.",
+                            "code": 0,
+                            "status": 401
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

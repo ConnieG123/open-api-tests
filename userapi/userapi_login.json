@@ -1,0 +1,97 @@
+{
+    "post": {
+        "tags": [
+            "Administrasi"
+        ],
+        "description": "Proses login untuk mendapatkan token otentikasi untuk digunakan pada transaksi API lainnya",
+        "parameters": [
+            {
+                "name": "username",
+                "in": "body",
+                "description": "User ID yang diberikan oleh Main Dealer",
+                "required": true,
+                "explode": false,
+                "schema": {
+                    "type": "string",
+                    "example": "userapi"
+                }
+            },
+            {
+                "name": "password",
+                "in": "body",
+                "description": "Password yang diberikan oleh Main Dealer",
+                "required": true,
+                "explode": false,
+                "schema": {
+                    "type": "string",
+                    "example": "password123"
+                }
+            }
+        ],
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "username": {
+                            "type": "string"
+                        },
+                        "password": {
+                            "type": "string"
+                        }
+                    },
+                    "example": {
+                        "username": "userapi",
+                        "password": "password123"
+                    }
+                }
+            }
+        },
+        "responses": {
+            "200": {
+                "description": "Success",
+                "content": {
+                    "application/json": {
+                        "schema": {},
+                        "example": {
+                            "access_token": "IgtsduHDoEGblBRmOhK2j76Fo"
+                        }
+                    }
+                }
+            },
+            "400": {
+                "description": "Bad Request : Sintaks JSON yang dikirim mungkin salah",
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "name": "Bad Request",
+                            "message": "Invalid JSON data in request body: Syntax error",
+                            "code": 0,
+                            "status": 400
+                        }
+                    }
+                }
+            },
+            "422": {
+                "description": "Gagal validasi data input",
+                "content": {
+                    "application/json": {
+                        "examples": {
+                            "Password kosong": {
+                                "value": {
+                                    "field": "password",
+                                    "message": "Password cannot be blank."
+                                }
+                            },
+                            "User atau password salah": {
+                                "value": {
+                                    "field": "password",
+                                    "message": "Incorrect username or password."
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
