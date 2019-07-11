@@ -1,0 +1,61 @@
+{
+    "post": {
+        "tags": [
+            "Master"            
+        ],
+        "description": "Anda dapat mengakses semua data master Alamat yang digunakan di sistem DMS",                
+        "responses": {
+            "200": {
+                "description": "Success",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "../dms-openapi-public.json#/components/schemas/MasterAlamat"
+                        },
+                        "examples": {
+                            "Data Tersedia": {
+                                "value": {
+                                    "data": [        
+                                        {
+                                            "vidalamat": "12.01.01.1001",
+                                            "vprovinsi": "SUMATERA UTARA",
+                                            "vkotakab": "KAB. TAPANULI TENGAH",
+                                            "vkecamatan": "KEC. BARUS",
+                                            "vlurahdesa": "KEL.  PASAR BATU GERIGIS",
+                                            "vidkota": "1204",
+                                            "vidkecamatan": "12.01.01",
+                                            "vidkecamatanahm": "120401",
+                                            "vidalamatahm": "1204010001",
+                                            "vcreateby": "admin",
+                                            "dtglcreate": "2014-11-07 11:19:47",
+                                            "vmodiby": "admin",
+                                            "dtglmodi": "2015-11-23 11:30:21"
+                                        }                                        
+                                    ]
+                                }
+                            },
+                            "Tidak Ada Data": {
+                                "value": {
+                                    "data": "Tidak ada data"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "401": {
+                "description": "Unauthorized : Anda tidak memiliki izin akses atau token bearer anda salah",
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "name": "Unauthorized",
+                            "message": "Your request was made with invalid credentials.",
+                            "code": 0,
+                            "status": 401
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
