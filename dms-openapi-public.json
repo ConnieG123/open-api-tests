@@ -1,16 +1,16 @@
 {
-    "openapi":"3.0.2",
+    "openapi": "3.0.2",
     "info": {
-        "title":"Indako DMS API (publik)",                
-        "version":"1.0.0",
-        "description":"Dokumentasi pemanfaatan API dari sistem Indako DMS",
+        "title": "Indako DMS API (publik)",
+        "version": "1.0.0",
+        "description": "Dokumentasi pemanfaatan API dari sistem Indako DMS",
         "contact": {
             "email": "darwin@indako.co.id"
         }
     },
     "servers": [
         {
-            "url":"https://dms.indako.co.id:8443",
+            "url": "https://dms.indako.co.id:8443",
             "description": "DMS API Production Server"
         }
     ],
@@ -32,32 +32,121 @@
             "description": "Operasi yang berhubungan dengan data Master"
         }
     ],
+    "components": {
+        "schemas": {
+            "MasterCustomerH23": {
+                "type": "object",
+                "properties": {
+                    "vidcustomerh23": {
+                        "type": "string"
+                    },
+                    "viddealer": {
+                        "type": "string"
+                    },
+                    "vnamacustomer": {
+                        "type": "string"
+                    },
+                    "valamat": {
+                        "type": "string"
+                    },
+                    "valamat2": {
+                        "type": "string"
+                    },
+                    "vidalamat": {
+                        "type": "string"
+                    },
+                    "vkelurahan": {
+                        "type": "string"
+                    },
+                    "vkecamatan": {
+                        "type": "string"
+                    },
+                    "vidkota": {
+                        "type": "string"
+                    },
+                    "vkota": {
+                        "type": "string"
+                    },
+                    "vidpos": {
+                        "type": "string"
+                    },
+                    "vtempatlahir": {
+                        "type": "string"
+                    },
+                    "dtgllahir": {
+                        "type": "string"
+                    },
+                    "vtelp": {
+                        "type": "string"
+                    },
+                    "vhp": {
+                        "type": "string"
+                    },
+                    "vjeniskelamin": {
+                        "type": "string"
+                    },
+                    "vktp": {
+                        "type": "string"
+                    },
+                    "vnpwp": {
+                        "type": "string"
+                    },
+                    "vnopolisi": {
+                        "type": "string"
+                    },
+                    "vidtipe": {
+                        "type": "string"
+                    },
+                    "vidwarna": {
+                        "type": "string"
+                    },
+                    "vengine": {
+                        "type": "string"
+                    },
+                    "vframe": {
+                        "type": "string"
+                    },
+                    "dtglbeli": {
+                        "type": "string"
+                    },
+                    "vthnrakit": {
+                        "type": "string"
+                    },
+                    "vcreateby": {
+                        "type": "string"
+                    },
+                    "dtglcreate": {
+                        "type": "string"
+                    },
+                    "vmodiby": {
+                        "type": "string"
+                    },
+                    "dtglmodi": {
+                        "type": "string"
+                    }
+                }
+            },
+            "inParamDateStartEnd": {
+                "type": "object",
+                "properties": {
+                    "tgl_awal": {
+                        "type": "string",
+                        "example": "2019-06-01"
+                    },
+                    "tgl_akhir": {
+                        "type": "string",
+                        "example": "2019-06-30"
+                    }
+                }
+            }            
+        }
+    },
     "paths": {
-        "/customerh23/listbysession":{
-            "post":{
-                    "tags":["Master","Transaksi H23"],
-                    "description": "Anda dapat mengakses data master konsumen bengkel (H23) dengan batasan tanggal input dan edit",
-                    "parameters": [
-                        {
-                            "name": "tgl_awal",
-                            "description": "Batansan tanggal awal input data konsumen H23 atau tanggal awal edit data konsumen H23",
-                            "required": true,
-                            "explode": true,
-                            "schema":{
-                                "type": "string"
-                            }
-                        },
-                        {
-                            "name": "tgl_akhir",
-                            "description": "Batasan tanggal akhir input data konsumen H23 atau tanggal akhir edit data konsumen H23",
-                            "required": true,
-                            "explode": true,
-                            "schema":{
-                                "type": "string"
-                            }
-                        }
-                    ]
-            }
+        "/customerh23/listbysession": {
+            "$ref": "./customerH23/customerH23_listbysession.json"
+        },
+        "/login/login":{
+            "$ref": "./userapi/userapi_login.json"
         }
     }
 }
