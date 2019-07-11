@@ -32,8 +32,113 @@
             "description": "Operasi yang berhubungan dengan data Master"
         }
     ],
+    "security": [
+        {
+            "bearerAuth": []
+        }
+    ],
     "components": {
+        "securitySchemes": {
+            "bearerAuth": {
+                "type": "http",
+                "scheme": "bearer"
+            }
+        },
         "schemas": {
+            "Master Jasa": {
+                "type": "object",
+                "properties": {
+                    "viddealer": {
+                        "type": "string"
+                    },
+                    "vidservice": {
+                        "type": "string"
+                    },
+                    "vidserviceahm": {
+                        "type": "string"
+                    },
+                    "vidtipe": {
+                        "type": "string"
+                    },
+                    "vidtipeahm": {
+                        "type": "string"
+                    },
+                    "vservicedesc": {
+                        "type": "string"
+                    },
+                    "mhet": {
+                        "type": "number"
+                    },
+                    "vstatus": {
+                        "type": "string"
+                    },
+                    "vidtipepkb": {
+                        "type": "string"
+                    },
+                    "vidjenispkb": {
+                        "type": "string"
+                    },
+                    "vidkatjob": {
+                        "type": "integer"
+                    },
+                    "vcreateby": {
+                        "type": "string"
+                    },
+                    "dtglcreate": {
+                        "type": "string"
+                    },
+                    "vmodiby": {
+                        "type": "string"
+                    },
+                    "dtglmodi": {
+                        "type": "string"
+                    }
+                }
+            },
+            "MasterAlamat": {
+                "type": "object",
+                "properties": {
+                    "vidalamat": {
+                        "type": "string"
+                    },
+                    "vprovinsi": {
+                        "type": "string"
+                    },
+                    "vkotakab": {
+                        "type": "string"
+                    },
+                    "vkecamatan": {
+                        "type": "string"
+                    },
+                    "vlurahdesa": {
+                        "type": "string"
+                    },
+                    "vidkota": {
+                        "type": "string"
+                    },
+                    "vidkecamatan": {
+                        "type": "string"
+                    },
+                    "vidkecamatanahm": {
+                        "type": "string"
+                    },
+                    "vidalamatahm": {
+                        "type": "string"
+                    },
+                    "vcreateby": {
+                        "type": "string"
+                    },
+                    "dtglcreate": {
+                        "type": "string"
+                    },
+                    "vmodiby": {
+                        "type": "string"
+                    },
+                    "dtglmodi": {
+                        "type": "string"
+                    }
+                }
+            },
             "MasterCustomerH23": {
                 "type": "object",
                 "properties": {
@@ -138,14 +243,20 @@
                         "example": "2019-06-30"
                     }
                 }
-            }            
+            }
         }
     },
     "paths": {
+        "/alamat/list": {
+            "$ref": "./alamat/alamat_list.json"
+        },
+        "/jasa/listbysession": {
+            "$ref": "./service/service_listbysession.json"
+        },
         "/customerh23/listbysession": {
             "$ref": "./customerH23/customerH23_listbysession.json"
         },
-        "/login/login":{
+        "/login/login": {
             "$ref": "./userapi/userapi_login.json"
         }
     }

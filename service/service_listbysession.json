@@ -1,0 +1,97 @@
+{
+    "post": {
+        "tags": [
+            "Master",
+            "Transaksi H23"
+        ],
+        "description": "Anda dapat mengakses data master jasa (servis) bengkel (H23) dengan batasan tanggal input dan edit",
+        "parameters": [
+            {
+                "name": "tgl_awal",
+                "in": "body",
+                "description": "Batasan tanggal awal input data master jasa atau tanggal awal edit data master jasa",
+                "required": true,
+                "explode": false,
+                "schema": {
+                    "type": "string",
+                    "example": "2019-06-01"
+                }
+            },
+            {
+                "name": "tgl_akhir",
+                "in": "body",
+                "description": "Batasan tanggal akhir input data master jasa atau tanggal akhir edit data master jasa",
+                "required": true,
+                "explode": false,
+                "schema": {
+                    "type": "string",
+                    "example": "2019-06-30"
+                }
+            }
+        ],
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "$ref": "../dms-openapi-public.json#/components/schemas/inParamDateStartEnd"
+                    }
+                }
+            }
+        },
+        "responses": {
+            "200": {
+                "description": "Success",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "../dms-openapi-public.json#/components/schemas/Master Jasa"
+                        },
+                        "examples": {
+                            "Data Tersedia": {
+                                "value": {
+                                    "data": [
+                                        {
+                                            "viddealer": "BHA",
+                                            "vidservice": "000616HM3",
+                                            "vidserviceahm": "BJ043",
+                                            "vidtipe": "HM3",
+                                            "vidtipeahm": "BJ",
+                                            "vservicedesc": "-",
+                                            "mhet": "0",
+                                            "vstatus": "T",
+                                            "vidtipepkb": "KPB4",
+                                            "vidjenispkb": "04",
+                                            "vidkatjob": "3",
+                                            "vcreateby": "FRONTDESK.BHA",
+                                            "dtglcreate": "2018-05-14 10:59:00",
+                                            "vmodiby": "FRONTDESK.BHA",
+                                            "dtglmodi": "2018-05-14 10:59:13"
+                                        }
+                                    ]
+                                }
+                            },
+                            "Tidak Ada Data": {
+                                "value": {
+                                    "data": "Tidak ada data"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "401": {
+                "description": "Unauthorized : Anda tidak memiliki izin akses atau token bearer anda salah",
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "name": "Unauthorized",
+                            "message": "Your request was made with invalid credentials.",
+                            "code": 0,
+                            "status": 401
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
