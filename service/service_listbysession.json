@@ -74,6 +74,11 @@
                                 "value": {
                                     "data": "Tidak ada data"
                                 }
+                            },
+                            "Tidak ada hak akses":{
+                                "value": {
+                                    "data": "Error 403: Permission Denied"
+                                }
                             }
                         }
                     }

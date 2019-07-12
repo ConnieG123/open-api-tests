@@ -1,36 +1,29 @@
 {
     "post": {
         "tags": [
-            "Master"            
+            "Master"
         ],
-        "description": "Anda dapat mengakses semua data master Alamat yang digunakan di sistem DMS",                
+        "description": "Anda dapat mengakses semua data master provinsi yang digunakan di sistem DMS",
         "responses": {
             "200": {
                 "description": "Success",
                 "content": {
                     "application/json": {
                         "schema": {
-                            "$ref": "../dms-openapi-public.json#/components/schemas/Master Alamat"
+                            "$ref": "../dms-openapi-public.json#/components/schemas/Master Provinsi"
                         },
                         "examples": {
                             "Data Tersedia": {
                                 "value": {
-                                    "data": [        
+                                    "data": [
                                         {
-                                            "vidalamat": "12.01.01.1001",
-                                            "vprovinsi": "SUMATERA UTARA",
-                                            "vkotakab": "KAB. TAPANULI TENGAH",
-                                            "vkecamatan": "KEC. BARUS",
-                                            "vlurahdesa": "KEL.  PASAR BATU GERIGIS",
-                                            "vidkota": "1204",
-                                            "vidkecamatan": "12.01.01",
-                                            "vidkecamatanahm": "120401",
-                                            "vidalamatahm": "1204010001",
+                                            "vidprovinsi": "1100",
+                                            "vnamaprovinsi": "NANGGROE ACEH DARUSSALAM",
                                             "vcreateby": "admin",
-                                            "dtglcreate": "2014-11-07 11:19:47",
+                                            "dtglcreate": "2011-08-22 14:18:02",
                                             "vmodiby": "admin",
-                                            "dtglmodi": "2015-11-23 11:30:21"
-                                        }                                        
+                                            "dtglmodi": "2013-01-18 14:18:35"
+                                        }
                                     ]
                                 }
                             },

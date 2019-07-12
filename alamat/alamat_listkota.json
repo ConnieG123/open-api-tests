@@ -1,36 +1,31 @@
 {
     "post": {
         "tags": [
-            "Master"            
+            "Master"
         ],
-        "description": "Anda dapat mengakses semua data master Alamat yang digunakan di sistem DMS",                
+        "description": "Anda dapat mengakses semua data master Kota yang digunakan di sistem DMS",
         "responses": {
             "200": {
                 "description": "Success",
                 "content": {
                     "application/json": {
                         "schema": {
-                            "$ref": "../dms-openapi-public.json#/components/schemas/Master Alamat"
+                            "$ref": "../dms-openapi-public.json#/components/schemas/Master Kota"
                         },
                         "examples": {
                             "Data Tersedia": {
                                 "value": {
-                                    "data": [        
+                                    "data": [
                                         {
-                                            "vidalamat": "12.01.01.1001",
-                                            "vprovinsi": "SUMATERA UTARA",
-                                            "vkotakab": "KAB. TAPANULI TENGAH",
-                                            "vkecamatan": "KEC. BARUS",
-                                            "vlurahdesa": "KEL.  PASAR BATU GERIGIS",
-                                            "vidkota": "1204",
-                                            "vidkecamatan": "12.01.01",
-                                            "vidkecamatanahm": "120401",
-                                            "vidalamatahm": "1204010001",
+                                            "vidkota": "1101",
+                                            "vnamakota": "KAB. SIMEULUE",
+                                            "vidprovinsi": "1100",
+                                            "vidwilayah": null,
                                             "vcreateby": "admin",
-                                            "dtglcreate": "2014-11-07 11:19:47",
+                                            "dtglcreate": "2011-08-29 11:29:45",
                                             "vmodiby": "admin",
-                                            "dtglmodi": "2015-11-23 11:30:21"
-                                        }                                        
+                                            "dtglmodi": "2011-08-29 11:38:54"
+                                        }
                                     ]
                                 }
                             },
