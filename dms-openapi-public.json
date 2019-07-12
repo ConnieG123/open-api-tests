@@ -95,7 +95,59 @@
                     }
                 }
             },
-            "MasterAlamat": {
+            "Master Provinsi": {
+                "type": "object",
+                "properties": {
+                    "vidprovinsi": {
+                        "type":"string"
+                    },
+                    "vnamaprovinsi": {
+                        "type":"string"
+                    },
+                    "vcreateby": {
+                        "type":"string"
+                    },
+                    "dtglcreate": {
+                        "type":"string"
+                    },
+                    "vmodiby": {
+                        "type":"string"
+                    },
+                    "dtglmodi": {
+                        "type":"string"
+                    }
+                }
+            },
+            "Master Kota": {
+                "type": "object",
+                "properties": {
+                    "vidkota": {
+                        "type": "string"
+                    },
+                    "vnamakota": {
+                        "type": "string"
+                    },
+                    "vidprovinsi": {
+                        "type": "string"
+                    },
+                    "vidwilayah": {
+                        "type": "string"
+                    },
+                    "vcreateby": {
+                        "type": "string"
+                    },
+                    "dtglcreate": {
+                        "type": "string"
+                    },
+                    "vmodiby": {
+                        "type": "string"
+                    },
+                    "dtglmodi": {
+                        "type": "string"
+                    }
+                }
+            },
+            "Master Alamat": {
                 "type": "object",
                 "properties": {
                     "vidalamat": {
@@ -231,6 +283,95 @@
                     }
                 }
             },
+            "Master Part": {
+                "type": "object",
+                "properties": {
+                    "vidpart": {
+                        "type": "string"
+                    },
+                    "vpartdesc": {
+                        "type": "string"
+                    },
+                    "nminstock": {
+                        "type": "integer"
+                    },
+                    "nmaxstock": {
+                        "type": "integer"
+                    },
+                    "vstatus": {
+                        "type": "integer"
+                    },
+                    "vrank": {
+                        "type": "string"
+                    },
+                    "vidpartgroup": {
+                        "type": "string"
+                    },
+                    "vgroupvnd": {
+                        "type": "string"
+                    },
+                    "vfsflag": {
+                        "type": "string"
+                    },
+                    "vimportflag": {
+                        "type": "string"
+                    },
+                    "vpnt": {
+                        "type": "string"
+                    },
+                    "vahmklbrg": {
+                        "type": "string"
+                    },
+                    "vtypemotor": {
+                        "type": "string"
+                    },
+                    "vsimilarity": {
+                        "type": "string"
+                    },
+                    "vrackdefault": {
+                        "type": "string"
+                    },
+                    "ndefdisc": {
+                        "type": "number"
+                    },
+                    "dactive": {
+                        "type": "string"
+                    },
+                    "vflagsimpart": {
+                        "type": "string"
+                    },
+                    "mhetpart": {
+                        "type": "number"
+                    },
+                    "vpartstat": {
+                        "type": "string"
+                    },
+                    "vpartfunc": {
+                        "type": "string"
+                    },
+                    "vpartltime": {
+                        "type": "string"
+                    },
+                    "vpartcategory": {
+                        "type": "string"
+                    },
+                    "vklprod": {
+                        "type": "string"
+                    },
+                    "dtglcreate": {
+                        "type": "string"
+                    },
+                    "dtglmodi": {
+                        "type": "string"
+                    },
+                    "vcreateby": {
+                        "type": "string"
+                    },
+                    "vmodiby": {
+                        "type": "string"
+                    }
+                }
+            },
             "inParamDateStartEnd": {
                 "type": "object",
                 "properties": {
@@ -247,6 +388,12 @@
         }
     },
     "paths": {
+        "/alamat/listprovinsi": {
+            "$ref": "./alamat/alamat_listprovinsi.json"
+        },
+        "/alamat/listkota": {
+            "$ref": "./alamat/alamat_listkota.json"
+        },
         "/alamat/list": {
             "$ref": "./alamat/alamat_list.json"
         },
@@ -258,6 +405,9 @@
         },
         "/login/login": {
             "$ref": "./userapi/userapi_login.json"
+        },
+        "/part/list": {
+            "$ref": "./part/part_list.json"
         }
     }
 }

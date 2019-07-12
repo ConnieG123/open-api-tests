@@ -1,0 +1,105 @@
+{
+    "post": {
+        "tags": [
+            "Master"
+        ],
+        "description": "Anda dapat mengakses semua data master Part yang digunakan di sistem DMS. Data part number baru atau perubahan data (misalnya perubahan harga) dapat diakses dengan batasan tanggal awal dan tanggal akhir. Sehingga tidak perlu mengambil semua part number setiap kali akses.",
+        "parameters": [
+            {
+                "name": "tgl_awal",
+                "in": "body",
+                "description": "Batasan tanggal awal tersedia part number baru atau tanggal awal perubahan data part",
+                "required": true,
+                "explode": false,
+                "schema": {
+                    "type": "string",
+                    "example": "2019-06-01"
+                }
+            },
+            {
+                "name": "tgl_akhir",
+                "in": "body",
+                "description": "Batasan tanggal akhir tersedia part number baru atau tanggal akhir perubahan data part",
+                "required": true,
+                "explode": false,
+                "schema": {
+                    "type": "string",
+                    "example": "2019-06-30"
+                }
+            }
+        ],
+        "responses": {
+            "200": {
+                "description": "Success",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "../dms-openapi-public.json#/components/schemas/Master Part"
+                        },
+                        "examples": {
+                            "Data Tersedia": {
+                                "value": {
+                                    "data": [
+                                        {
+                                            "vidpart": "04101MJHY00",
+                                            "vpartdesc": "COVER COMP., A.C. GENERATOR",
+                                            "nminstock": null,
+                                            "nmaxstock": null,
+                                            "vstatus": "D",
+                                            "vrank": "F",
+                                            "vidpartgroup": "NOGRP",
+                                            "vgroupvnd": "AHM",
+                                            "vfsflag": "S",
+                                            "vimportflag": "Y",
+                                            "vpnt": "B",
+                                            "vahmklbrg": "IMPOR",
+                                            "vtypemotor": null,
+                                            "vsimilarity": " ",
+                                            "vrackdefault": null,
+                                            "ndefdisc": null,
+                                            "dactive": null,
+                                            "vflagsimpart": "F",
+                                            "mhetpart": "2336000",
+                                            "vpartstat": "N",
+                                            "vpartfunc": "S",
+                                            "vpartltime": "L",
+                                            "vpartcategory": "E",
+                                            "vklprod": "GP",
+                                            "dtglcreate": "2018-05-03 17:24:43",
+                                            "dtglmodi": "2019-04-01 08:29:01",
+                                            "vcreateby": "admin",
+                                            "vmodiby": "admin"
+                                        }
+                                    ]
+                                }
+                            },
+                            "Tidak Ada Data": {
+                                "value": {
+                                    "data": "Tidak ada data"
+                                }
+                            },
+                            "Tidak ada hak akses":{
+                                "value": {
+                                    "data": "Error 403: Permission Denied"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "401": {
+                "description": "Unauthorized : Anda tidak memiliki izin akses atau token bearer anda salah",
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "name": "Unauthorized",
+                            "message": "Your request was made with invalid credentials.",
+                            "code": 0,
+                            "status": 401
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
