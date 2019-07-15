@@ -1,0 +1,95 @@
+{
+    "post": {
+        "tags": [
+            "Transaksi H23"
+        ],
+        "description": "Anda dapat mengakses data detail suku cadang yang digunakan pada PKB (Perintah Kerja Bengkel) dengan batasan tanggal input dan edit. Untuk data header, diakses melalui url terpisah (lihat dokumentasi data header PKB). ",
+        "parameters": [
+            {
+                "name": "tgl_awal",
+                "in": "body",
+                "description": "Batasan tanggal awal input data PKB atau tanggal awal edit data PKB",
+                "required": true,
+                "explode": false,
+                "schema": {
+                    "type": "string",
+                    "example": "2019-06-01"
+                }
+            },
+            {
+                "name": "tgl_akhir",
+                "in": "body",
+                "description": "Batasan tanggal akhir input data PKB atau tanggal akhir edit data PKB",
+                "required": true,
+                "explode": false,
+                "schema": {
+                    "type": "string",
+                    "example": "2019-06-30"
+                }
+            }
+        ],
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "$ref": "../dms-openapi-public.json#/components/schemas/inParamDateStartEnd"
+                    }
+                }
+            }
+        },
+        "responses": {
+            "200": {
+                "description": "Success",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "../dms-openapi-public.json#/components/schemas/Detail Jasa PKB"
+                        },
+                        "examples": {
+                            "Data Tersedia": {
+                                "value": {
+                                    "data": [
+                                        {
+                                            "viddealer": "BHA",
+                                            "vidpkb": "19-000013",
+                                            "vidpart": "082322MBK8LN9",
+                                            "nqty": "1",
+                                            "mprice": "45000",
+                                            "vcreateby": "frontdesk.bha",
+                                            "dtglcreate": "2019-01-02 11:22:25",
+                                            "vmodiby": null,
+                                            "dtglmodi": null
+                                        }
+                                    ]
+                                }
+                            },
+                            "Tidak Ada Data": {
+                                "value": {
+                                    "data": "Tidak ada data"
+                                }
+                            },
+                            "Tidak ada hak akses": {
+                                "value": {
+                                    "data": "Error 403: Permission Denied"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "401": {
+                "description": "Unauthorized : Anda tidak memiliki izin akses atau token bearer anda salah",
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "name": "Unauthorized",
+                            "message": "Your request was made with invalid credentials.",
+                            "code": 0,
+                            "status": 401
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
