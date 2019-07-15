@@ -20,16 +20,16 @@
             "description": "Operasi yang berhubungan dengan akses dan otentikasi user"
         },
         {
+            "name": "Master",
+            "description": "Operasi yang berhubungan dengan data Master"
+        },
+        {
             "name": "Transaksi H1",
             "description": "Operasi yang berhubungan dengan transaksi H1"
         },
         {
             "name": "Transaksi H23",
             "description": "Operasi yang berhubungan dengan transaksi Servis dan Suku Cadang"
-        },
-        {
-            "name": "Master",
-            "description": "Operasi yang berhubungan dengan data Master"
         }
     ],
     "security": [
@@ -99,22 +99,22 @@
                 "type": "object",
                 "properties": {
                     "vidprovinsi": {
-                        "type":"string"
+                        "type": "string"
                     },
                     "vnamaprovinsi": {
-                        "type":"string"
+                        "type": "string"
                     },
                     "vcreateby": {
-                        "type":"string"
+                        "type": "string"
                     },
                     "dtglcreate": {
-                        "type":"string"
+                        "type": "string"
                     },
                     "vmodiby": {
-                        "type":"string"
+                        "type": "string"
                     },
                     "dtglmodi": {
-                        "type":"string"
+                        "type": "string"
                     }
                 }
             },
@@ -372,6 +372,168 @@
                     }
                 }
             },
+            "Header PKB": {
+                "type": "object",
+                "properties": {
+                    "viddealer": {
+                        "type": "string"
+                    },
+                    "vidpkb": {
+                        "type": "string"
+                    },
+                    "dpkb": {
+                        "type": "string"
+                    },
+                    "vidcustomerh23": {
+                        "type": "string"
+                    },
+                    "vnowa": {
+                        "type": "string"
+                    },
+                    "vcomplaint": {
+                        "type": "string"
+                    },
+                    "vidsa": {
+                        "type": "string"
+                    },
+                    "vidkaryawan": {
+                        "type": "string"
+                    },
+                    "vkm": {
+                        "type": "string"
+                    },
+                    "vkpbcard": {
+                        "type": "string"
+                    },
+                    "npit": {
+                        "type": "integer"
+                    },
+                    "ndurasi": {
+                        "type": "integer"
+                    },
+                    "dstart": {
+                        "type": "string"
+                    },
+                    "nflagpause": {
+                        "type": "integer"
+                    },
+                    "dfinish": {
+                        "type": "string"
+                    },
+                    "vidtipepkb": {
+                        "type": "string"
+                    },
+                    "vtipejob": {
+                        "type": "string"
+                    },
+                    "vstatus": {
+                        "type": "string"
+                    },
+                    "vflagpemilik": {
+                        "type": "string"
+                    },
+                    "vkatunitentry": {
+                        "type": "string"
+                    },
+                    "vojek": {
+                        "type": "string"
+                    },
+                    "vdaridealer": {
+                        "type": "string"
+                    },
+                    "valasan": {
+                        "type": "string"
+                    },
+                    "valasanother": {
+                        "type": "string"
+                    },
+                    "vanalisaadvisor": {
+                        "type": "string"
+                    },
+                    "vsaranmekanik": {
+                        "type": "string"
+                    },
+                    "njenisantrian": {
+                        "type": "integer"
+                    },
+                    "vcreateby": {
+                        "type": "string"
+                    },
+                    "dtglcreate": {
+                        "type": "string"
+                    },
+                    "vmodiby": {
+                        "type": "string"
+                    },
+                    "dtglmodi": {
+                        "type": "string"
+                    }
+                }
+            },
+            "Detail Jasa PKB": {
+                "type": "object",
+                "properties": {
+                    "viddealer": {
+                        "type": "string"
+                    },
+                    "vidpkb": {
+                        "type": "string"
+                    },
+                    "vidservice": {
+                        "type": "string"
+                    },
+                    "nqty": {
+                        "type": "integer"
+                    },
+                    "mprice": {
+                        "type": "number"
+                    },
+                    "vcreateby": {
+                        "type": "string"
+                    },
+                    "dtglcreate": {
+                        "type": "string"
+                    },
+                    "vmodiby": {
+                        "type": "string"
+                    },
+                    "dtglmodi": {
+                        "type": "string"
+                    }
+                }
+            },
+            "Detail Part PKB": {
+                "type": "object",
+                "properties": {
+                    "viddealer": {
+                        "type": "string"
+                    },
+                    "vidpkb": {
+                        "type": "string"
+                    },
+                    "vidpart": {
+                        "type": "string"
+                    },
+                    "nqty": {
+                        "type": "integer"
+                    },
+                    "mprice": {
+                        "type": "number"
+                    },
+                    "vcreateby": {
+                        "type": "string"
+                    },
+                    "dtglcreate": {
+                        "type": "string"
+                    },
+                    "vmodiby": {
+                        "type": "string"
+                    },
+                    "dtglmodi": {
+                        "type": "string"
+                    }
+                }
+            },
             "inParamDateStartEnd": {
                 "type": "object",
                 "properties": {
@@ -408,6 +570,15 @@
         },
         "/part/list": {
             "$ref": "./part/part_list.json"
+        },
+        "/pkb/listheaderbysession": {
+            "$ref": "./pkb/pkb_listheaderbysession.json"
+        },
+        "/pkb/listdetailjobbysession": {
+            "$ref": "./pkb/pkb_listdetailjobbysession.json"
+        },
+        "/pkb/listdetailpartbysession": {
+            "$ref": "./pkb/pkb_listdetailpartbysession.json"
         }
     }
 }

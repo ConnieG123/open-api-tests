@@ -1,0 +1,117 @@
+{
+    "post": {
+        "tags": [
+            "Transaksi H23"
+        ],
+        "description": "Anda dapat mengakses data header PKB (Perintah Kerja Bengkel) dengan batasan tanggal input dan edit. Untuk data detail, diakses melalui url terpisah (lihat dokumentasi data detail PKB). ",
+        "parameters": [
+            {
+                "name": "tgl_awal",
+                "in": "body",
+                "description": "Batasan tanggal awal input data PKB atau tanggal awal edit data PKB",
+                "required": true,
+                "explode": false,
+                "schema": {
+                    "type": "string",
+                    "example": "2019-06-01"
+                }
+            },
+            {
+                "name": "tgl_akhir",
+                "in": "body",
+                "description": "Batasan tanggal akhir input data PKB atau tanggal akhir edit data PKB",
+                "required": true,
+                "explode": false,
+                "schema": {
+                    "type": "string",
+                    "example": "2019-06-30"
+                }
+            }
+        ],
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "$ref": "../dms-openapi-public.json#/components/schemas/inParamDateStartEnd"
+                    }
+                }
+            }
+        },
+        "responses": {
+            "200": {
+                "description": "Success",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "../dms-openapi-public.json#/components/schemas/Header PKB"
+                        },
+                        "examples": {
+                            "Data Tersedia": {
+                                "value": {
+                                    "data": [
+                                        {
+                                            "viddealer": "BHA",
+                                            "vidpkb": "18-036896",
+                                            "dpkb": "2018-12-01",
+                                            "vidcustomerh23": "H23CUST/BHA/033981",
+                                            "vnowa": null,
+                                            "vcomplaint": "-",
+                                            "vidsa": "MRI",
+                                            "vidkaryawan": "PUR",
+                                            "vkm": "6651",
+                                            "vkpbcard": "0",
+                                            "npit": null,
+                                            "ndurasi": null,
+                                            "dstart": "2018-12-01 14:29:25",
+                                            "nflagpause": "0",
+                                            "dfinish": "2018-12-01 14:29:27",
+                                            "vidtipepkb": "KPB5-10",
+                                            "vtipejob": "S",
+                                            "vstatus": "T",
+                                            "vflagpemilik": "T",
+                                            "vkatunitentry": "1",
+                                            "vojek": null,
+                                            "vdaridealer": "1",
+                                            "valasan": "2",
+                                            "valasanother": "",
+                                            "vanalisaadvisor": "",
+                                            "vsaranmekanik": "",
+                                            "njenisantrian": "1",
+                                            "vcreateby": "frontdesk.bha",
+                                            "dtglcreate": "2018-12-01 14:29:20",
+                                            "vmodiby": "kacab.bha",
+                                            "dtglmodi": "2019-01-03 08:35:07"
+                                        }
+                                    ]
+                                }
+                            },
+                            "Tidak Ada Data": {
+                                "value": {
+                                    "data": "Tidak ada data"
+                                }
+                            },
+                            "Tidak ada hak akses": {
+                                "value": {
+                                    "data": "Error 403: Permission Denied"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "401": {
+                "description": "Unauthorized : Anda tidak memiliki izin akses atau token bearer anda salah",
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "name": "Unauthorized",
+                            "message": "Your request was made with invalid credentials.",
+                            "code": 0,
+                            "status": 401
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
