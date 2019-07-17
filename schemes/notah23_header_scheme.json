@@ -1,0 +1,95 @@
+{
+    "type": "object",
+    "properties": {
+        "viddealer": {
+            "type":"string"
+        },
+        "vidnotah23": {
+            "type":"string"
+        },
+        "vidcustomerh23": {
+            "type":"string"
+        },
+        "dnota": {
+            "type":"string"
+        },
+        "vidponsc": {
+            "type":"string"
+        },
+        "vidpkb": {
+            "type":"string"
+        },
+        "ndiskonpercent": {
+            "type":"number"
+        },
+        "mdiskon": {
+            "type":"number"
+        },
+        "mtotal": {
+            "type":"number"
+        },
+        "mdpp": {
+            "type":"number"
+        },
+        "mppn": {
+            "type":"number"
+        },
+        "mhargajual": {
+            "type":"number"
+        },
+        "vflagpajak": {
+            "type":"string"
+        },
+        "vstatus": {
+            "type":"string"
+        },
+        "vtandatangan": {
+            "type":"string"
+        },
+        "vnopajak": {
+            "type":"string"
+        },
+        "valasanbatal": {
+            "type":"string"
+        },
+        "vtipenota": {
+            "type":"string"
+        },
+        "vtipebayar": {
+            "type":"string"
+        },
+        "vflagposting": {
+            "type":"string"
+        },
+        "dposting": {
+            "type":"string"
+        },
+        "dtglbatal": {
+            "type":"string"
+        },
+        "vbatalby": {
+            "type":"string"
+        },
+        "vflagcetak": {
+            "type":"string"
+        },
+        "vflagtransfertax": {
+            "type":"string"
+        },
+        "vidhoo": {
+            "type":"string"
+        },
+        "vcreateby": {
+            "type":"string"
+        },
+        "dtglcreate": {
+            "type":"string"
+        },
+        "vmodiby": {
+            "type":"string"
+        },
+        "dtglmodi": {
+            "type":"string"
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "type": "object",
+    "properties": {
+        "vidtipegroup": {
+            "type": "string"
+        },
+        "vdesc": {
+            "type": "string"
+        },
+        "nsort": {
+            "type": "integer"
+        },
+        "vstatus": {
+            "type": "string"
+        },
+        "vgroup": {
+            "type": "string"
+        },
+        "vidtipeseries": {
+            "type": "string"
+        },
+        "vidtipetarget": {
+            "type": "string"
+        },
+        "vflagtarget": {
+            "type": "string"
+        },
+        "vcreateby": {
+            "type": "string"
+        },
+        "dtglcreate": {
+            "type": "string"
+        },
+        "vmodiby": {
+            "type": "string"
+        },
+        "dtglmodi": {
+            "type": "string"
+        }
+    }
+}

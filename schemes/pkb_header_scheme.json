@@ -1,0 +1,98 @@
+{
+    "type": "object",
+    "properties": {
+        "viddealer": {
+            "type": "string"
+        },
+        "vidpkb": {
+            "type": "string"
+        },
+        "dpkb": {
+            "type": "string"
+        },
+        "vidcustomerh23": {
+            "type": "string"
+        },
+        "vnowa": {
+            "type": "string"
+        },
+        "vcomplaint": {
+            "type": "string"
+        },
+        "vidsa": {
+            "type": "string"
+        },
+        "vidkaryawan": {
+            "type": "string"
+        },
+        "vkm": {
+            "type": "string"
+        },
+        "vkpbcard": {
+            "type": "string"
+        },
+        "npit": {
+            "type": "integer"
+        },
+        "ndurasi": {
+            "type": "integer"
+        },
+        "dstart": {
+            "type": "string"
+        },
+        "nflagpause": {
+            "type": "integer"
+        },
+        "dfinish": {
+            "type": "string"
+        },
+        "vidtipepkb": {
+            "type": "string"
+        },
+        "vtipejob": {
+            "type": "string"
+        },
+        "vstatus": {
+            "type": "string"
+        },
+        "vflagpemilik": {
+            "type": "string"
+        },
+        "vkatunitentry": {
+            "type": "string"
+        },
+        "vojek": {
+            "type": "string"
+        },
+        "vdaridealer": {
+            "type": "string"
+        },
+        "valasan": {
+            "type": "string"
+        },
+        "valasanother": {
+            "type": "string"
+        },
+        "vanalisaadvisor": {
+            "type": "string"
+        },
+        "vsaranmekanik": {
+            "type": "string"
+        },
+        "njenisantrian": {
+            "type": "integer"
+        },
+        "vcreateby": {
+            "type": "string"
+        },
+        "dtglcreate": {
+            "type": "string"
+        },
+        "vmodiby": {
+            "type": "string"
+        },
+        "dtglmodi": {
+            "type": "string"
+        }
+    }
+}

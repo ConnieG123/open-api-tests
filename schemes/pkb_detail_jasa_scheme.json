@@ -1,0 +1,32 @@
+{
+    "type": "object",
+    "properties": {
+        "viddealer": {
+            "type": "string"
+        },
+        "vidpkb": {
+            "type": "string"
+        },
+        "vidservice": {
+            "type": "string"
+        },
+        "nqty": {
+            "type": "integer"
+        },
+        "mprice": {
+            "type": "number"
+        },
+        "vcreateby": {
+            "type": "string"
+        },
+        "dtglcreate": {
+            "type": "string"
+        },
+        "vmodiby": {
+            "type": "string"
+        },
+        "dtglmodi": {
+            "type": "string"
+        }
+    }
+}

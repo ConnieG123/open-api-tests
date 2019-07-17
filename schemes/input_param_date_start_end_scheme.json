@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "tgl_awal": {
+            "type": "string",
+            "example": "2019-06-01"
+        },
+        "tgl_akhir": {
+            "type": "string",
+            "example": "2019-06-30"
+        }
+    }
+}

@@ -46,506 +46,49 @@
         },
         "schemas": {
             "Master Jasa": {
-                "type": "object",
-                "properties": {
-                    "viddealer": {
-                        "type": "string"
-                    },
-                    "vidservice": {
-                        "type": "string"
-                    },
-                    "vidserviceahm": {
-                        "type": "string"
-                    },
-                    "vidtipe": {
-                        "type": "string"
-                    },
-                    "vidtipeahm": {
-                        "type": "string"
-                    },
-                    "vservicedesc": {
-                        "type": "string"
-                    },
-                    "mhet": {
-                        "type": "number"
-                    },
-                    "vstatus": {
-                        "type": "string"
-                    },
-                    "vidtipepkb": {
-                        "type": "string"
-                    },
-                    "vidjenispkb": {
-                        "type": "string"
-                    },
-                    "vidkatjob": {
-                        "type": "integer"
-                    },
-                    "vcreateby": {
-                        "type": "string"
-                    },
-                    "dtglcreate": {
-                        "type": "string"
-                    },
-                    "vmodiby": {
-                        "type": "string"
-                    },
-                    "dtglmodi": {
-                        "type": "string"
-                    }
-                }
+                "$ref": "./schemes/master_jasa_scheme.json"
             },
             "Master Provinsi": {
-                "type": "object",
-                "properties": {
-                    "vidprovinsi": {
-                        "type": "string"
-                    },
-                    "vnamaprovinsi": {
-                        "type": "string"
-                    },
-                    "vcreateby": {
-                        "type": "string"
-                    },
-                    "dtglcreate": {
-                        "type": "string"
-                    },
-                    "vmodiby": {
-                        "type": "string"
-                    },
-                    "dtglmodi": {
-                        "type": "string"
-                    }
-                }
+                "$ref": "./schemes/master_provinsi_scheme.json"
             },
             "Master Kota": {
-                "type": "object",
-                "properties": {
-                    "vidkota": {
-                        "type": "string"
-                    },
-                    "vnamakota": {
-                        "type": "string"
-                    },
-                    "vidprovinsi": {
-                        "type": "string"
-                    },
-                    "vidwilayah": {
-                        "type": "string"
-                    },
-                    "vcreateby": {
-                        "type": "string"
-                    },
-                    "dtglcreate": {
-                        "type": "string"
-                    },
-                    "vmodiby": {
-                        "type": "string"
-                    },
-                    "dtglmodi": {
-                        "type": "string"
-                    }
-                }
+                "$ref": "./schemes/master_kota_scheme.json"
             },
             "Master Alamat": {
-                "type": "object",
-                "properties": {
-                    "vidalamat": {
-                        "type": "string"
-                    },
-                    "vprovinsi": {
-                        "type": "string"
-                    },
-                    "vkotakab": {
-                        "type": "string"
-                    },
-                    "vkecamatan": {
-                        "type": "string"
-                    },
-                    "vlurahdesa": {
-                        "type": "string"
-                    },
-                    "vidkota": {
-                        "type": "string"
-                    },
-                    "vidkecamatan": {
-                        "type": "string"
-                    },
-                    "vidkecamatanahm": {
-                        "type": "string"
-                    },
-                    "vidalamatahm": {
-                        "type": "string"
-                    },
-                    "vcreateby": {
-                        "type": "string"
-                    },
-                    "dtglcreate": {
-                        "type": "string"
-                    },
-                    "vmodiby": {
-                        "type": "string"
-                    },
-                    "dtglmodi": {
-                        "type": "string"
-                    }
-                }
+                "$ref": "./schemes/master_alamat_scheme.json"
             },
             "MasterCustomerH23": {
-                "type": "object",
-                "properties": {
-                    "vidcustomerh23": {
-                        "type": "string"
-                    },
-                    "viddealer": {
-                        "type": "string"
-                    },
-                    "vnamacustomer": {
-                        "type": "string"
-                    },
-                    "valamat": {
-                        "type": "string"
-                    },
-                    "valamat2": {
-                        "type": "string"
-                    },
-                    "vidalamat": {
-                        "type": "string"
-                    },
-                    "vkelurahan": {
-                        "type": "string"
-                    },
-                    "vkecamatan": {
-                        "type": "string"
-                    },
-                    "vidkota": {
-                        "type": "string"
-                    },
-                    "vkota": {
-                        "type": "string"
-                    },
-                    "vidpos": {
-                        "type": "string"
-                    },
-                    "vtempatlahir": {
-                        "type": "string"
-                    },
-                    "dtgllahir": {
-                        "type": "string"
-                    },
-                    "vtelp": {
-                        "type": "string"
-                    },
-                    "vhp": {
-                        "type": "string"
-                    },
-                    "vjeniskelamin": {
-                        "type": "string"
-                    },
-                    "vktp": {
-                        "type": "string"
-                    },
-                    "vnpwp": {
-                        "type": "string"
-                    },
-                    "vnopolisi": {
-                        "type": "string"
-                    },
-                    "vidtipe": {
-                        "type": "string"
-                    },
-                    "vidwarna": {
-                        "type": "string"
-                    },
-                    "vengine": {
-                        "type": "string"
-                    },
-                    "vframe": {
-                        "type": "string"
-                    },
-                    "dtglbeli": {
-                        "type": "string"
-                    },
-                    "vthnrakit": {
-                        "type": "string"
-                    },
-                    "vcreateby": {
-                        "type": "string"
-                    },
-                    "dtglcreate": {
-                        "type": "string"
-                    },
-                    "vmodiby": {
-                        "type": "string"
-                    },
-                    "dtglmodi": {
-                        "type": "string"
-                    }
-                }
+                "$ref": "./schemes/master_customerh23_scheme.json"
             },
             "Master Part": {
-                "type": "object",
-                "properties": {
-                    "vidpart": {
-                        "type": "string"
-                    },
-                    "vpartdesc": {
-                        "type": "string"
-                    },
-                    "nminstock": {
-                        "type": "integer"
-                    },
-                    "nmaxstock": {
-                        "type": "integer"
-                    },
-                    "vstatus": {
-                        "type": "integer"
-                    },
-                    "vrank": {
-                        "type": "string"
-                    },
-                    "vidpartgroup": {
-                        "type": "string"
-                    },
-                    "vgroupvnd": {
-                        "type": "string"
-                    },
-                    "vfsflag": {
-                        "type": "string"
-                    },
-                    "vimportflag": {
-                        "type": "string"
-                    },
-                    "vpnt": {
-                        "type": "string"
-                    },
-                    "vahmklbrg": {
-                        "type": "string"
-                    },
-                    "vtypemotor": {
-                        "type": "string"
-                    },
-                    "vsimilarity": {
-                        "type": "string"
-                    },
-                    "vrackdefault": {
-                        "type": "string"
-                    },
-                    "ndefdisc": {
-                        "type": "number"
-                    },
-                    "dactive": {
-                        "type": "string"
-                    },
-                    "vflagsimpart": {
-                        "type": "string"
-                    },
-                    "mhetpart": {
-                        "type": "number"
-                    },
-                    "vpartstat": {
-                        "type": "string"
-                    },
-                    "vpartfunc": {
-                        "type": "string"
-                    },
-                    "vpartltime": {
-                        "type": "string"
-                    },
-                    "vpartcategory": {
-                        "type": "string"
-                    },
-                    "vklprod": {
-                        "type": "string"
-                    },
-                    "dtglcreate": {
-                        "type": "string"
-                    },
-                    "dtglmodi": {
-                        "type": "string"
-                    },
-                    "vcreateby": {
-                        "type": "string"
-                    },
-                    "vmodiby": {
-                        "type": "string"
-                    }
-                }
+                "$ref": "./schemes/master_part_scheme.json"
+            },
+            "Master Tipe Series Motor": {
+                "$ref": "./schemes/master_tipeseries_scheme.json"
+            },
+            "Master Tipe Group Motor": {
+                "$ref": "./schemes/master_tipegroup_scheme.json"
+            },
+            "Master Tipe Motor": {
+                "$ref": "./schemes/master_tipeclr_scheme.json"
             },
             "Header PKB": {
-                "type": "object",
-                "properties": {
-                    "viddealer": {
-                        "type": "string"
-                    },
-                    "vidpkb": {
-                        "type": "string"
-                    },
-                    "dpkb": {
-                        "type": "string"
-                    },
-                    "vidcustomerh23": {
-                        "type": "string"
-                    },
-                    "vnowa": {
-                        "type": "string"
-                    },
-                    "vcomplaint": {
-                        "type": "string"
-                    },
-                    "vidsa": {
-                        "type": "string"
-                    },
-                    "vidkaryawan": {
-                        "type": "string"
-                    },
-                    "vkm": {
-                        "type": "string"
-                    },
-                    "vkpbcard": {
-                        "type": "string"
-                    },
-                    "npit": {
-                        "type": "integer"
-                    },
-                    "ndurasi": {
-                        "type": "integer"
-                    },
-                    "dstart": {
-                        "type": "string"
-                    },
-                    "nflagpause": {
-                        "type": "integer"
-                    },
-                    "dfinish": {
-                        "type": "string"
-                    },
-                    "vidtipepkb": {
-                        "type": "string"
-                    },
-                    "vtipejob": {
-                        "type": "string"
-                    },
-                    "vstatus": {
-                        "type": "string"
-                    },
-                    "vflagpemilik": {
-                        "type": "string"
-                    },
-                    "vkatunitentry": {
-                        "type": "string"
-                    },
-                    "vojek": {
-                        "type": "string"
-                    },
-                    "vdaridealer": {
-                        "type": "string"
-                    },
-                    "valasan": {
-                        "type": "string"
-                    },
-                    "valasanother": {
-                        "type": "string"
-                    },
-                    "vanalisaadvisor": {
-                        "type": "string"
-                    },
-                    "vsaranmekanik": {
-                        "type": "string"
-                    },
-                    "njenisantrian": {
-                        "type": "integer"
-                    },
-                    "vcreateby": {
-                        "type": "string"
-                    },
-                    "dtglcreate": {
-                        "type": "string"
-                    },
-                    "vmodiby": {
-                        "type": "string"
-                    },
-                    "dtglmodi": {
-                        "type": "string"
-                    }
-                }
+                "$ref": "./schemes/pkb_header_scheme.json"
             },
             "Detail Jasa PKB": {
-                "type": "object",
-                "properties": {
-                    "viddealer": {
-                        "type": "string"
-                    },
-                    "vidpkb": {
-                        "type": "string"
-                    },
-                    "vidservice": {
-                        "type": "string"
-                    },
-                    "nqty": {
-                        "type": "integer"
-                    },
-                    "mprice": {
-                        "type": "number"
-                    },
-                    "vcreateby": {
-                        "type": "string"
-                    },
-                    "dtglcreate": {
-                        "type": "string"
-                    },
-                    "vmodiby": {
-                        "type": "string"
-                    },
-                    "dtglmodi": {
-                        "type": "string"
-                    }
-                }
+                "$ref": "./schemes/pkb_detail_jasa_scheme.json"
             },
             "Detail Part PKB": {
-                "type": "object",
-                "properties": {
-                    "viddealer": {
-                        "type": "string"
-                    },
-                    "vidpkb": {
-                        "type": "string"
-                    },
-                    "vidpart": {
-                        "type": "string"
-                    },
-                    "nqty": {
-                        "type": "integer"
-                    },
-                    "mprice": {
-                        "type": "number"
-                    },
-                    "vcreateby": {
-                        "type": "string"
-                    },
-                    "dtglcreate": {
-                        "type": "string"
-                    },
-                    "vmodiby": {
-                        "type": "string"
-                    },
-                    "dtglmodi": {
-                        "type": "string"
-                    }
-                }
+                "$ref": "./schemes/pkb_detail_part_scheme.json"
+            },
+            "Header Nota H23": {
+                "$ref": "./schemes/notah23_header_scheme.json"
+            },
+            "Detail Nota H23": {
+                "$ref": "./schemes/notah23_detail_scheme.json"
             },
             "inParamDateStartEnd": {
-                "type": "object",
-                "properties": {
-                    "tgl_awal": {
-                        "type": "string",
-                        "example": "2019-06-01"
-                    },
-                    "tgl_akhir": {
-                        "type": "string",
-                        "example": "2019-06-30"
-                    }
-                }
+                "$ref": "./schemes/input_param_date_start_end_scheme.json"
             }
         }
     },
@@ -571,6 +114,15 @@
         "/part/list": {
             "$ref": "./part/part_list.json"
         },
+        "/tipe/listtipeseries": {
+            "$ref": "./tipe/tipe_listtipeseries.json"
+        },
+        "/tipe/listtipegroup": {
+            "$ref": "./tipe/tipe_listtipegroup.json"
+        },
+        "/tipe/listtypeclr": {
+            "$ref": "./tipe/tipe_listtypeclr.json"
+        },
         "/pkb/listheaderbysession": {
             "$ref": "./pkb/pkb_listheaderbysession.json"
         },
@@ -579,6 +131,12 @@
         },
         "/pkb/listdetailpartbysession": {
             "$ref": "./pkb/pkb_listdetailpartbysession.json"
+        },
+        "/notah23/listheaderbysession": {
+            "$ref": "./notah23/notah23_listheaderbysession.json"
+        },
+        "/notah23/listdetailbysession": {
+            "$ref": "./notah23/notah23_listdetailbysession.json"
         }
     }
 }

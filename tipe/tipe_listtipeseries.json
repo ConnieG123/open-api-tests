@@ -1,0 +1,61 @@
+{
+    "post": {
+        "tags": [
+            "Master"
+        ],
+        "description": "Anda dapat mengakses semua data master Tipe Series Motor yang digunakan di sistem DMS",
+        "responses": {
+            "200": {
+                "description": "Success",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "../dms-openapi-public.json#/components/schemas/Master Tipe Series Motor"
+                        },
+                        "examples": {
+                            "Data Tersedia": {
+                                "value": {
+                                    "data": [
+                                        {
+                                            "vidtipeseries": "TS_000001",
+                                            "vdesc": "Revo Series",
+                                            "vstatus": "T",
+                                            "nsort": "1",
+                                            "vcreateby": "admin",
+                                            "dtglcreate": "2013-08-23 13:54:55",
+                                            "vmodiby": "frans",
+                                            "dtglmodi": "2015-04-23 10:31:58"
+                                        }
+                                    ]
+                                }
+                            },
+                            "Tidak Ada Data": {
+                                "value": {
+                                    "data": "Tidak ada data"
+                                }
+                            },
+                            "Tidak ada hak akses": {
+                                "value": {
+                                    "data": "Error 403: Permission Denied"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "401": {
+                "description": "Unauthorized : Anda tidak memiliki izin akses atau token bearer anda salah",
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "name": "Unauthorized",
+                            "message": "Your request was made with invalid credentials.",
+                            "code": 0,
+                            "status": 401
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

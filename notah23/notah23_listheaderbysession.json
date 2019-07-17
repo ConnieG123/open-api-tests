@@ -1,0 +1,129 @@
+{
+    "post": {
+        "tags": [
+            "Transaksi H23"
+        ],
+        "description": "Anda dapat mengakses data header Faktur Jual Bengkel dengan batasan tanggal input dan edit. Untuk data detail, diakses melalui url terpisah (lihat dokumentasi data detail Nota H23). ",
+        "parameters": [
+            {
+                "name": "tgl_awal",
+                "in": "body",
+                "description": "Batasan tanggal awal input data Faktur Jual bengkel atau tanggal awal edit data Faktur Jual Bengkel",
+                "required": true,
+                "explode": false,
+                "schema": {
+                    "type": "string",
+                    "example": "2019-06-01"
+                }
+            },
+            {
+                "name": "tgl_akhir",
+                "in": "body",
+                "description": "Batasan tanggal akhir input data Faktur Jual bengkel atau tanggal akhir edit data Faktur Jual bengkel",
+                "required": true,
+                "explode": false,
+                "schema": {
+                    "type": "string",
+                    "example": "2019-06-30"
+                }
+            }
+        ],
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "$ref": "../dms-openapi-public.json#/components/schemas/inParamDateStartEnd"
+                    }
+                }
+            }
+        },
+        "responses": {
+            "200": {
+                "description": "Success",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "../dms-openapi-public.json#/components/schemas/Header Nota H23"
+                        },
+                        "examples": {
+                            "Data Tersedia": {
+                                "value": {
+                                    "data": [
+                                        {
+                                            "viddealer": "BHA",
+                                            "vidnotah23": "2019-020019",
+                                            "vidcustomerh23": "H23CUST/BHA/037997",
+                                            "dnota": "2019-06-01",
+                                            "vidponsc": null,
+                                            "vidpkb": "19-016835",
+                                            "ndiskonpercent": "0",
+                                            "mdiskon": "0",
+                                            "mtotal": "20000",
+                                            "mdpp": "18182",
+                                            "mppn": "1818",
+                                            "mhargajual": "18182",
+                                            "vflagpajak": "F",
+                                            "vstatus": "T",
+                                            "vtandatangan": null,
+                                            "vnopajak": null,
+                                            "valasanbatal": null,
+                                            "vtipenota": "NJB",
+                                            "vtipebayar": "K",
+                                            "vflagposting": "T",
+                                            "dposting": "2019-06-01 15:00:32",
+                                            "dtglbatal": null,
+                                            "vbatalby": null,
+                                            "vflagcetak": "T",
+                                            "vflagtransfertax": "F",
+                                            "vidhoo": null,
+                                            "vcreateby": "frontdesk.bha",
+                                            "dtglcreate": "2019-06-01 13:18:11",
+                                            "vmodiby": "frontdesk.bha",
+                                            "dtglmodi": "2019-06-01 15:00:32"
+                                        }
+                                    ]
+                                }
+                            },
+                            "Tidak Ada Data": {
+                                "value": {
+                                    "data": "Tidak ada data"
+                                }
+                            },
+                            "Tidak ada hak akses": {
+                                "value": {
+                                    "data": "Error 403: Permission Denied"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "401": {
+                "description": "Unauthorized : Anda tidak memiliki izin akses atau token bearer anda salah",
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "name": "Unauthorized",
+                            "message": "Your request was made with invalid credentials.",
+                            "code": 0,
+                            "status": 401
+                        }
+                    }
+                }
+            },
+            "403": {
+                "description": "Forbidden : Anda belum melakukan login atau token bearer anda salah",
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "name": "Forbidden",
+                            "message": "Login Required",
+                            "code": 0,
+                            "status": 403
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

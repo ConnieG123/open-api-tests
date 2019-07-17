@@ -1,0 +1,92 @@
+{
+    "type": "object",
+    "properties": {
+        "vidcustomerh23": {
+            "type": "string"
+        },
+        "viddealer": {
+            "type": "string"
+        },
+        "vnamacustomer": {
+            "type": "string"
+        },
+        "valamat": {
+            "type": "string"
+        },
+        "valamat2": {
+            "type": "string"
+        },
+        "vidalamat": {
+            "type": "string"
+        },
+        "vkelurahan": {
+            "type": "string"
+        },
+        "vkecamatan": {
+            "type": "string"
+        },
+        "vidkota": {
+            "type": "string"
+        },
+        "vkota": {
+            "type": "string"
+        },
+        "vidpos": {
+            "type": "string"
+        },
+        "vtempatlahir": {
+            "type": "string"
+        },
+        "dtgllahir": {
+            "type": "string"
+        },
+        "vtelp": {
+            "type": "string"
+        },
+        "vhp": {
+            "type": "string"
+        },
+        "vjeniskelamin": {
+            "type": "string"
+        },
+        "vktp": {
+            "type": "string"
+        },
+        "vnpwp": {
+            "type": "string"
+        },
+        "vnopolisi": {
+            "type": "string"
+        },
+        "vidtipe": {
+            "type": "string"
+        },
+        "vidwarna": {
+            "type": "string"
+        },
+        "vengine": {
+            "type": "string"
+        },
+        "vframe": {
+            "type": "string"
+        },
+        "dtglbeli": {
+            "type": "string"
+        },
+        "vthnrakit": {
+            "type": "string"
+        },
+        "vcreateby": {
+            "type": "string"
+        },
+        "dtglcreate": {
+            "type": "string"
+        },
+        "vmodiby": {
+            "type": "string"
+        },
+        "dtglmodi": {
+            "type": "string"
+        }
+    }
+}

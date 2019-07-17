@@ -1,0 +1,89 @@
+{
+    "type": "object",
+    "properties": {
+        "vidpart": {
+            "type": "string"
+        },
+        "vpartdesc": {
+            "type": "string"
+        },
+        "nminstock": {
+            "type": "integer"
+        },
+        "nmaxstock": {
+            "type": "integer"
+        },
+        "vstatus": {
+            "type": "integer"
+        },
+        "vrank": {
+            "type": "string"
+        },
+        "vidpartgroup": {
+            "type": "string"
+        },
+        "vgroupvnd": {
+            "type": "string"
+        },
+        "vfsflag": {
+            "type": "string"
+        },
+        "vimportflag": {
+            "type": "string"
+        },
+        "vpnt": {
+            "type": "string"
+        },
+        "vahmklbrg": {
+            "type": "string"
+        },
+        "vtypemotor": {
+            "type": "string"
+        },
+        "vsimilarity": {
+            "type": "string"
+        },
+        "vrackdefault": {
+            "type": "string"
+        },
+        "ndefdisc": {
+            "type": "number"
+        },
+        "dactive": {
+            "type": "string"
+        },
+        "vflagsimpart": {
+            "type": "string"
+        },
+        "mhetpart": {
+            "type": "number"
+        },
+        "vpartstat": {
+            "type": "string"
+        },
+        "vpartfunc": {
+            "type": "string"
+        },
+        "vpartltime": {
+            "type": "string"
+        },
+        "vpartcategory": {
+            "type": "string"
+        },
+        "vklprod": {
+            "type": "string"
+        },
+        "dtglcreate": {
+            "type": "string"
+        },
+        "dtglmodi": {
+            "type": "string"
+        },
+        "vcreateby": {
+            "type": "string"
+        },
+        "vmodiby": {
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,116 @@
+{
+    "post": {
+        "tags": [
+            "Transaksi H23"
+        ],
+        "description": "Anda dapat mengakses data detail Faktur Jual Bengkel dengan batasan tanggal input dan edit. Untuk data header, diakses melalui url terpisah (lihat dokumentasi data header Nota H23). ",
+        "parameters": [
+            {
+                "name": "tgl_awal",
+                "in": "body",
+                "description": "Batasan tanggal awal input data Faktur Jual bengkel atau tanggal awal edit data Faktur Jual Bengkel",
+                "required": true,
+                "explode": false,
+                "schema": {
+                    "type": "string",
+                    "example": "2019-06-01"
+                }
+            },
+            {
+                "name": "tgl_akhir",
+                "in": "body",
+                "description": "Batasan tanggal akhir input data Faktur Jual bengkel atau tanggal akhir edit data Faktur Jual bengkel",
+                "required": true,
+                "explode": false,
+                "schema": {
+                    "type": "string",
+                    "example": "2019-06-30"
+                }
+            }
+        ],
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "$ref": "../dms-openapi-public.json#/components/schemas/inParamDateStartEnd"
+                    }
+                }
+            }
+        },
+        "responses": {
+            "200": {
+                "description": "Success",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "../dms-openapi-public.json#/components/schemas/Detail Nota H23"
+                        },
+                        "examples": {
+                            "Data Tersedia": {
+                                "value": {
+                                    "data": [
+                                        {
+                                            "viddealer": "BHA",
+                                            "vidnotah23": "2019-020019",
+                                            "viditem": "000011DV0",
+                                            "nqty": "1",
+                                            "mprice": "20000",
+                                            "ndiskonpercent": "0",
+                                            "mdiskon": "0",
+                                            "mdpp": "18182",
+                                            "mdppnet": "18182",
+                                            "mppnnet": "1818",
+                                            "mtermin": "18182",
+                                            "mhdp": "20000",
+                                            "mdiskonfaktur": "0",
+                                            "vcreateby": "frontdesk.bha",
+                                            "dtglcreate": "2019-06-01 13:18:11",
+                                            "vmodiby": null,
+                                            "dtglmodi": null
+                                        }
+                                    ]
+                                }
+                            },
+                            "Tidak Ada Data": {
+                                "value": {
+                                    "data": "Tidak ada data"
+                                }
+                            },
+                            "Tidak ada hak akses": {
+                                "value": {
+                                    "data": "Error 403: Permission Denied"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "401": {
+                "description": "Unauthorized : Anda tidak memiliki izin akses atau token bearer anda salah",
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "name": "Unauthorized",
+                            "message": "Your request was made with invalid credentials.",
+                            "code": 0,
+                            "status": 401
+                        }
+                    }
+                }
+            },
+            "403": {
+                "description": "Forbidden : Anda belum melakukan login atau token bearer anda salah",
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "name": "Forbidden",
+                            "message": "Login Required",
+                            "code": 0,
+                            "status": 403
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
