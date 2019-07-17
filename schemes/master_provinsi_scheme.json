@@ -1,0 +1,23 @@
+{
+    "type": "object",
+    "properties": {
+        "vidprovinsi": {
+            "type": "string"
+        },
+        "vnamaprovinsi": {
+            "type": "string"
+        },
+        "vcreateby": {
+            "type": "string"
+        },
+        "dtglcreate": {
+            "type": "string"
+        },
+        "vmodiby": {
+            "type": "string"
+        },
+        "dtglmodi": {
+            "type": "string"
+        }
+    }
+}

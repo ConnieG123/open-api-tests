@@ -1,0 +1,79 @@
+{
+    "post": {
+        "tags": [
+            "Master"
+        ],
+        "description": "Anda dapat mengakses semua data master Tipe Motor yang digunakan di sistem DMS",
+        "responses": {
+            "200": {
+                "description": "Success",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "../dms-openapi-public.json#/components/schemas/Master Tipe Motor"
+                        },
+                        "examples": {
+                            "Data Tersedia": {
+                                "value": {
+                                    "data": [
+                                        {
+                                            "vidtipe": "ABN",
+                                            "vidwarna": "BK",
+                                            "vtipewarna": "ABN-BK",
+                                            "vtipedesc": "C100ML",
+                                            "vtipedesc1": "ASTREA LEGENDA",
+                                            "vwarnadesc": "BLACK",
+                                            "vstatus": "F",
+                                            "mhetunit": "0",
+                                            "mbbn": "0",
+                                            "montheroad": "0",
+                                            "vgroup": "CUB",
+                                            "vidtipegroup": "TG_000000",
+                                            "vsegment": "CUB LOW",
+                                            "vflagpo": "F",
+                                            "vflagreport": "F",
+                                            "vflagindent": "F",
+                                            "nsort": "0",
+                                            "nflagindentahm": "0",
+                                            "vcreateby": "admin",
+                                            "dtglcreate": "2011-11-11 10:09:14",
+                                            "vmodiby": "admin",
+                                            "dtglmodi": "2017-05-02 10:36:58",
+                                            "v4segment": "CUB MID LOW",
+                                            "nbigbike": "0",
+                                            "ntsdgroup": "1",
+                                            "nkategori": "1"
+                                        }
+                                    ]
+                                }
+                            },
+                            "Tidak Ada Data": {
+                                "value": {
+                                    "data": "Tidak ada data"
+                                }
+                            },
+                            "Tidak ada hak akses": {
+                                "value": {
+                                    "data": "Error 403: Permission Denied"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "401": {
+                "description": "Unauthorized : Anda tidak memiliki izin akses atau token bearer anda salah",
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "name": "Unauthorized",
+                            "message": "Your request was made with invalid credentials.",
+                            "code": 0,
+                            "status": 401
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

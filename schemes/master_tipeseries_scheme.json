@@ -1,0 +1,29 @@
+{
+    "type": "object",
+    "properties": {
+        "vidtipeseries": {
+            "type":"string"
+        },
+        "vdesc": {
+            "type":"string"
+        },
+        "vstatus": {
+            "type":"string"
+        },
+        "nsort": {
+            "type":"integer"
+        },
+        "vcreateby": {
+            "type":"string"
+        },
+        "dtglcreate": {
+            "type":"string"
+        },
+        "vmodiby": {
+            "type":"string"
+        },
+        "dtglmodi": {
+            "type":"string"
+        }
+    }
+}

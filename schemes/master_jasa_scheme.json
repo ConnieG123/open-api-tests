@@ -1,0 +1,50 @@
+{
+    "type": "object",
+    "properties": {
+        "viddealer": {
+            "type": "string"
+        },
+        "vidservice": {
+            "type": "string"
+        },
+        "vidserviceahm": {
+            "type": "string"
+        },
+        "vidtipe": {
+            "type": "string"
+        },
+        "vidtipeahm": {
+            "type": "string"
+        },
+        "vservicedesc": {
+            "type": "string"
+        },
+        "mhet": {
+            "type": "number"
+        },
+        "vstatus": {
+            "type": "string"
+        },
+        "vidtipepkb": {
+            "type": "string"
+        },
+        "vidjenispkb": {
+            "type": "string"
+        },
+        "vidkatjob": {
+            "type": "integer"
+        },
+        "vcreateby": {
+            "type": "string"
+        },
+        "dtglcreate": {
+            "type": "string"
+        },
+        "vmodiby": {
+            "type": "string"
+        },
+        "dtglmodi": {
+            "type": "string"
+        }
+    }
+}

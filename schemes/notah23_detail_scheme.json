@@ -1,0 +1,56 @@
+{
+    "type": "object",
+    "properties": {
+        "viddealer": {
+            "type": "string"
+        },
+        "vidnotah23": {
+            "type": "string"
+        },
+        "viditem": {
+            "type": "string"
+        },
+        "nqty": {
+            "type": "integer"
+        },
+        "mprice": {
+            "type": "number"
+        },
+        "ndiskonpercent": {
+            "type": "number"
+        },
+        "mdiskon": {
+            "type": "number"
+        },
+        "mdpp": {
+            "type": "number"
+        },
+        "mdppnet": {
+            "type": "number"
+        },
+        "mppnnet": {
+            "type": "number"
+        },
+        "mtermin": {
+            "type": "number"
+        },
+        "mhdp": {
+            "type": "number"
+        },
+        "mdiskonfaktur": {
+            "type": "number"
+        },
+        "vcreateby": {
+            "type": "string"
+        },
+        "dtglcreate": {
+            "type": "string"
+        },
+        "vmodiby": {
+            "type": "string"
+        },
+        "dtglmodi": {
+            "type": "string"
+        }
+    }
+}

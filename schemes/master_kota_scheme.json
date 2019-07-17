@@ -1,0 +1,29 @@
+{
+    "type": "object",
+    "properties": {
+        "vidkota": {
+            "type": "string"
+        },
+        "vnamakota": {
+            "type": "string"
+        },
+        "vidprovinsi": {
+            "type": "string"
+        },
+        "vidwilayah": {
+            "type": "string"
+        },
+        "vcreateby": {
+            "type": "string"
+        },
+        "dtglcreate": {
+            "type": "string"
+        },
+        "vmodiby": {
+            "type": "string"
+        },
+        "dtglmodi": {
+            "type": "string"
+        }
+    }
+}

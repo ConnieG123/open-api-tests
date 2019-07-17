@@ -1,0 +1,65 @@
+{
+    "post": {
+        "tags": [
+            "Master"
+        ],
+        "description": "Anda dapat mengakses semua data master Tipe Group Motor yang digunakan di sistem DMS",
+        "responses": {
+            "200": {
+                "description": "Success",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "../dms-openapi-public.json#/components/schemas/Master Tipe Group Motor"
+                        },
+                        "examples": {
+                            "Data Tersedia": {
+                                "value": {
+                                    "data": [
+                                        {
+                                            "vidtipegroup": "TG_000000",
+                                            "vdesc": "OLD_TIPE",
+                                            "nsort": "0",
+                                            "vstatus": "F",
+                                            "vgroup": "CUB",
+                                            "vidtipeseries": "TS_000000",
+                                            "vidtipetarget": null,
+                                            "vflagtarget": null,
+                                            "vcreateby": "admin",
+                                            "dtglcreate": "2012-12-31 11:10:55",
+                                            "vmodiby": null,
+                                            "dtglmodi": null
+                                        }
+                                    ]
+                                }
+                            },
+                            "Tidak Ada Data": {
+                                "value": {
+                                    "data": "Tidak ada data"
+                                }
+                            },
+                            "Tidak ada hak akses": {
+                                "value": {
+                                    "data": "Error 403: Permission Denied"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "401": {
+                "description": "Unauthorized : Anda tidak memiliki izin akses atau token bearer anda salah",
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "name": "Unauthorized",
+                            "message": "Your request was made with invalid credentials.",
+                            "code": 0,
+                            "status": 401
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

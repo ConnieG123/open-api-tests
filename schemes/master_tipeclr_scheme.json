@@ -1,0 +1,83 @@
+{
+    "type": "object",
+    "properties": {
+        "vidtipe": {
+            "type": "string"
+        },
+        "vidwarna": {
+            "type": "string"
+        },
+        "vtipewarna": {
+            "type": "string"
+        },
+        "vtipedesc": {
+            "type": "string"
+        },
+        "vtipedesc1": {
+            "type": "string"
+        },
+        "vwarnadesc": {
+            "type": "string"
+        },
+        "vstatus": {
+            "type": "string"
+        },
+        "mhetunit": {
+            "type": "string"
+        },
+        "mbbn": {
+            "type": "number"
+        },
+        "montheroad": {
+            "type": "number"
+        },
+        "vgroup": {
+            "type": "string"
+        },
+        "vidtipegroup": {
+            "type": "string"
+        },
+        "vsegment": {
+            "type": "string"
+        },
+        "vflagpo": {
+            "type": "string"
+        },
+        "vflagreport": {
+            "type": "string"
+        },
+        "vflagindent": {
+            "type": "string"
+        },
+        "nsort": {
+            "type": "integer"
+        },
+        "nflagindentahm": {
+            "type": "integer"
+        },
+        "vcreateby": {
+            "type": "string"
+        },
+        "dtglcreate": {
+            "type": "string"
+        },
+        "vmodiby": {
+            "type": "string"
+        },
+        "dtglmodi": {
+            "type": "string"
+        },
+        "v4segment": {
+            "type": "string"
+        },
+        "nbigbike": {
+            "type": "integer"
+        },
+        "ntsdgroup": {
+            "type": "integer"
+        },
+        "nkategori": {
+            "type": "integer"
+        }
+    }
+}

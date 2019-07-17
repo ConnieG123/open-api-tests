@@ -1,0 +1,44 @@
+{
+    "type": "object",
+    "properties": {
+        "vidalamat": {
+            "type": "string"
+        },
+        "vprovinsi": {
+            "type": "string"
+        },
+        "vkotakab": {
+            "type": "string"
+        },
+        "vkecamatan": {
+            "type": "string"
+        },
+        "vlurahdesa": {
+            "type": "string"
+        },
+        "vidkota": {
+            "type": "string"
+        },
+        "vidkecamatan": {
+            "type": "string"
+        },
+        "vidkecamatanahm": {
+            "type": "string"
+        },
+        "vidalamatahm": {
+            "type": "string"
+        },
+        "vcreateby": {
+            "type": "string"
+        },
+        "dtglcreate": {
+            "type": "string"
+        },
+        "vmodiby": {
+            "type": "string"
+        },
+        "dtglmodi": {
+            "type": "string"
+        }
+    }
+}
