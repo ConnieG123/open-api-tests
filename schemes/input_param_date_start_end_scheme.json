@@ -3,11 +3,13 @@
     "properties": {
         "tgl_awal": {
             "type": "string",
-            "example": "2019-06-01"
+            "example": "2019-06-01",
+            "format":"date"
         },
         "tgl_akhir": {
             "type": "string",
-            "example": "2019-06-30"
+            "example": "2019-06-30",
+            "format":"date"
         }
     }
 }

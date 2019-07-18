@@ -2,28 +2,42 @@
     "type": "object",
     "properties": {
         "vidkota": {
-            "type": "string"
+            "type": "string",
+            "description": "Kode unik master kota",
+            "example": "1275"
         },
         "vnamakota": {
-            "type": "string"
+            "type": "string",
+            "description": "Deskripsi / nama kota",
+            "example": "Kota Medan"
         },
         "vidprovinsi": {
-            "type": "string"
+            "type": "string",
+            "description": "Kode unik provinsi (lihat schema master provinsi)",
+            "example": "1200"
         },
         "vidwilayah": {
-            "type": "string"
+            "type": "string",
+            "description": "Kode unik wilayah",
+            "example": "MEDAN"
         },
         "vcreateby": {
-            "type": "string"
+            "type": "string",
+            "description": "User ID yang melakukan input data pertama kali"
         },
         "dtglcreate": {
-            "type": "string"
+            "type": "string",
+            "description": "Tanggal dan waktu dilakukan penginputan pertama kali",
+            "example": "2019-06-01 07:08:09"
         },
         "vmodiby": {
-            "type": "string"
+            "type": "string",
+            "description": "User ID yang melakukan perubahan data"
         },
         "dtglmodi": {
-            "type": "string"
+            "type": "string",
+            "description": "Tanggal dan waktu perubahan data",
+            "example": "2019-06-01 07:08:09"
         }
     }
 }

@@ -2,43 +2,67 @@
     "type": "object",
     "properties": {
         "vidalamat": {
-            "type": "string"
+            "type": "string",
+            "description": "Kode unik master alamat versi DMS",
+            "example": "12.01.01.1001"
         },
         "vprovinsi": {
-            "type": "string"
+            "type": "string",
+            "description": "Deskripsi provinsi",
+            "example": "SUMATERA UTARA"
         },
         "vkotakab": {
-            "type": "string"
+            "type": "string",
+            "description": "Deskripsi kota atau kabupaten",
+            "example": "KAB. TAPANULI TENGAH"
         },
         "vkecamatan": {
-            "type": "string"
+            "type": "string",
+            "description": "Deskripsi kecamatan",
+            "example": "KEC. BARUS"
         },
         "vlurahdesa": {
-            "type": "string"
+            "type": "string",
+            "description": "Deskripsi kelurahan atau desa",
+            "example": "KEL.  PASAR BATU GERIGIS"
         },
         "vidkota": {
-            "type": "string"
+            "type": "string",
+            "description": "Kode unik master kota (lihat schema master kota)",
+            "example": "1204"
         },
         "vidkecamatan": {
-            "type": "string"
+            "type": "string",
+            "description": "Kode unik master Kecamatan",
+            "example": "12.01.01"
         },
         "vidkecamatanahm": {
-            "type": "string"
+            "type": "string",
+            "description": "Kode unik master kecamatan versi AHM",
+            "example": "120401"
         },
         "vidalamatahm": {
-            "type": "string"
+            "type": "string",
+            "description": "Kode unik master alamat versi AHM",
+            "example": "1204010001"
         },
         "vcreateby": {
-            "type": "string"
+            "type": "string",
+            "description": "User ID yang melakukan input data pertama kali"
         },
         "dtglcreate": {
-            "type": "string"
+            "type": "string",
+            "description": "Tanggal dan waktu dilakukan penginputan pertama kali",
+            "example": "2019-06-01 07:08:09"
         },
         "vmodiby": {
-            "type": "string"
+            "type": "string",
+            "description": "User ID yang melakukan perubahan data"
         },
         "dtglmodi": {
-            "type": "string"
+            "type": "string",
+            "description": "Tanggal dan waktu perubahan data",
+            "example": "2019-06-01 07:08:09"
         }
     }
 }

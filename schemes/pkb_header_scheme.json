@@ -2,97 +2,145 @@
     "type": "object",
     "properties": {
         "viddealer": {
-            "type": "string"
+            "type": "string",
+            "description":"Kode dealer 3 huruf",
+            "example":"IMA"
         },
         "vidpkb": {
-            "type": "string"
+            "type": "string",
+            "description":"Nomor PKB",
+            "example":"19-00001"
         },
         "dpkb": {
-            "type": "string"
+            "type": "string",
+            "description":"Tanggal PKB",
+            "example":"2019-06-01"
         },
         "vidcustomerh23": {
-            "type": "string"
+            "type": "string",
+            "description":"ID master customer H23 (lihat schema Master Customer H23)",
+            "example":"H23CUST/00247/000002"
         },
         "vnowa": {
-            "type": "string"
+            "type": "string",
+            "description":"Nomor Whatsapp",
+            "example":"08123456789"
         },
         "vcomplaint": {
-            "type": "string"
+            "type": "string",
+            "description":"Keluhan konsumen",
+            "example":"Lampu utama tidak menyala"
         },
         "vidsa": {
-            "type": "string"
+            "type": "string",
+            "description":"ID Service Advisor yang menangani"
         },
         "vidkaryawan": {
-            "type": "string"
+            "type": "string",
+            "description":"ID mekanik yang menangani"
         },
         "vkm": {
-            "type": "string"
+            "type": "string",
+            "description":"Jarak tempuh pada odometer motor",
+            "example":"1000"
         },
         "vkpbcard": {
-            "type": "string"
+            "type": "string",
+            "description":"Nomor kartu servis (sudah tidak digunakan lagi)"
         },
         "npit": {
-            "type": "integer"
+            "type": "integer",
+            "description":"Nomor PIT"
         },
         "ndurasi": {
-            "type": "integer"
+            "type": "integer",
+            "description":"Durasi pengerjaan"
         },
         "dstart": {
-            "type": "string"
+            "type": "string",
+            "description":"Tanggal dan waktu mulai dikerjakan",
+            "example":"2019-06-01 14:00:01"
         },
         "nflagpause": {
-            "type": "integer"
+            "type": "integer",
+            "description":"Status bahwa pekerjaan dihentikan sementara (pending)",
+            "example":"1 jika status sedang di pending, atau 0 jika tidak"
         },
         "dfinish": {
-            "type": "string"
+            "type": "string",
+            "description":"Tanggal dan waktu selesai pengerjaan",
+            "example":"2019-06-01 15:00:01"
         },
         "vidtipepkb": {
-            "type": "string"
+            "type": "string",
+            "description":"Jenis pekerjaan KPB1, KPB2, KPB3, KPB4, KPB5-10, CS, LR, LS, HR, JR, OR, C1, C2",
+            "example":"KPB1"
         },
         "vtipejob": {
-            "type": "string"
+            "type": "string",
+            "description":"Field tidak digunakan"
         },
         "vstatus": {
-            "type": "string"
+            "type": "string",
+            "description":"Status apakah PKB batal atau tidak",
+            "example":"'T' jika aktif atau 'F' jika batal"
         },
         "vflagpemilik": {
-            "type": "string"
+            "type": "string",
+            "description":"Status yang menyatakan unit yang diservis merupakan milik pembawa"
         },
         "vkatunitentry": {
-            "type": "string"
+            "type": "string",
+            "description":"Kategori unit entry 1=Walk In, 2=POS servis, 3=ASK Motor, 4=ASK Mobil, 5=AHASS Event, 6=Public Area, 7=Group Customer, 9=Join Dealer Activity, 10=Pit Express, 11=Others, 12=Fasttrack",
+            "example":"1"
         },
         "vojek": {
-            "type": "string"
+            "type": "string",
+            "description":"Berisi nilai jika konsumen merupakan pengemudi ojek online",
+            "example":"'1' jika GRAB atau '2' jika GOJEK"
         },
         "vdaridealer": {
-            "type": "string"
+            "type": "string",
+            "description":"Status yang menyatakan apakah unit dibeli di dealer yang sama"
         },
         "valasan": {
-            "type": "string"
+            "type": "string",
+            "description":"Alasan konsumen datang servis"
         },
         "valasanother": {
-            "type": "string"
+            "type": "string",
+            "description":"Alasan lainnya"
         },
         "vanalisaadvisor": {
-            "type": "string"
+            "type": "string",
+            "description":"Analisa SA"
         },
         "vsaranmekanik": {
-            "type": "string"
+            "type": "string",
+            "description":"Saran mekanik"
         },
         "njenisantrian": {
-            "type": "integer"
+            "type": "integer",
+            "description":"Jenis antrian. 1=Reguler, 2=Pit Express, 3=Fast Track, 4=Booking",
+            "example":"1"
         },
         "vcreateby": {
-            "type": "string"
+            "type": "string",
+            "description": "User ID yang melakukan input data pertama kali"
         },
         "dtglcreate": {
-            "type": "string"
+            "type": "string",
+            "description": "Tanggal dan waktu dilakukan penginputan pertama kali",
+            "example": "2019-06-01 07:08:09"
         },
         "vmodiby": {
-            "type": "string"
+            "type": "string",
+            "description": "User ID yang melakukan perubahan data"
         },
         "dtglmodi": {
-            "type": "string"
+            "type": "string",
+            "description": "Tanggal dan waktu perubahan data",
+            "example": "2019-06-01 07:08:09"
         }
     }
 }

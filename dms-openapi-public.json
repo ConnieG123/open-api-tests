@@ -57,7 +57,7 @@
             "Master Alamat": {
                 "$ref": "./schemes/master_alamat_scheme.json"
             },
-            "MasterCustomerH23": {
+            "Master Customer H23": {
                 "$ref": "./schemes/master_customerh23_scheme.json"
             },
             "Master Part": {
