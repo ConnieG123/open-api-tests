@@ -2,94 +2,155 @@
     "type": "object",
     "properties": {
         "viddealer": {
-            "type":"string"
+            "type": "string",
+            "description": "Kode dealer 3 huruf",
+            "example": "IMA"
         },
         "vidnotah23": {
-            "type":"string"
+            "type": "string",
+            "description": "No Faktur",
+            "example": "2019-000001"
         },
         "vidcustomerh23": {
-            "type":"string"
+            "type": "string",
+            "description": "ID unik Master Customer H23, lihat schema Master Customer H23",
+            "example": "H23CUST/IMA/037997"
         },
         "dnota": {
-            "type":"string"
+            "type": "string",
+            "format": "date",
+            "example": "2019-06-01",
+            "description": "Tanggal Faktur"
         },
         "vidponsc": {
-            "type":"string"
+            "type": "string",
+            "description": "NO PO NSC, hanya terisi jika merupakan penjualan HANYA part (tidak memiliki jasa, atau tidak memiliki PKB).",
+            "example": "PON/2019/002912"
         },
         "vidpkb": {
-            "type":"string"
+            "type": "string",
+            "description": "NO PKB yang terkait dari faktur bengkel",
+            "example": "19-016835"
         },
         "ndiskonpercent": {
-            "type":"number"
+            "type": "number",
+            "description": "Nilai diskon dalam persen",
+            "example": "5 artinya diskon 5%"
         },
         "mdiskon": {
-            "type":"number"
+            "type": "number",
+            "description": "Nilai diskon dalam nominal rupiah (hasil perkalian diskon persen dengan dpp)",
+            "example": "2000 artinya diskon Rp. 2.000"
         },
         "mtotal": {
-            "type":"number"
+            "type": "number",
+            "description": "Nilai total faktur dalam nominal rupiah",
+            "example": "22000"
         },
         "mdpp": {
-            "type":"number"
+            "type": "number",
+            "description": "Nilai total faktur dalam DPP (setelah diskon)",
+            "example": "20000"
         },
         "mppn": {
-            "type":"number"
+            "type": "number",
+            "description": "Nilai total faktur dalam PPN = 10% x DPP (setelah diskon)",
+            "example": "2000"
         },
         "mhargajual": {
-            "type":"number"
+            "type": "number",
+            "description": "Nilai total DPP sebelum diskon",
+            "example": "20000"
         },
         "vflagpajak": {
-            "type":"string"
+            "type": "string",
+            "description": "Status apakah faktur ini merupakan faktur pajak",
+            "example": "'T' = Faktur pajak dan 'F' jika bukan faktur pajak"
         },
         "vstatus": {
-            "type":"string"
+            "type": "string",
+            "description": "Status apakah faktur aktif atau batal",
+            "example": "'T' = Aktif atau 'F' = Batal"
         },
         "vtandatangan": {
-            "type":"string"
+            "type": "string",
+            "description": "Nama PIC yang akan muncul di kolom tanda tangan di faktur pajak",
+            "example": "{Nama yang ditunjuk}"
         },
         "vnopajak": {
-            "type":"string"
+            "type": "string",
+            "description": "No faktur pajak jika merupakan faktur pajak",
+            "example": "010.003-16.41938662 atau null jika bukan faktur pajak"
         },
         "valasanbatal": {
-            "type":"string"
+            "type": "string",
+            "description":"Alasan kenapa faktur jual dibatalkan"            
         },
         "vtipenota": {
-            "type":"string"
+            "type": "string",
+            "description":"Jenis faktur jual. Faktur jual dibedakan menjadi 2 kategori yaitu NSC (nota suku cadang) dan NJB (nota jasa bengkel). Dalam satu faktur jual tidak ada gabungan jasa dan suku cadang.",
+            "example":"NSC atau NJB"
         },
         "vtipebayar": {
-            "type":"string"
+            "type": "string",
+            "description":"Jenis pembayaran yang dilakukan oleh konsumen",
+            "example":"'T' jika Tunai dan 'K' jika Kredit"
         },
         "vflagposting": {
-            "type":"string"
+            "type": "string",
+            "description":"Status apakah faktur jual ini sudah diposting. Faktur yang sudah diposting tidak dapat dibatalkan dengan user frontdesk atau counterpart.",
+            "example":"'T' jika sudah diposting atau 'F' jika belum diposting",
+            "default":"F"
         },
         "dposting": {
-            "type":"string"
+            "type": "string",
+            "format": "date",
+            "example": "2019-06-01",
+            "description":"Tanggal dilakukan posting"
         },
         "dtglbatal": {
-            "type":"string"
+            "type": "string",
+            "format": "date",
+            "example": "2019-06-01",
+            "description":"Tanggal pembatalan faktur"
         },
         "vbatalby": {
-            "type":"string"
+            "type": "string",
+            "description":"User ID yang melakukan pembatalan"
         },
         "vflagcetak": {
-            "type":"string"
+            "type": "string",
+            "description":"Status apakah faktur ini sudah dicetak",
+            "example":"'T' jika sudah dicetak dan 'F' jika belum dicetak"
         },
         "vflagtransfertax": {
-            "type":"string"
+            "type": "string",
+            "description":"Field ini tidak digunakan. Anda dapat mengabaikan field ini"
         },
         "vidhoo": {
-            "type":"string"
+            "type": "string",
+            "description":"No HOO jika faktur jual ini berasal dari Hotline order",
+            "example":"2018/PO/08220"
         },
         "vcreateby": {
-            "type":"string"
+            "type": "string",
+            "description":"User ID yang melakukan input pertama kali"
         },
         "dtglcreate": {
-            "type":"string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2019-06-01 07:08:09",
+            "description":"Tanggal dan waktu pertama kali input"
         },
         "vmodiby": {
-            "type":"string"
+            "type": "string",
+            "description":"User ID yang melakukan perubahan data terhadap faktur ini"
         },
         "dtglmodi": {
-            "type":"string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2019-06-01 07:08:09",
+            "description":"Tanggal dan waktu terjadi perubahan data"
         }
     }
 }

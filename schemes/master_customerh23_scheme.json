@@ -2,91 +2,147 @@
     "type": "object",
     "properties": {
         "vidcustomerh23": {
-            "type": "string"
+            "type": "string",
+            "description": "Kode unik data master konsumen H23",
+            "example": "H23CUST/00247/000001"
         },
         "viddealer": {
-            "type": "string"
+            "type": "string",
+            "description": "Kode dealer 3 huruf",
+            "example": "IMA"
         },
         "vnamacustomer": {
-            "type": "string"
+            "type": "string",
+            "description": "Nama konsumen",
+            "example": "Budi"
         },
         "valamat": {
-            "type": "string"
+            "type": "string",
+            "description": "Alamat konsumen",
+            "example": "JL.SEI BATANG HARI NO.9294"
         },
         "valamat2": {
-            "type": "string"
+            "type": "string",
+            "description": "Alamat konsumen tambahan jika tidak cukup di field 'valamat'",
+            "example": "Komplek ABC atau null jika tidak ada alamat tambahan"
         },
         "vidalamat": {
-            "type": "string"
+            "type": "string",
+            "description": "Kode master alamat (lihat schema master alamat)",
+            "example": "12.71.02.1004"
         },
         "vkelurahan": {
-            "type": "string"
+            "type": "string",
+            "description": "Nama kelurahan",
+            "example": "KEL. BABURA SUNGGAL"
         },
         "vkecamatan": {
-            "type": "string"
+            "type": "string",
+            "description": "Nama kecamatan",
+            "example": "KEC. MEDAN SUNGGAL"
         },
         "vidkota": {
-            "type": "string"
+            "type": "string",
+            "description": "Kode kota (lihat schema master kota)",
+            "example": "1275"
         },
         "vkota": {
-            "type": "string"
+            "type": "string",
+            "description": "Nama kota atau kabupaten",
+            "example": "KOTA MEDAN"
         },
         "vidpos": {
-            "type": "string"
+            "type": "string",
+            "description": "Kode pos",
+            "example": "20000"
         },
         "vtempatlahir": {
-            "type": "string"
+            "type": "string",
+            "description": "Tempat lahir konsumen",
+            "example": "Medan"
         },
         "dtgllahir": {
-            "type": "string"
+            "type": "string",
+            "description": "Tanggal lahir konsumen",
+            "example": "1987-01-01"
         },
         "vtelp": {
-            "type": "string"
+            "type": "string",
+            "description": "Nomor telepon",
+            "example": "061-4556900"
         },
         "vhp": {
-            "type": "string"
+            "type": "string",
+            "description": "Nomor handphone",
+            "example": "08123456789"
         },
         "vjeniskelamin": {
-            "type": "string"
+            "type": "string",
+            "description": "Jenis kelamin",
+            "example": "'L' untuk laki-laki dan 'P' untuk perempuan"
         },
         "vktp": {
-            "type": "string"
+            "type": "string",
+            "description": "Nomor KTP atau no resi",
+            "example": "1202051810390001"
         },
         "vnpwp": {
-            "type": "string"
+            "type": "string",
+            "description": "Nomor NPWP",
+            "example": "00.000.000.0-000.000"
         },
         "vnopolisi": {
-            "type": "string"
+            "type": "string",
+            "description": "No polisi dari sepeda motor",
+            "example": "BK 1234 ABC"
         },
         "vidtipe": {
-            "type": "string"
+            "type": "string",
+            "description": "Kode tipe sepeda motor (lihat schema master tipe motor)",
+            "example": "ABN"
         },
         "vidwarna": {
-            "type": "string"
+            "type": "string",
+            "description": "Kode warna sepeda motor (lihat schema master tipe motor)",
+            "example": "BK"
         },
         "vengine": {
-            "type": "string"
+            "type": "string",
+            "description": "Nomor mesin sepeda motor",
+            "example": "JM21E1475937"
         },
         "vframe": {
-            "type": "string"
+            "type": "string",
+            "description": "Nomor rangka sepeda motor",
+            "example": "MH1JBN111HK131905"
         },
         "dtglbeli": {
-            "type": "string"
+            "type": "string",
+            "description": "Tanggal beli sepeda motor",
+            "example": "2000-10-12"
         },
         "vthnrakit": {
-            "type": "string"
+            "type": "string",
+            "description": "Tahun produksi sepeda motor",
+            "example": "2000"
         },
         "vcreateby": {
-            "type": "string"
+            "type": "string",
+            "description": "User ID yang melakukan input data pertama kali"
         },
         "dtglcreate": {
-            "type": "string"
+            "type": "string",
+            "description": "Tanggal dan waktu dilakukan penginputan pertama kali",
+            "example": "2019-06-01 07:08:09"
         },
         "vmodiby": {
-            "type": "string"
+            "type": "string",
+            "description": "User ID yang melakukan perubahan data"
         },
         "dtglmodi": {
-            "type": "string"
+            "type": "string",
+            "description": "Tanggal dan waktu perubahan data",
+            "example": "2019-06-01 07:08:09"
         }
     }
 }

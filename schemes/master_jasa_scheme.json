@@ -2,49 +2,66 @@
     "type": "object",
     "properties": {
         "viddealer": {
-            "type": "string"
+            "type": "string",
+            "description":"Kode dealer 3 huruf"
         },
         "vidservice": {
-            "type": "string"
+            "type": "string",
+            "description":"Kode unik data master jasa"
         },
         "vidserviceahm": {
-            "type": "string"
+            "type": "string",
+            "description":"Kode unik data master jasa versi AHM"
         },
         "vidtipe": {
-            "type": "string"
+            "type": "string",
+            "description":"Kode unik tipe motor (lihat schema master tipe motor)"
         },
         "vidtipeahm": {
-            "type": "string"
+            "type": "string",
+            "description":"Kode unik tipe motor 2 huruf yang digunakan di divisi sparepart"
         },
         "vservicedesc": {
-            "type": "string"
+            "type": "string",
+            "description":"Keterangan jasa"
         },
         "mhet": {
-            "type": "number"
+            "type": "number",
+            "description":"Harga HET atau harga default"
         },
         "vstatus": {
-            "type": "string"
+            "type": "string",
+            "description":"Status apakah jasa masih dapat digunakan"
         },
         "vidtipepkb": {
-            "type": "string"
+            "type": "string",
+            "description":"Kategori PKB untuk jasa"
         },
         "vidjenispkb": {
-            "type": "string"
+            "type": "string",
+            "description":"Field ini berisi value generate otomatis"
         },
         "vidkatjob": {
-            "type": "integer"
+            "type": "integer",
+            "description":"Field ini berisi value generate otomatis"
         },
         "vcreateby": {
-            "type": "string"
+            "type": "string",
+            "description": "User ID yang melakukan input data pertama kali"
         },
         "dtglcreate": {
-            "type": "string"
+            "type": "string",
+            "description": "Tanggal dan waktu dilakukan penginputan pertama kali",
+            "example": "2019-06-01 07:08:09"
         },
         "vmodiby": {
-            "type": "string"
+            "type": "string",
+            "description": "User ID yang melakukan perubahan data"
         },
         "dtglmodi": {
-            "type": "string"
+            "type": "string",
+            "description": "Tanggal dan waktu perubahan data",
+            "example": "2019-06-01 07:08:09"
         }
     }
 }

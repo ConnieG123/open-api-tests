@@ -2,31 +2,46 @@
     "type": "object",
     "properties": {
         "viddealer": {
-            "type": "string"
+            "type": "string",
+            "description":"Kode dealer 3 huruf",
+            "example":"IMA"
         },
         "vidpkb": {
-            "type": "string"
+            "type": "string",
+            "description":"Nomor PKB (lihat schema Header PKB)",
+            "example":"19-00001"
         },
         "vidpart": {
-            "type": "string"
+            "type": "string",
+            "description":"Part number yang digunakan",
+            "example":"082322MBK8LN9"
         },
         "nqty": {
-            "type": "integer"
+            "type": "integer",
+            "description":"Jumlah atau Qty item",
+            "example":"1"
         },
         "mprice": {
-            "type": "number"
+            "type": "number",
+            "description":"Harga jual per item"
         },
         "vcreateby": {
-            "type": "string"
+            "type": "string",
+            "description": "User ID yang melakukan input data pertama kali"
         },
         "dtglcreate": {
-            "type": "string"
+            "type": "string",
+            "description": "Tanggal dan waktu dilakukan penginputan pertama kali",
+            "example": "2019-06-01 07:08:09"
         },
         "vmodiby": {
-            "type": "string"
+            "type": "string",
+            "description": "User ID yang melakukan perubahan data"
         },
         "dtglmodi": {
-            "type": "string"
+            "type": "string",
+            "description": "Tanggal dan waktu perubahan data",
+            "example": "2019-06-01 07:08:09"
         }
     }
 }

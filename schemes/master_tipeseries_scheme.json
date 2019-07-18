@@ -2,28 +2,40 @@
     "type": "object",
     "properties": {
         "vidtipeseries": {
-            "type":"string"
+            "type":"string",
+            "description":"Kode unik data Tipe Series"
         },
         "vdesc": {
-            "type":"string"
+            "type":"string",
+            "description":"Deskripsi tipe series",
+            "example":"Revo Series"
         },
         "vstatus": {
-            "type":"string"
+            "type":"string",
+            "description":"Status apakah tipe series ini masih aktif",
+            "example":"'T' jika masih aktif atau 'F' jika sudah tidak aktif"
         },
         "nsort": {
-            "type":"integer"
+            "type":"integer",
+            "description":"Field ini tidak digunakan"
         },
         "vcreateby": {
-            "type":"string"
+            "type": "string",
+            "description": "User ID yang melakukan input data pertama kali"
         },
         "dtglcreate": {
-            "type":"string"
+            "type": "string",
+            "description": "Tanggal dan waktu dilakukan penginputan pertama kali",
+            "example": "2019-06-01 07:08:09"
         },
         "vmodiby": {
-            "type":"string"
+            "type": "string",
+            "description": "User ID yang melakukan perubahan data"
         },
         "dtglmodi": {
-            "type":"string"
+            "type": "string",
+            "description": "Tanggal dan waktu perubahan data",
+            "example": "2019-06-01 07:08:09"
         }
     }
 }
