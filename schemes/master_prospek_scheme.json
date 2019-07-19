@@ -1,0 +1,208 @@
+{
+    "type": "object",
+    "properties": {
+        "vidprospek": {
+            "type": "string",
+            "description": "Kode unik data prospek",
+            "example":"A2A/2019/129167"
+        },
+        "viddealer": {
+            "type": "string",
+            "description": "Kode dealer 3 huruf",
+            "example": "IMA"
+        },
+        "vnama": {
+            "type": "string",
+            "description": "Nama prospek",
+            "example": "Budi"
+        },
+        "vnama2": {
+            "type": "string",
+            "description": "Nama tambahan jika field nama tidak cukup"
+        },
+        "vjeniskelamin": {
+            "type": "string",
+            "description": "Jenis kelamin L (Laki-laki) atau P (Perempuan)",
+            "example": "L"
+        },
+        "vidagama": {
+            "type": "string",
+            "description": "Keterangan agama: 1=Islam, 2= Kristen, 3=Katolik, 4=Hindu, 5=Budha, 6=Lainnya",
+            "example":"1"
+        },
+        "valamat": {
+            "type": "string",
+            "description": "Alamat prospek",
+            "example":"JLN.BINJAI LK.III"
+        },
+        "valamat2": {
+            "type": "string",
+            "description": "Alamat tambahan jika field alamat tidak cukup"
+        },
+        "vidalamat": {
+            "type": "string",
+            "description": "Kode unik master alamat (lihat schema master alamat)",
+            "example":"12.01.03.1005"
+        },
+        "vkelurahan": {
+            "type": "string",
+            "description": "Keterangan kelurahan",
+            "example":"KEL.  SIBULAN INDAH"
+        },
+        "vkecamatan": {
+            "type": "string",
+            "description": "Keterangan kecamatan",
+            "example":"KEC. PANDAN"
+        },
+        "vkota": {
+            "type": "string",
+            "description": "Keterangan kota atau kabupaten",
+            "example":"KAB. TAPANULI TENGAH"
+        },
+        "vhp": {
+            "type": "string",
+            "description": "Nomor handphone prospek",
+            "example": "081234546789"
+        },
+        "vtelp": {
+            "type": "string",
+            "description": "Nomor telepon prospek",
+            "example": "061-4556900"
+        },
+        "vidkaryawan": {
+            "type": "string",
+            "description": "ID salesforce yang melakukan prospek"
+        },
+        "vidkordinator": {
+            "type": "string",
+            "description": "ID kordinator dari salesforce yang melakukan prospek"
+        },
+        "vidtipe": {
+            "type": "string",
+            "description": "Kode tipe motor yang diinginkan prospek (lihat schema master tipe motor)",
+            "example": "ABN"
+        },
+        "vidwarna": {
+            "type": "string",
+            "description": "Kode warna motor yang diinginkan (lihat schema master tipe motor)",
+            "example": "BK"
+        },
+        "vkategori": {
+            "type": "string",
+            "description": "Kategori prospek",
+            "example": "H"
+        },
+        "ddatang": {
+            "type": "string",
+            "format": "date",
+            "description": "Tanggal bertemu dengan prospek",
+            "example": "2019-06-01"
+        },
+        "tdatang": {
+            "type": "string",
+            "description": "Jam bertemu dengan prospek",
+            "example": "09:00"
+        },
+        "vflagsumberprospek": {
+            "type": "string",
+            "description": "Kode sumber prospek"
+        },
+        "dfollow1": {
+            "type": "string",
+            "description": "Tanggal follow up pertama",
+            "example": "2019-06-01"
+        },
+        "vfollowup1by": {
+            "type": "string",
+            "description": "ID salesforce yang melakukan follow up pertama"
+        },
+        "vjenisfollowup1": {
+            "type": "string",
+            "description": "Metode yang digunakan dalam follow up pertama"
+        },
+        "vflaghasil1": {
+            "type": "string",
+            "description": "Hasil follow up"
+        },
+        "vkethasil1": {
+            "type": "string",
+            "description": "Keterangan hasil follow up pertama"
+        },
+        "dfollow2": {
+            "type": "string",
+            "description": "Tanggal follow up kedua"
+        },
+        "vfollowup2by": {
+            "type": "string",
+            "description": "ID Salesforce yang melakukan follow up kedua"
+        },
+        "vjenisfollowup2": {
+            "type": "string",
+            "description": "Metode yang digunakan dalam follow up kedua"
+        },
+        "vflaghasil2": {
+            "type": "string",
+            "description": "Hasil follow up kedua"
+        },
+        "vkethasil2": {
+            "type": "string",
+            "description": "Keterangan hasil follow up kedua"
+        },
+        "dfollow3": {
+            "type": "string",
+            "description": "Tanggal follow up ketiga"
+        },
+        "vfollowup3by": {
+            "type": "string",
+            "description": "ID Salesforce yang melakukan follow up ketiga"
+        },
+        "vjenisfollowup3": {
+            "type": "string",
+            "description": "Metode yang digunakan dalam follow up ketiga"
+        },
+        "vflaghasil3": {
+            "type": "string",
+            "description": "Hasil follow up ketiga"
+        },
+        "vkethasil3": {
+            "type": "string",
+            "description": "Keterangan hasil follow up ketiga"
+        },
+        "vketerangan": {
+            "type": "string",
+            "description": "Keterangan atau catatan umum aktivitas prospek",
+            "example": "Rencana akan mengambil scoopy warna apapun"
+        },
+        "nidprospekcrm": {
+            "type": "integer",
+            "description": "Kode unik prospek dari aplikasi CRM"
+        },
+        "vhashuuid": {
+            "type": "string",
+            "description": "Kode unik hash sebagai penghubung dengan data CRM",
+            "example": "22051cb4-9a53-4e9f-9c7c-7bdc8ccc5d7c"
+        },
+        "vkodeBtl": {
+            "type": "string",
+            "description": "Field ini tidak digunakan"
+        },
+        "vcreateby": {
+            "type": "string",
+            "description": "User ID yang melakukan input data pertama kali"
+        },
+        "dtglcreate": {
+            "type": "string",
+            "description": "Tanggal dan waktu dilakukan penginputan pertama kali",
+            "example": "2019-06-01 07:08:09"
+        },
+        "vmodiby": {
+            "type": "string",
+            "description": "User ID yang melakukan perubahan data"
+        },
+        "dtglmodi": {
+            "type": "string",
+            "description": "Tanggal dan waktu perubahan data",
+            "example": "2019-06-01 07:08:09"
+        }
+    }
+}

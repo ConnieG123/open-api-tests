@@ -1,0 +1,132 @@
+{
+    "post": {
+        "tags": [
+            "Master",
+            "Transaksi H1"
+        ],
+        "description": "Anda dapat mengakses data prospek dengan batasan tanggal input dan edit",
+        "parameters": [
+            {
+                "name": "tgl_awal",
+                "in": "body",
+                "description": "Batasan tanggal awal input data prospek atau tanggal awal edit data prospek",
+                "required": true,
+                "explode": false,
+                "schema": {
+                    "type": "string",
+                    "example": "2019-06-01"
+                }
+            },
+            {
+                "name": "tgl_akhir",
+                "in": "body",
+                "description": "Batasan tanggal akhir input data prospek atau tanggal akhir edit data prospek",
+                "required": true,
+                "explode": false,
+                "schema": {
+                    "type": "string",
+                    "example": "2019-06-30"
+                }
+            }
+        ],
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "$ref": "../dms-openapi-public.json#/components/schemas/inParamDateStartEnd"
+                    }
+                }
+            }
+        },
+        "responses": {
+            "200": {
+                "description": "Success",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "../dms-openapi-public.json#/components/schemas/Master Prospek"
+                        },
+                        "examples": {
+                            "Data Tersedia": {
+                                "value": {
+                                    "data": [
+                                        {
+                                            "vidprospek": "A2A/2019/129167",
+                                            "viddealer": "A2A",
+                                            "vnama": "MAHZAILUDDIN",
+                                            "vnama2": null,
+                                            "vjeniskelamin": "L",
+                                            "vidagama": "1",
+                                            "valamat": "JLN.BINJAI LK.III",
+                                            "valamat2": null,
+                                            "vidalamat": null,
+                                            "vkelurahan": null,
+                                            "vkecamatan": null,
+                                            "vkota": null,
+                                            "vhp": "081370036880",
+                                            "vtelp": null,
+                                            "vidkaryawan": "KAR-0001649",
+                                            "vidkordinator": "125422",
+                                            "vidtipe": "HZ0",
+                                            "vidwarna": "RD",
+                                            "vkategori": "H",
+                                            "ddatang": "2019-03-30",
+                                            "tdatang": "11:45:00",
+                                            "vflagsumberprospek": "3",
+                                            "dfollow1": "2019-04-01",
+                                            "vfollowup1by": "397069",
+                                            "vjenisfollowup1": "V",
+                                            "vflaghasil1": "T",
+                                            "vkethasil1": "DEAL AMBIL VARIO 125 CBS ISS RED",
+                                            "dfollow2": null,
+                                            "vfollowup2by": null,
+                                            "vjenisfollowup2": null,
+                                            "vflaghasil2": "0",
+                                            "vkethasil2": null,
+                                            "dfollow3": null,
+                                            "vfollowup3by": null,
+                                            "vjenisfollowup3": null,
+                                            "vflaghasil3": "0",
+                                            "vkethasil3": null,
+                                            "vketerangan": "RENCANA MAU AMBIL VARIO 125 CBS ISS RED",
+                                            "nidprospekcrm": "865038",
+                                            "vhashuuid": "22051cb4-9a53-4e9f-9c7c-7bdc8ccc5d7c",
+                                            "vkodeBtl": null,
+                                            "vcreateby": "system",
+                                            "dtglcreate": "2019-04-01 12:15:13",
+                                            "vmodiby": "system",
+                                            "dtglmodi": "2019-04-02 00:00:08"                                            
+                                        }
+                                    ]
+                                }
+                            },
+                            "Tidak Ada Data": {
+                                "value": {
+                                    "data": "Tidak ada data"
+                                }
+                            },
+                            "Tidak ada hak akses": {
+                                "value": {
+                                    "data": "Error 403: Permission Denied"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "401": {
+                "description": "Unauthorized : Anda tidak memiliki izin akses atau token bearer anda salah",
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "name": "Unauthorized",
+                            "message": "Your request was made with invalid credentials.",
+                            "code": 0,
+                            "status": 401
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
