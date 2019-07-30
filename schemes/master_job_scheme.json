@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "vidjob": {
+            "type": "string",
+            "description":"Kode unik data Pekerjaan"
+        },
+        "vnamajob": {
+            "type": "string",
+            "description":"Keterangan pekerjaan"
+        },        
+        "vstatus": {
+            "type": "string",
+            "description":"Status apakah kode pekerjaan masih dapat digunakan"
+        }        
+    }
+}

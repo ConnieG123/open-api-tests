@@ -1,0 +1,33 @@
+{
+    "type": "object",
+    "properties": {
+        "nidpendidikan": {
+            "type": "integer",
+            "description": "Kode unik master pendidikan",
+            "example": "1"
+        },
+        "vketerangan": {
+            "type": "string",
+            "description": "Keterangan pendidikan",
+            "example": "S1"
+        },
+        "vcreateby": {
+            "type": "string",
+            "description": "User ID yang melakukan input data pertama kali"
+        },
+        "dtglcreate": {
+            "type": "string",
+            "description": "Tanggal dan waktu dilakukan penginputan pertama kali",
+            "example": "2019-06-01 07:08:09"
+        },
+        "vmodiby": {
+            "type": "string",
+            "description": "User ID yang melakukan perubahan data"
+        },
+        "dtglmodi": {
+            "type": "string",
+            "description": "Tanggal dan waktu perubahan data",
+            "example": "2019-06-01 07:08:09"
+        }
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "post": {
+        "tags": [
+            "Master"
+        ],
+        "description": "Anda dapat mengakses semua data master Perkerjaan yang digunakan di sistem DMS",
+        "responses": {
+            "200": {
+                "description": "Success",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "../dms-openapi-public.json#/components/schemas/Master Pekerjaan"
+                        },
+                        "examples": {
+                            "Data Tersedia": {
+                                "value": {
+                                    "data": [
+                                        {
+                                            "vidjob": "1",
+                                            "vnamajob": "PEGAWAI NEGERI",
+                                            "vstatus": "T"
+                                        }
+                                    ]
+                                }
+                            },
+                            "Tidak Ada Data": {
+                                "value": {
+                                    "data": "Tidak ada data"
+                                }
+                            },
+                            "Tidak ada hak akses": {
+                                "value": {
+                                    "data": "Error 403: Permission Denied"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "401": {
+                "description": "Unauthorized : Anda tidak memiliki izin akses atau token bearer anda salah",
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "name": "Unauthorized",
+                            "message": "Your request was made with invalid credentials.",
+                            "code": 0,
+                            "status": 401
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

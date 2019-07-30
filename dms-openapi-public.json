@@ -45,6 +45,12 @@
             }
         },
         "schemas": {
+            "Master Pendidikan": {
+                "$ref": "./schemes/master_pendidikan_scheme.json"
+            },
+            "Master Pekerjaan": {
+                "$ref": "./schemes/master_job_scheme.json"
+            },
             "Master Jasa": {
                 "$ref": "./schemes/master_jasa_scheme.json"
             },
@@ -59,6 +65,9 @@
             },
             "Master Prospek": {
                 "$ref": "./schemes/master_prospek_scheme.json"
+            },
+            "Master Customer H1": {
+                "$ref": "./schemes/master_customerh1_scheme.json"
             },
             "Master Customer H23": {
                 "$ref": "./schemes/master_customerh23_scheme.json"
@@ -96,6 +105,12 @@
         }
     },
     "paths": {
+        "/job/list": {
+            "$ref": "./job/job_list.json"
+        },
+        "/pendidikan/list": {
+            "$ref": "./pendidikan/pendidikan_list.json"
+        },
         "/alamat/listprovinsi": {
             "$ref": "./alamat/alamat_listprovinsi.json"
         },
@@ -110,6 +125,9 @@
         },
         "/prospek/listbysession": {
             "$ref": "./prospek/prospek_listbysession.json"
+        },
+        "/customerh1/listbysession": {
+            "$ref": "./customerh1/customerH1_listbysession.json"
         },
         "/customerh23/listbysession": {
             "$ref": "./customerH23/customerH23_listbysession.json"
