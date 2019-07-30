@@ -1,0 +1,133 @@
+{
+    "type": "object",
+    "properties": {
+        "vidcustomer": {
+            "type": "string",
+            "description": "Kode unik master konsumen H1",
+            "example": "CUST/BHA/019660"
+        },
+        "viddealer": {
+            "type": "string",
+            "description": "Kode dealer 3 huruf",
+            "example": "BHA"
+        },
+        "vnamacustomer": {
+            "type": "string",
+            "description": "Nama konsumen",
+            "example": "BERNANDO SILABAN"
+        },
+        "valamat": {
+            "type": "string",
+            "description": "Alamat konsumen",
+            "example": "JL MATAHARI I LK V"
+        },
+        "valamat2": {
+            "type": "string",
+            "description": "Alamat konsumen tambahan jika tidak cukup di field 'valamat'",
+            "example": "Komplek ABC atau null jika tidak ada alamat tambahan"
+        },
+        "vidprovinsi": {
+            "type": "string",
+            "description": "Kode unik master provinsi (lihat scheme master provinsi)",
+            "example": "1200"
+        },
+        "vidkota": {
+            "type": "string",
+            "description": "Kode unik master kota (lihat scheme master kota)",
+            "example": "1275"
+        },
+        "vidpos": {
+            "type": "string",
+            "description": "Kodepos",
+            "example": "20000"
+        },
+        "vkecamatan": {
+            "type": "string",
+            "description": "Kecamatan alamat konsumen",
+            "example": "Kec. Medan Maimun"
+        },
+        "vkelurahan": {
+            "type": "string",
+            "description": "Kelurahan / Desa alamat konsumen",
+            "example": "Kel. Aur"
+        },
+        "vktp": {
+            "type": "string",
+            "description": "No KTP konsumen",
+            "example": "120721XXXXXX0001"
+        },
+        "dtgllahir": {
+            "type": "string",
+            "description": "Tanggal lahir konsumen dalam format yyyy-mm-dd",
+            "example": "1973-01-01"
+        },
+        "vtempatlahir": {
+            "type": "string",
+            "description": "Tempat lahir konsumen",
+            "example": "Medan"
+        },
+        "vtelp": {
+            "type": "string",
+            "description": "Nomor telepon konsumen",
+            "example": "061-45569XX"
+        },
+        "vhp": {
+            "type": "string",
+            "description": "Nomor handphone konsumen",
+            "example": "08123456789"
+        },
+        "vjeniskelamin": {
+            "type": "string",
+            "description": "Jenis kelamin, L=Laki-laki dan P=Perempuan",
+            "example": "L"
+        },
+        "vnpwp": {
+            "type": "string",
+            "description": "Nomor NPWP konsumen",
+            "example": "00.000.000.0-000.000"
+        },
+        "vidjob": {
+            "type": "string",
+            "description": "Kode unik pekerjaan konsumen (lihat scheme master pekerjaan)",
+            "example": "1"
+        },
+        "vidagama": {
+            "type": "string",
+            "description": "Kode unik agama konsumen, 1=Islam, 2=Kristen, 3=Katolik, 4=Hindu, 5=Budha",
+            "example": "1"
+        },
+        "nidpendidikan": {
+            "type": "integer",
+            "description": "Kode unik pendidikan konsumen (lihat schema master pendidikan)",
+            "example": "1"
+        },
+        "vidalamat": {
+            "type": "string",
+            "description": "Kode unik master alamat (lihat scheme master alamat)",
+            "example": "12.71.03.0001"
+        },
+        "vemail": {
+            "type": "string",
+            "description": "Alamat email konsumen",
+            "example": "blabla@blabla.com"
+        },
+        "vcreateby": {
+            "type": "string",
+            "description": "User ID yang melakukan input data pertama kali"
+        },
+        "dtglcreate": {
+            "type": "string",
+            "description": "Tanggal dan waktu dilakukan penginputan pertama kali",
+            "example": "2019-06-01 07:08:09"
+        },
+        "vmodiby": {
+            "type": "string",
+            "description": "User ID yang melakukan perubahan data"
+        },
+        "dtglmodi": {
+            "type": "string",
+            "description": "Tanggal dan waktu perubahan data",
+            "example": "2019-06-01 07:08:09"
+        }
+    }
+}
