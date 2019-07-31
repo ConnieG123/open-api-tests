@@ -1,0 +1,68 @@
+{
+    "type": "object",
+    "properties": {
+        "vidunitinvoice": {
+            "type": "string",
+            "description": "No Invoice (DO)",
+            "example": "22194/DO-B10/2019"
+        },
+        "viddealer": {
+            "type": "string",
+            "description": "Kode dealer 3 huruf",
+            "example": "BHA"
+        },
+        "vidtipe": {
+            "type": "string",
+            "description": "Kode tipe motor 3 huruf (lihat scheme master tipe motor)",
+            "example": "ABN"
+        },
+        "vidwarna": {
+            "type":"string",
+            "description":"Kode warna motor (lihat scheme master tipe motor)",
+            "example":"BK"
+        },
+        "nqtyinv": {
+            "type":"integer",
+            "description":"Jumlah unit per tipe (Qty)",
+            "example":"10"
+        },
+        "nqtyrcv": {
+            "type":"integer",
+            "description":"Jumlah unit yang telah diterima unitnya (berkaitan dengan surat jalan)",
+            "example":"5"
+        },
+        "mhargastd": {
+            "type":"number",
+            "description":"Harga satuan",
+            "example":"25321000"
+        },
+        "mdiskon": {
+            "type":"number",
+            "description":"Nilai Diskon",
+            "example":"500000"
+        },
+        "mjumlah": {
+            "type":"number",
+            "description":"Total per tipe",
+            "example":"25321000"
+        },
+        "vcreateby": {
+            "type": "string",
+            "description": "User ID yang melakukan input data pertama kali"
+        },
+        "dtglcreate": {
+            "type": "string",
+            "description": "Tanggal dan waktu dilakukan penginputan pertama kali",
+            "example": "2019-06-01 07:08:09"
+        },
+        "vmodiby": {
+            "type": "string",
+            "description": "User ID yang melakukan perubahan data"
+        },
+        "dtglmodi": {
+            "type": "string",
+            "description": "Tanggal dan waktu perubahan data",
+            "example": "2019-06-01 07:08:09"
+        }
+    }
+}

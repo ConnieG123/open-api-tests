@@ -1,0 +1,99 @@
+{
+    "post": {
+        "tags": [
+            "Transaksi H1"
+        ],
+        "description": "Anda dapat mengakses data detail DO (Invoice) dengan batasan tanggal input dan edit",
+        "parameters": [
+            {
+                "name": "tgl_awal",
+                "in": "body",
+                "description": "Batasan tanggal awal input data detail DO (Invoice) atau tanggal awal edit data konsumen H1",
+                "required": true,
+                "explode": false,
+                "schema": {
+                    "type": "string",
+                    "example": "2019-06-01"
+                }
+            },
+            {
+                "name": "tgl_akhir",
+                "in": "body",
+                "description": "Batasan tanggal akhir input data detail DO (Invoice) atau tanggal akhir edit data konsumen H1",
+                "required": true,
+                "explode": false,
+                "schema": {
+                    "type": "string",
+                    "example": "2019-06-30"
+                }
+            }
+        ],
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "$ref": "../dms-openapi-public.json#/components/schemas/inParamDateStartEnd"
+                    }
+                }
+            }
+        },
+        "responses": {
+            "200": {
+                "description": "Success",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "../dms-openapi-public.json#/components/schemas/Detail Unit Invoice"
+                        },
+                        "examples": {
+                            "Data Tersedia": {
+                                "value": {
+                                    "data": [
+                                        {
+                                            "vidunitinvoice": "22194/DO-B10/2019",
+                                            "viddealer": "BHA",
+                                            "vidtipe": "HY2",
+                                            "vidwarna": "BK",
+                                            "nqtyinv": "2",
+                                            "nqtyrcv": "2",
+                                            "mhargastd": "15180500",
+                                            "mdiskon": "0",
+                                            "mjumlah": "30361000",
+                                            "vcreateby": "HERYATI",
+                                            "dtglcreate": "2019-06-27 17:21:10",
+                                            "vmodiby": "kacab.bha",
+                                            "dtglmodi": "2019-07-02 12:03:56"
+                                        }
+                                    ]
+                                }
+                            },
+                            "Tidak Ada Data": {
+                                "value": {
+                                    "data": "Tidak ada data"
+                                }
+                            },
+                            "Tidak ada hak akses": {
+                                "value": {
+                                    "data": "Error 403: Permission Denied"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "401": {
+                "description": "Unauthorized : Anda tidak memiliki izin akses atau token bearer anda salah",
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "name": "Unauthorized",
+                            "message": "Your request was made with invalid credentials.",
+                            "code": 0,
+                            "status": 401
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

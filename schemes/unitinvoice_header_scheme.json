@@ -1,0 +1,98 @@
+{
+    "type": "object",
+    "properties": {
+        "vidunitinvoice": {
+            "type":"string",
+            "description":"No Invoice (DO)",
+            "example":"22490/DO-B10/2019"
+        },
+        "viddealer": {
+            "type":"string",
+            "description":"Kode dealer 3 huruf",
+            "example":"IMA"
+        },
+        "dtglinvoice": {
+            "type":"string",
+            "description":"Tanggal Invoice",
+            "example":"2019-06-01"
+        },
+        "ntotalunit": {
+            "type":"integer",
+            "description":"Total unit dalam satu faktur",
+            "example":"1"
+        },
+        "ntop": {
+            "type":"integer",
+            "description":"Jumlah hari TOP 1 (dari tanggal faktur)",
+            "example":"10"
+        },
+        "ntop2": {
+            "type":"integer",
+            "description":"Jumlah hari TOP 2 (dari tanggal faktur)",
+            "example":"18"
+        },
+        "dtop": {
+            "type":"string",
+            "description":"Tanggal jatuh tempo pertama",
+            "example":"2019-06-11"
+        },
+        "dtop2": {
+            "type":"string",
+            "description":"Tanggal jatuh tempo kedua",
+            "example":"2019-06-19"
+        },
+        "mcash": {
+            "type":"number",
+            "description":"Nilai dibayar cash",
+            "example":"10000000"
+        },
+        "mtop": {
+            "type":"number",
+            "description":"Nilai jatuh tempo pertama",
+            "example":"100000000"
+        },
+        "mtop2": {
+            "type":"number",
+            "description":"Nilai jatuh tempo kedua",
+            "example":"50000000"
+        },
+        "vtipebayar": {
+            "type":"string",
+            "description":"Flag jenis bayar, R=Reguler",
+            "example":"R"
+        },
+        "mdpp": {
+            "type":"number",
+            "description":"Jumlah DPP faktur",
+            "example":"14652500"
+        },
+        "mppn": {
+            "type":"number",
+            "description":"Jumlah PPN faktur",
+            "example":"1465250"
+        },
+        "mdiskon": {
+            "type":"number",
+            "description":"Jumlah diskon faktur",
+            "example":"5000000"
+        },
+        "vcreateby": {
+            "type": "string",
+            "description": "User ID yang melakukan input data pertama kali"
+        },
+        "dtglcreate": {
+            "type": "string",
+            "description": "Tanggal dan waktu dilakukan penginputan pertama kali",
+            "example": "2019-06-01 07:08:09"
+        },
+        "vmodiby": {
+            "type": "string",
+            "description": "User ID yang melakukan perubahan data"
+        },
+        "dtglmodi": {
+            "type": "string",
+            "description": "Tanggal dan waktu perubahan data",
+            "example": "2019-06-01 07:08:09"
+        }
+    }
+}
