@@ -84,6 +84,12 @@
             "Master Tipe Motor": {
                 "$ref": "./schemes/master_tipeclr_scheme.json"
             },
+            "Header Unit Invoice": {
+                "$ref": "./schemes/unitinvoice_header_scheme.json"
+            },
+            "Detail Unit Invoice": {
+                "$ref": "./schemes/unitinvoice_detail_scheme.json"
+            },
             "Header PKB": {
                 "$ref": "./schemes/pkb_header_scheme.json"
             },
@@ -146,6 +152,12 @@
         },
         "/tipe/listtypeclr": {
             "$ref": "./tipe/tipe_listtypeclr.json"
+        },
+        "/unitinvoice/listheaderbysession": {
+            "$ref": "./unitinvoice/unitinvoice_listheaderbysession.json"
+        },
+        "/unitinvoice/listdetailbysession": {
+            "$ref": "./unitinvoice/unitinvoice_listdetailbysession.json"
         },
         "/pkb/listheaderbysession": {
             "$ref": "./pkb/pkb_listheaderbysession.json"

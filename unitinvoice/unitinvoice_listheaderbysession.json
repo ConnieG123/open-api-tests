@@ -1,0 +1,105 @@
+{
+    "post": {
+        "tags": [
+            "Transaksi H1"
+        ],
+        "description": "Anda dapat mengakses data header DO (Invoice) dengan batasan tanggal input dan edit",
+        "parameters": [
+            {
+                "name": "tgl_awal",
+                "in": "body",
+                "description": "Batasan tanggal awal input data header DO (Invoice) atau tanggal awal edit data konsumen H1",
+                "required": true,
+                "explode": false,
+                "schema": {
+                    "type": "string",
+                    "example": "2019-06-01"
+                }
+            },
+            {
+                "name": "tgl_akhir",
+                "in": "body",
+                "description": "Batasan tanggal akhir input data header DO (Invoice) atau tanggal akhir edit data konsumen H1",
+                "required": true,
+                "explode": false,
+                "schema": {
+                    "type": "string",
+                    "example": "2019-06-30"
+                }
+            }
+        ],
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "$ref": "../dms-openapi-public.json#/components/schemas/inParamDateStartEnd"
+                    }
+                }
+            }
+        },
+        "responses": {
+            "200": {
+                "description": "Success",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "../dms-openapi-public.json#/components/schemas/Header Unit Invoice"
+                        },
+                        "examples": {
+                            "Data Tersedia": {
+                                "value": {
+                                    "data": [
+                                        {
+                                            "vidunitinvoice": "22486/DO-B10/2019",
+                                            "viddealer": "BHA",
+                                            "dtglinvoice": "2019-07-01",
+                                            "ntotalunit": "1",
+                                            "ntop": "10",
+                                            "ntop2": "18",
+                                            "dtop": "2019-07-11",
+                                            "dtop2": "2019-07-19",
+                                            "mcash": "0",
+                                            "mtop": "7326250",
+                                            "mtop2": "8791500",
+                                            "vtipebayar": "R",
+                                            "mdpp": "14652500",
+                                            "mppn": "1465250",
+                                            "mdiskon": "0",
+                                            "vcreateby": "HERYATI",
+                                            "dtglcreate": "2019-07-01 16:38:58",
+                                            "vmodiby": null,
+                                            "dtglmodi": null
+                                        }
+                                    ]
+                                }
+                            },
+                            "Tidak Ada Data": {
+                                "value": {
+                                    "data": "Tidak ada data"
+                                }
+                            },
+                            "Tidak ada hak akses": {
+                                "value": {
+                                    "data": "Error 403: Permission Denied"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "401": {
+                "description": "Unauthorized : Anda tidak memiliki izin akses atau token bearer anda salah",
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "name": "Unauthorized",
+                            "message": "Your request was made with invalid credentials.",
+                            "code": 0,
+                            "status": 401
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
