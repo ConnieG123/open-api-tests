@@ -58,7 +58,7 @@
         },
         "vtipebayar": {
             "type":"string",
-            "description":"Flag jenis bayar, R=Reguler",
+            "description":"Flag jenis bayar, R=Reguler, C=Cash",
             "example":"R"
         },
         "mdpp": {

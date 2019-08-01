@@ -90,6 +90,12 @@
             "Detail Unit Invoice": {
                 "$ref": "./schemes/unitinvoice_detail_scheme.json"
             },
+            "Header Unit Receive": {
+                "$ref": "./schemes/unitrcv_header_scheme.json"
+            },
+            "Detail Unit Receive": {
+                "$ref": "./schemes/unitrcv_detail_scheme.json"
+            },
             "Header PKB": {
                 "$ref": "./schemes/pkb_header_scheme.json"
             },
@@ -158,6 +164,12 @@
         },
         "/unitinvoice/listdetailbysession": {
             "$ref": "./unitinvoice/unitinvoice_listdetailbysession.json"
+        },
+        "/unitrcv/listheaderbysession": {
+            "$ref": "./unitrcv/unitrcv_listheaderbysession.json"
+        },
+        "/unitrcv/listdetailbysession": {
+            "$ref": "./unitrcv/unitrcv_listdetailbysession.json"
         },
         "/pkb/listheaderbysession": {
             "$ref": "./pkb/pkb_listheaderbysession.json"

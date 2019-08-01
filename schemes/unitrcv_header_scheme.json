@@ -1,0 +1,38 @@
+{
+    "type": "object",
+    "properties": {
+        "viddealer": {
+            "type": "string",
+            "description": "Kode dealer 3 huruf",
+            "example": "BHA"
+        },
+        "vidunitrcv": {
+            "type":"string",
+            "description":"Nomor surat jalan",
+            "example": "44366/SJ-LK-1/2019"
+        },
+        "dtglsj": {
+            "type":"string",
+            "description":"Tanggal surat jalan",
+            "example":"2019-06-01"
+        },
+        "vcreateby": {
+            "type": "string",
+            "description": "User ID yang melakukan input data pertama kali"
+        },
+        "dtglcreate": {
+            "type": "string",
+            "description": "Tanggal dan waktu dilakukan penginputan pertama kali",
+            "example": "2019-06-01 07:08:09"
+        },
+        "vmodiby": {
+            "type": "string",
+            "description": "User ID yang melakukan perubahan data"
+        },
+        "dtglmodi": {
+            "type": "string",
+            "description": "Tanggal dan waktu perubahan data",
+            "example": "2019-06-01 07:08:09"
+        }
+    }
+}
