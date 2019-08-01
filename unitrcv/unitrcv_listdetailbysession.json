@@ -3,12 +3,12 @@
         "tags": [
             "Transaksi H1"
         ],
-        "description": "Anda dapat mengakses data header DO (Invoice) dengan batasan tanggal input dan edit",
+        "description": "Anda dapat mengakses data detail penerimaan unit dari main dealer dengan batasan tanggal input dan edit",
         "parameters": [
             {
                 "name": "tgl_awal",
                 "in": "body",
-                "description": "Batasan tanggal awal input data header DO (Invoice) atau tanggal awal edit data unit invoice",
+                "description": "Batasan tanggal awal input data detail penerimaan unit dari main dealer atau tanggal awal perubahan data status unit",
                 "required": true,
                 "explode": false,
                 "schema": {
@@ -19,7 +19,7 @@
             {
                 "name": "tgl_akhir",
                 "in": "body",
-                "description": "Batasan tanggal akhir input data header DO (Invoice) atau tanggal akhir edit data unit invoice",
+                "description": "Batasan tanggal akhir input data detail penerimaan unit dari main dealer atau tanggal akhir perubahan data status unit",
                 "required": true,
                 "explode": false,
                 "schema": {
@@ -43,32 +43,28 @@
                 "content": {
                     "application/json": {
                         "schema": {
-                            "$ref": "../dms-openapi-public.json#/components/schemas/Header Unit Invoice"
+                            "$ref": "../dms-openapi-public.json#/components/schemas/Detail Unit Receive"
                         },
                         "examples": {
                             "Data Tersedia": {
                                 "value": {
                                     "data": [
                                         {
-                                            "vidunitinvoice": "22486/DO-B10/2019",
                                             "viddealer": "BHA",
-                                            "dtglinvoice": "2019-07-01",
-                                            "ntotalunit": "1",
-                                            "ntop": "10",
-                                            "ntop2": "18",
-                                            "dtop": "2019-07-11",
-                                            "dtop2": "2019-07-19",
-                                            "mcash": "0",
-                                            "mtop": "7326250",
-                                            "mtop2": "8791500",
-                                            "vtipebayar": "R",
-                                            "mdpp": "14652500",
-                                            "mppn": "1465250",
-                                            "mdiskon": "0",
-                                            "vcreateby": "HERYATI",
-                                            "dtglcreate": "2019-07-01 16:38:58",
-                                            "vmodiby": null,
-                                            "dtglmodi": null
+                                            "vidunitrcv": "15609/SJ-LK-1/2019",
+                                            "vidunitinvoice": "07966/DO-B10/2019",
+                                            "vidtipe": "GW2",
+                                            "vidwarna": "PH",
+                                            "vengine": "JFS1E1428106",
+                                            "vframe": "MH1JFS119KK435221",
+                                            "vfakstnk": "BA  /038889/S",
+                                            "vthnproduksi": "2019",
+                                            "vidindent": null,
+                                            "vstatus": "0",
+                                            "vcreateby": "kacab.bha",
+                                            "dtglcreate": "2019-03-11 11:41:30",
+                                            "vmodiby": "kacab.bha",
+                                            "dtglmodi": "2019-07-02 17:39:35"
                                         }
                                     ]
                                 }

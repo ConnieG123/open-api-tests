@@ -1,0 +1,78 @@
+{
+    "type": "object",
+    "properties": {
+        "viddealer": {
+            "type": "string",
+            "description": "Kode dealer 3 huruf",
+            "example": "BHA"
+        },
+        "vidunitrcv": {
+            "type": "string",
+            "description": "Nomor surat jalan",
+            "example": "15609/SJ-LK-1/2019"
+        },
+        "vidunitinvoice": {
+            "type": "string",
+            "description": "Nomor Invoice (DO) - lihat referensi scheme Detail Unit Invoice",
+            "example": "07966/DO-B10/2019"
+        },
+        "vidtipe": {
+            "type": "string",
+            "description": "Kode tipe motor (lihat scheme master tipe motor)",
+            "example": "GW2"
+        },
+        "vidwarna": {
+            "type": "string",
+            "description": "Kode warna motor (lihat scheme master tipe motor)",
+            "example": "PH"
+        },
+        "vengine": {
+            "type": "string",
+            "description": "Nomor mesin",
+            "example": "JFS1E1428106"
+        },
+        "vframe": {
+            "type": "string",
+            "description": "Nomor rangka",
+            "example": "MH1JFS119KK435221"
+        },
+        "vfakstnk": {
+            "type": "string",
+            "description": "Nomor faktur STNK",
+            "example": "BA  /038889/S"
+        },
+        "vthnproduksi": {
+            "type": "string",
+            "description": "Tahun produksi",
+            "example": "2019"
+        },
+        "vidindent": {
+            "type": "string",
+            "description": "Nomor indent, jika unit ini hasil indent"
+        },
+        "vstatus": {
+            "type": "string",
+            "description": "Status motor yaitu 0=Terjual, 1=Stock, dan 2=stock hasil batal faktur jual konsumen",
+            "example": "1"
+        },
+        "vcreateby": {
+            "type": "string",
+            "description": "User ID yang melakukan input data pertama kali",
+            "example": "B10/007759/12/2015"
+        },
+        "dtglcreate": {
+            "type": "string",
+            "description": "Tanggal dan waktu dilakukan penginputan pertama kali",
+            "example": "2019-06-01 07:08:09"
+        },
+        "vmodiby": {
+            "type": "string",
+            "description": "User ID yang melakukan perubahan data"
+        },
+        "dtglmodi": {
+            "type": "string",
+            "description": "Tanggal dan waktu perubahan data",
+            "example": "2019-06-01 07:08:09"
+        }
+    }
+}
