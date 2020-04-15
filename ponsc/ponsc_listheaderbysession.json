@@ -3,12 +3,12 @@
         "tags": [
             "Transaksi H23"
         ],
-        "description": "Anda dapat mengakses data header Faktur Jual Bengkel dengan batasan tanggal input dan edit. Untuk data detail, diakses melalui url terpisah (lihat dokumentasi data detail Nota H23). ",
+        "description": "Anda dapat mengakses data header PO NSC dengan batasan tanggal input dan edit. Untuk data detail, diakses melalui url terpisah (lihat dokumentasi data detail PO NSC). ",
         "parameters": [
             {
                 "name": "tgl_awal",
                 "in": "body",
-                "description": "Batasan tanggal awal input data Faktur Jual bengkel atau tanggal awal edit data Faktur Jual Bengkel",
+                "description": "Batasan tanggal awal input data Faktur PO atau tanggal awal edit data Faktur PO NSC",
                 "required": true,
                 "explode": false,
                 "schema": {
@@ -19,7 +19,7 @@
             {
                 "name": "tgl_akhir",
                 "in": "body",
-                "description": "Batasan tanggal akhir input data Faktur Jual bengkel atau tanggal akhir edit data Faktur Jual bengkel",
+                "description": "Batasan tanggal akhir input data Faktur PO NSC atau tanggal akhir edit data Faktur PO NSC",
                 "required": true,
                 "explode": false,
                 "schema": {
@@ -43,47 +43,31 @@
                 "content": {
                     "application/json": {
                         "schema": {
-                            "$ref": "../dms-openapi-public.json#/components/schemas/Header Nota H23"
+                            "$ref": "../dms-openapi-public.json#/components/schemas/Header PO NSC"
                         },
                         "examples": {
                             "Data Tersedia": {
                                 "value": {
                                     "data": [
                                         {
-                                            "viddealer": "BHA",
-                                            "vidnotah23": "2020-006277",
-                                            "vidcustomerh23": "H23CUST/BHA/038777",
-                                            "dnota": "2020-02-01",
-                                            "vidponsc": null,
-                                            "vidpkb": "20-003828",
+                                            "viddealer": "IMA",
+                                            "vidponsc": "PON/2020/001362",
+                                            "vidcustomerh23": "H23CUST/IMA/038215",
+                                            "dponsc": "2020-04-04",
                                             "ndiskonpercent": "0",
                                             "mdiskon": "0",
-                                            "mtotal": "35000",
-                                            "mdpp": "31818",
-                                            "mppn": "3182",
-                                            "mhargajual": "31818",
-                                            "vflagpajak": "F",
-                                            "nflaglunas": "0",
-                                            "dtgllunas": null,
+                                            "mtotal": "26000",
+                                            "mdpp": "23636",
+                                            "mppn": "2364",
+                                            "mhargajual": "23636",
                                             "vstatus": "T",
-                                            "vtandatangan": null,
-                                            "vnopajak": null,
                                             "valasanbatal": null,
-                                            "vtipenota": "NSC",
-                                            "vtipebayar": "T",
-                                            "vflagposting": "T",
-                                            "dposting": "2020-02-01 17:16:41",
                                             "dtglbatal": null,
-                                            "vbatalby": null,
-                                            "vflagcetak": "T",
-                                            "vflagtransfertax": "F",
-                                            "vidhoo": null,
-                                            "vcreateby": "FRONTDESK.BHA",
-                                            "dtglcreate": "2020-02-01 17:05:32",
-                                            "vmodiby": "frontdesk.bha",
-                                            "dtglmodi": "2020-02-01 17:16:41",
-                                            "vidkaryawan": "KAR-0010922",
-                                            "vidsa": "KAR-0009165"
+                                            "vcreateby": "counterpart.ima",
+                                            "dtglcreate": "2020-04-04 15:51:43",
+                                            "vmodiby": "counterpart.ima",
+                                            "dtglmodi": "2020-04-04 15:51:43",
+                                            "vnamacustomer": "IBNU IQBAL"
                                         }
                                     ]
                                 }

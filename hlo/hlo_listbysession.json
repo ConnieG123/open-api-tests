@@ -3,7 +3,7 @@
         "tags": [
             "Transaksi H23"
         ],
-        "description": "Anda dapat mengakses data detail jasa pada PKB (Perintah Kerja Bengkel) dengan batasan tanggal input dan edit. Untuk data header, diakses melalui url terpisah (lihat dokumentasi data header PKB). ",
+        "description": "Anda dapat mengakses data Transaksi HLO dengan batasan tanggal input dan edit.",
         "parameters": [
             {
                 "name": "tgl_awal",
@@ -28,39 +28,52 @@
                 }
             }
         ],
-        "requestBody": {
-            "content": {
-                "application/json": {
-                    "schema": {
-                        "$ref": "../dms-openapi-public.json#/components/schemas/inParamDateStartEnd"
-                    }
-                }
-            }
-        },
         "responses": {
             "200": {
                 "description": "Success",
                 "content": {
                     "application/json": {
                         "schema": {
-                            "$ref": "../dms-openapi-public.json#/components/schemas/Detail Jasa PKB"
+                            "$ref": "../dms-openapi-public.json#/components/schemas/Transaksi HLO"
                         },
                         "examples": {
                             "Data Tersedia": {
                                 "value": {
                                     "data": [
                                         {
-                                            "viddealer": "BHA",
-                                            "vidpkb": "19-000001",
-                                            "vidservice": "VA063",
-                                            "nqty": "1",
-                                            "mprice": "70000",
-                                            "vcreateby": "frontdesk.bha",
-                                            "dtglcreate": "2019-01-02 10:02:56",
-                                            "vmodiby": null,
-                                            "dtglmodi": null,
-                                            "vservicedesc": "SERVICE LENGKAP BEAT",
-                                            "vidtipepkb": "CS"
+                                            "vidpo": "2020/PO/03311",
+                                            "viduser": "01840",
+                                            "vnamacustomer": "INDAH RAHMADHANI",
+                                            "valamatcustomer": "BLOK SONGO",
+                                            "vkotacustomer": "KOTA PINANG",
+                                            "vkodepos": "21464",
+                                            "dtglpodealer": "2020-03-01",
+                                            "dtglpo": "2020-03-01",
+                                            "vidclaim": "2365",
+                                            "vshipto": "PT CAKRA ADI DHARMA 2",
+                                            "vidtipe": "GR",
+                                            "vtipemkt": "SK",
+                                            "vthnrakit": "2018",
+                                            "vtelp": "081311831408",
+                                            "vflagotr": "F",
+                                            "vflagjr": "F",
+                                            "vstatus": "T",
+                                            "vflagtransfer": "T",
+                                            "nflagsupply": "2",
+                                            "vframe": "MH1JM3112JK937283",
+                                            "vengine": "JM31E1981306",
+                                            "mdp": "0",
+                                            "vflagcetak": "T",
+                                            "ncetak": "1",
+                                            "dtglcetak": "2020-03-01 11:18:33",
+                                            "vflagnginap": "F",
+                                            "vnotracking": "018402003311",
+                                            "ntracking": "0",
+                                            "vcreateby": "01840",
+                                            "dtglcreate": "2020-03-01 11:14:54",
+                                            "vmodiby": "system",
+                                            "dtglmodi": "2020-03-04 23:51:02",
+                                            "msisa": null
                                         }
                                     ]
                                 }

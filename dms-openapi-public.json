@@ -111,6 +111,15 @@
             "Detail Nota H23": {
                 "$ref": "./schemes/notah23_detail_scheme.json"
             },
+            "Transaksi HLO": {
+                "$ref": "./schemes/transaksi_hoo_scheme.json"
+            },
+            "Header PO NSC": {
+                "$ref": "./schemes/ponsc_header_scheme.json"
+            },
+            "Detail PO NSC": {
+                "$ref": "./schemes/ponsc_detail_scheme.json"
+            },
             "inParamDateStartEnd": {
                 "$ref": "./schemes/input_param_date_start_end_scheme.json"
             }
@@ -185,6 +194,15 @@
         },
         "/notah23/listdetailbysession": {
             "$ref": "./notah23/notah23_listdetailbysession.json"
+        },
+        "/hlo/listbysession": {
+            "$ref": "./hlo/hlo_listbysession.json"
+        },
+        "/ponsc/listheaderbysession": {
+            "$ref": "./ponsc/ponsc_listheaderbysession.json"
+        },
+        "/ponsc/listdetailbysession": {
+            "$ref": "./ponsc/ponsc_listdetailbysession.json"
         }
     }
 }

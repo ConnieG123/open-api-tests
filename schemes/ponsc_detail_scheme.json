@@ -1,0 +1,97 @@
+{
+    "type": "object",
+    "properties": {
+        "viddealer": {
+            "type": "string",
+            "description": "Kode dealer 3 huruf",
+            "example": "IMA"
+        },
+        "vidponsc": {
+            "type": "string",
+            "description": "No faktur jual, relasi terhadap schema Header Nota H23",
+            "example": "PON/2020/001308"
+        },
+        "vidpart": {
+            "type": "string",
+            "description": "Kode part (schema Master Part)",
+            "example": "082342MAK8LN9"
+        },
+        "nqty": {
+            "type": "integer",
+            "description": "Jumlah atau Qty penjualan. Pasti '1' jika Jasa. Tidak boleh nol",
+            "example": "1"
+        },
+        "mprice": {
+            "type": "number",
+            "description": "Harga jual per item jasa atau part",
+            "example": "20000"
+        },
+        "ndiskonpercent": {
+            "type": "number",
+            "description": "Diskon per item dalam persen",
+            "example": "5 artinya diskon 5%"
+        },
+        "mdiskon": {
+            "type": "number",
+            "description":"Diskon dalam nominal (diskon persen x harga jual)",
+            "example":"500"
+        },
+        "mdpp": {
+            "type": "number",
+            "description":"DPP per item setelah diskon",
+            "example":"20000"
+        },
+        "mdppnet": {
+            "type": "number",
+            "description":"DPP per item setelah diskon (sama dengan field mdpp)",
+            "example":"20000"
+        },
+        "mppnnet": {
+            "type": "number",
+            "description":"PPN per item setelah diskon (10% dari DPP)",
+            "example":"2000"
+        },
+        "mtermin": {
+            "type": "number",
+            "description":"field ini tidak digunakan. saat ini nilai sama dengan DPP"
+        },
+        "mhdp": {
+            "type": "number",
+            "description":"Nilai nominal netto setelah diskon per item",
+            "example":"20000"
+        },
+        "mdiskonfaktur": {
+            "type": "number",
+            "description":"Nilai nominal hasil distribusi diskon per faktur",
+            "example":"5000"
+        },
+        "vcreateby": {
+            "type": "string",
+            "description":"User ID yang melakukan input pertama kali"
+        },
+        "dtglcreate": {
+            "type": "string",
+            "format": "date-time",
+            "example": "2019-06-01 07:08:09",
+            "description":"Tanggal dan waktu pertama kali input"
+        },
+        "vmodiby": {
+            "type": "string",
+            "description":"User ID yang melakukan perubahan data terhadap faktur ini"
+        },
+        "dtglmodi": {
+            "type": "string",
+            "format": "date-time",
+            "example": "2019-06-01 07:08:09",
+            "description":"Tanggal dan waktu terjadi perubahan data"
+        },
+        "nidpartpromo": {
+            "type": "string",
+            "description":"ID Promo yang terdapat pada part tertentu"
+        },
+        "nidbooking": {
+            "type": "string",
+            "description":"Kode Booking"
+        }
+    }
+}

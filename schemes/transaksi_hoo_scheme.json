@@ -1,0 +1,158 @@
+{
+    "type": "object",
+    "properties": {
+        "vidpo": {
+            "type": "string",
+            "description":"Nomor HLO",
+            "example":"2020/PO/03311"
+        },
+        "viduser": {
+            "type": "string",
+            "description":"ID User",
+            "example":"01840"
+        },
+        "vnamacustomer": {
+            "type": "string",
+            "description":"Nama Konsumen",
+            "example":"INDAH RAHMADHANI"
+        },
+        "valamatcustomer": {
+            "type": "string",
+            "description":"Alamat Konsumen",
+            "example":"BLOK SONGO"
+        },
+        "vkotacustomer": {
+            "type": "string",
+            "description":"Kota Konsumen",
+            "example": "KOTA PINANG"
+        },
+        "vkodepos": {
+            "type": "string",
+            "description": "User ID yang melakukan input data pertama kali",
+            "example": "21464"
+        },
+        "dtglpodealer": {
+            "type": "string",
+            "description": "Tanggal dealer melakukan transaksi hoo",
+            "example": "2020-03-01"
+        },
+        "dtglpo": {
+            "type": "string",
+            "description": "Tanggal penginputan transaksi hoo",
+            "example": "2020-03-01"
+        },
+        "vidclaim": {
+            "type": "string",
+            "description": "Kode Claim",
+            "example": "2365"
+        },
+        "vshipto": {
+            "type": "string",
+            "description": "Tujuan pengiriman",
+            "example": "PT CAKRA ADI DHARMA 2"
+        },
+        "vidtipe": {
+            "type": "string",
+            "description": "Kode tipe sepeda motor (lihat schema master tipe motor)",
+            "example": "GR"
+        },
+        "vtipemkt": {
+            "type": "string",
+            "description": "Tipe motor 2 huruf versi AHM",
+            "example": "SK"
+        },
+        "vthnrakit": {
+            "type": "string",
+            "description": "Tahun SMH dirakit",
+            "example": "2018"
+        },
+        "vtelp": {
+            "type": "string",
+            "description": "No Telepon Konsumen",
+            "example": "081311831408"
+        },
+        "vflagotr": {
+            "type": "string",
+            "description": "Status OTR (T = OTR, F = Tidak)",
+            "example": "F"
+        },
+        "vflagjr": {
+            "type": "string",
+            "description": "Status Job Return (T = Iya, F = Tidak)",
+            "example": "F"
+        },
+        "vstatus": {
+            "type": "string",
+            "description": "Status (T = Aktif, F = Tidak)",
+            "example": "T"
+        },
+        "vflagtransfer": {
+            "type": "string",
+            "description": "Status Transfer (T = Sudah transfer, F = Belum transfer",
+            "example": "T"
+        },
+        "nflagsupply": {
+            "type": "string",
+            "description": "",
+            "example": ""
+        },
+        "vframe": {
+            "type": "string",
+            "description": "No Rangka SMH",
+            "example": "MH1JM3112JK937283"
+        },
+        "vengine": {
+            "type": "string",
+            "description": "No Mesin SMH",
+            "example": "JM31E1981306"
+        },
+        "mdp": {
+            "type": "string",
+            "description": "DP yang dibayar oleh konsumen",
+            "example": "0"
+        },
+        "vflagcetak": {
+            "type": "string",
+            "description": "Status cetak tanda terima HLO (T = Sudah, F = Belum)",
+            "example": "T"
+        },
+        "ncetak": {
+            "type": "string",
+            "description": "Total cetak tanda terima HLO yang sudah dicetak keluar",
+            "example": "1"
+        },
+        "dtglcetak": {
+            "type": "string",
+            "description": "Tanggal tanda terima HLO dicetak",
+            "example": "2020-03-01 11:18:33"
+        },
+        "nflagnginap": {
+            "type": "string",
+            "description": "Status SMH nginap di showroom honda (T = Iya, F = Tidak)",
+            "example": "F"
+        },
+        "vnotracking": {
+            "type": "string",
+            "description": "No Tracking",
+            "example": "018402003311"
+        },
+        "vcreateby": {
+            "type": "string",
+            "description": "User ID yang melakukan input data pertama kali"
+        },
+        "dtglcreate": {
+            "type": "string",
+            "description": "Tanggal dan waktu dilakukan penginputan pertama kali",
+            "example": "2020-03-01 11:14:54"
+        },
+        "vmodiby": {
+            "type": "string",
+            "description": "User ID yang melakukan perubahan data"
+        },
+        "dtglmodi": {
+            "type": "string",
+            "description": "Tanggal dan waktu perubahan data",
+            "example": "2020-03-04 23:51:02"
+        }
+    }
+}
