@@ -1,0 +1,112 @@
+{
+    "post": {
+        "tags": [
+            "Transaksi H1"
+        ],
+        "description": "Anda dapat mengakses data Indent dengan batasan tanggal input dan edit.",
+        "parameters": [
+            {
+                "name": "tgl_awal",
+                "in": "body",
+                "description": "Batasan tanggal awal input data PKB atau tanggal awal edit data PKB",
+                "required": true,
+                "explode": false,
+                "schema": {
+                    "type": "string",
+                    "example": "2019-06-01"
+                }
+            },
+            {
+                "name": "tgl_akhir",
+                "in": "body",
+                "description": "Batasan tanggal akhir input data PKB atau tanggal akhir edit data PKB",
+                "required": true,
+                "explode": false,
+                "schema": {
+                    "type": "string",
+                    "example": "2019-06-30"
+                }
+            }
+        ],
+        "responses": {
+            "200": {
+                "description": "Success",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "../dms-openapi-public.json#/components/schemas/Transaksi HOO"
+                        },
+                        "examples": {
+                            "Data Tersedia": {
+                                "value": {
+                                    "data": [
+                                        {
+                                            "vidindent": "SPK/000874/01/2020",
+                                            "viddealer": "IMA",
+                                            "vahass": "00137",
+                                            "vidcustomer": "CUST/IMA/018437",
+                                            "vnamacustomer": "ALDY",
+                                            "valamat": "JLPANCING V GGMUSHOLLA LK3",
+                                            "dtgllahir": "1998-06-10",
+                                            "vidtipe": "HP2",
+                                            "vidwarna": "CH",
+                                            "nqty": "1",
+                                            "vidkaryawan": "138499",
+                                            "dindent": "2020-01-16",
+                                            "vspkindent": "SPK/WL/2020/004",
+                                            "dtimeindent": "16012020155252",
+                                            "detd": null,
+                                            "mdp": "190000000",
+                                            "vidunitinvoice": "A0306/DO-B10/2020",
+                                            "dtglunitinvoice": "2020-01-20",
+                                            "vidunitrcv": "04244/SJ-LK-1/2020",
+                                            "dtglunitrcv": "2020-01-21",
+                                            "vjenisbeli": "2",
+                                            "vstatus": "2",
+                                            "valasanbatal": null,
+                                            "dtglbatal": null,
+                                            "vidleasing": "FIF",
+                                            "vkodeleasing": "FC00000003",
+                                            "vcreateby": "cs.ima",
+                                            "dtglcreate": "2020-01-16 15:52:52",
+                                            "vmodiby": "cs.ima",
+                                            "dtglmodi": "2020-01-21 13:14:18",
+                                            "mtenor": null,
+                                            "mangsuran": null,
+                                            "dtglpengajuan": "2020-01-16 15:52:52",
+                                            "nidhdrtagihpoleasing": null,
+                                            "dtgltagih": null
+                                        }
+                                    ]
+                                }
+                            },
+                            "Tidak Ada Data": {
+                                "value": {
+                                    "data": "Tidak ada data"
+                                }
+                            },
+                            "Tidak ada hak akses": {
+                                "value": {
+                                    "data": "Error 403: Permission Denied"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "401": {
+                "description": "Unauthorized : Anda tidak memiliki izin akses atau token bearer anda salah",
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "name": "Unauthorized",
+                            "message": "Your request was made with invalid credentials.",
+                            "code": 0,
+                            "status": 401
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

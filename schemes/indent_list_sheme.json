@@ -1,0 +1,170 @@
+{
+    "type": "object",
+    "properties": {
+        "vidindent": {
+            "type": "string",
+            "description":"Nomor Indent",
+            "example":"SPK/000874/01/2020"
+        },
+        "viddealer": {
+            "type": "string",
+            "description":"Kode Dealer 3 huruf",
+            "example":"IMA"
+        },
+        "vahass": {
+            "type": "string",
+            "description":"Kode Dealer 5 huruf AHM",
+            "example":"00137"
+        },
+        "vidcustomer": {
+            "type": "string",
+            "description":"ID Master Customer H1 (lihat schema Master Customer H1)",
+            "example":"CUST/IMA/018437"
+        },
+        "vnamacustomer": {
+            "type": "string",
+            "description":"Nama Customer",
+            "example": "ALDY"
+        },
+        "valamat": {
+            "type": "string",
+            "description": "Alamat Customer",
+            "example": "JLPANCING V GGMUSHOLLA LK3"
+        },
+        "dtgllahir": {
+            "type": "string",
+            "description": "Tanggal lahir Customer",
+            "example": "1998-06-10"
+        },
+        "vidtipe": {
+            "type": "string",
+            "description": "Kode tipe motor (lihat schema Master Tipe Listtypeclr)",
+            "example": "HP2"
+        },
+        "vidwarna": {
+            "type": "string",
+            "description": "Kode warna motor (lihat schema Master Tipe Listtypeclr)",
+            "example": "CH"
+        },
+        "nqty": {
+            "type": "string",
+            "description": "Qty indent",
+            "example": "1"
+        },
+        "vidkaryawan": {
+            "type": "string",
+            "description": "ID Karyawan ",
+            "example": "138499"
+        },
+        "dindent": {
+            "type": "string",
+            "description": "Tanggal indent",
+            "example": "2020-01-16"
+        },
+        "vspkindent": {
+            "type": "string",
+            "description": "ID spk indent",
+            "example": "SPK/WL/2020/004"
+        },
+        "dtimeindent": {
+            "type": "string",
+            "description": "Tanggal & Waktu indent",
+            "example": "16012020155252"
+        },
+        "detd": {
+            "type": "string",
+            "description": "Tanggal estimasi",
+            "example": "null"
+        },
+        "mdp": {
+            "type": "string",
+            "description": "Total DP",
+            "example": "190000000"
+        },
+        "vidunitinvoice": {
+            "type": "string",
+            "description": "ID Unit Invoice",
+            "example": "A0306/DO-B10/2020"
+        },
+        "dtglunitinvoice": {
+            "type": "string",
+            "description": "Tanggal Unit Invoice",
+            "example": "2020-01-20"
+        },
+        "vidunitrcv": {
+            "type": "string",
+            "description": "ID Unit Inbound",
+            "example": "MH1JM3112JK937283"
+        },
+        "dtglunitrcv": {
+            "type": "string",
+            "description": "Tanggal unit inbound",
+            "example": "JM31E1981306"
+        },
+        "vjenisbeli": {
+            "type": "string",
+            "description": "Tipe Pembayaran (1 = cash, 2 = kredit)",
+            "example": "2"
+        },
+        "vstatus": {
+            "type": "string",
+            "description": "Status Indent (1 = Open Paid, 2 = closed/ terpenuhi, 3 = batal, 4=Open Unpaid)",
+            "example": "2"
+        },
+        "valasanbatal": {
+            "type": "string",
+            "description": "Alasan batal indent",
+            "example": "null"
+        },
+        "dtglbatal": {
+            "type": "string",
+            "description": "Tanggal batal indent",
+            "example": "null"
+        },
+        "vidleasing": {
+            "type": "string",
+            "description": "ID Leasing",
+            "example": "FIF"
+        },
+        "vkodeleasing": {
+            "type": "string",
+            "description": "Kode leasing",
+            "example": "FC00000003"
+        },
+        "dtglcreate": {
+            "type": "string",
+            "description": "Tanggal dan waktu dilakukan penginputan pertama kali",
+            "example": "2020-03-01 11:14:54"
+        },
+        "vmodiby": {
+            "type": "string",
+            "description": "User ID yang melakukan perubahan data"
+        },
+        "dtglmodi": {
+            "type": "string",
+            "description": "Tanggal dan waktu perubahan data",
+            "example": "2020-03-04 23:51:02"
+        },
+        "mtenor": {
+            "type": "string",
+            "description": "Jumlah Tenor"
+        },
+        "mangsuran": {
+            "type": "string",
+            "description": "Jumlah Angsuran"
+        },
+        "dtglpengajuan": {
+            "type": "string",
+            "description": "Tanggal Pengajuan Indent",
+            "example": "2020-01-16 15:52:52"
+        },
+        "nidhdrtagihpoleasing": {
+            "type": "string",
+            "description": "ID PO dari finance company"
+        },
+        "dtgltagih": {
+            "type": "string",
+            "description": "Tanggal ID PO"
+        }
+    }
+}

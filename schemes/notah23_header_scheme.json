@@ -151,6 +151,16 @@
             "format": "date-time",
             "example": "2019-06-01 07:08:09",
             "description":"Tanggal dan waktu terjadi perubahan data"
+        },
+        "vidkaryawan": {
+            "type": "string",
+            "description": "ID Karyawan",
+            "example": "KAR-0010922"
+        },
+        "vidsa": {
+            "type": "string",
+            "description": "ID Service Advisor",
+            "example": "KAR-0009165"
         }
     }
 }

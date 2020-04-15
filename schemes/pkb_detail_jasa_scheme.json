@@ -42,6 +42,16 @@
             "type": "string",
             "description": "Tanggal dan waktu perubahan data",
             "example": "2019-06-01 07:08:09"
+        },
+        "vservicedesc": {
+            "type": "string",
+            "description": "Nama Servis",
+            "example": "SERVICE LENGKAP BEAT"
+        },
+        "vidtipepkb": {
+            "type": "string",
+            "description": "Jenis pekerjaan KPB1, KPB2, KPB3, KPB4, KPB5-10, CS, LR, LS, HR, JR, OR, C1, C2",
+            "example": "CS"
         }
     }
 }
