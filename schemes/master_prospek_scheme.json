@@ -203,6 +203,67 @@
             "type": "string",
             "description": "Tanggal dan waktu perubahan data",
             "example": "2019-06-01 07:08:09"
+        },
+        "vidpos": {
+            "type": "string",
+            "description": "Kode Pos Kantor"
+        },
+        "valamats": {
+            "type": "string",
+            "description": "Alamat Kantor"
+        },
+        "vidalamats": {
+            "type": "string",
+            "description": "Kode Alamat Kantor"
+        },
+        "vkotas": {
+            "type": "string",
+            "description": "Kota Alamat Kantor"
+        },
+        "vkecamatans": {
+            "type": "string",
+            "description": "Kecamatan Alamat Kantor"
+        },
+        "vkelurahans": {
+            "type": "string",
+            "description": "Kelurahan Alamat Kantor"
+        },
+        "Vidpos": {
+            "type": "string",
+            "description": "Kode Pos Rumah"
+        },
+        "flongitude": {
+            "type": "string",
+            "description": "Koordinasi Longitude Alamat Pengirim"
+        },
+        "flatitude": {
+            "type": "string",
+            "description": "Koordinasi Latitude Alamat Pengirim"
+        },
+        "vidjob": {
+            "type": "string",
+            "description": "Kode Pekerjaan"
+        },
+        "vhps": {
+            "type": "string",
+            "description": "Nomor HP Kantor"
+        },
+        "nstatus": {
+            "type": "string",
+            "description": "Status Prospek (T = Aktif, F = Batal)",
+            "example": "T"
+        },
+        "nidpromo": {
+            "type": "string",
+            "description": "Kode ID Promo Sales"
+        },
+        "vidsalesprog": {
+            "type": "string",
+            "description": "Kode ID Sales Program"
+        },
+        "nflagtestride": {
+            "type": "string",
+            "description": "Status Test Ride"
         }
     }
 }

@@ -1,0 +1,157 @@
+{
+    "post": {
+        "tags": [
+            "Transaksi H1"
+        ],
+        "description": "Anda dapat mengakses data header Faktur Jual SPK dengan batasan tanggal input dan edit. Untuk data detail, diakses melalui url terpisah (lihat dokumentasi data detail SPK). ",
+        "parameters": [
+            {
+                "name": "tgl_awal",
+                "in": "body",
+                "description": "Batasan tanggal awal input data Faktur SPK atau tanggal awal edit data Faktur SPK",
+                "required": true,
+                "explode": false,
+                "schema": {
+                    "type": "string",
+                    "example": "2019-06-01"
+                }
+            },
+            {
+                "name": "tgl_akhir",
+                "in": "body",
+                "description": "Batasan tanggal akhir input data Faktur SPK atau tanggal akhir edit data Faktur SPK",
+                "required": true,
+                "explode": false,
+                "schema": {
+                    "type": "string",
+                    "example": "2019-06-30"
+                }
+            }
+        ],
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "$ref": "../dms-openapi-public.json#/components/schemas/inParamDateStartEnd"
+                    }
+                }
+            }
+        },
+        "responses": {
+            "200": {
+                "description": "Success",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "../dms-openapi-public.json#/components/schemas/Header SPK"
+                        },
+                        "examples": {
+                            "Data Tersedia": {
+                                "value": {
+                                    "data": [
+                                        {
+                                            "viddealer": "IMA",
+                                            "vidspk": "SPK/20/02/000300",
+                                            "dspk": "2020-02-10",
+                                            "dinputspk": "2020-02-10",
+                                            "vidposdealer": "0",
+                                            "vidkaryawan": "124773",
+                                            "vtipepenjualan": "1",
+                                            "vtipear": "RSO",
+                                            "vidcustomer": "CUST/IMA/018602",
+                                            "vidleasing": "FIF",
+                                            "mdp": "3200000",
+                                            "vtipepajak": "1",
+                                            "vnopajak": "010.000-20.57916182",
+                                            "vstatus": "T",
+                                            "vidsuratjalan": "SJU/20-02/000300",
+                                            "vnotesj": "SMH dalam kondisi baik",
+                                            "vtandatangan": "Dian Susanty",
+                                            "dtglbatal": null,
+                                            "valasanbatal": null,
+                                            "mhargajual": "18364091",
+                                            "mppn": "1836409",
+                                            "mdppunit": "18909545",
+                                            "mdppdiskon": "545454",
+                                            "mtotal": "20200500",
+                                            "vidindent": null,
+                                            "vcreateby": "FRONTDESK.BHA",
+                                            "dtglcreate": "2020-02-01 17:05:32",
+                                            "vmodiby": "frontdesk.bha",
+                                            "dtglmodi": "2020-02-01 17:16:41",
+                                            "vidalamatkantor": null,
+                                            "valamatkantor": null,
+                                            "vnamastnk": "RIZAL NABABAN",
+                                            "vktpstnk": "1271132610850006",
+                                            "valamatstnk": "JL KAMBES LINGKUNGAN IV",
+                                            "vidalamatstnk": "12.71.13.1004",
+                                            "vtelpstnk": "082168636108",
+                                            "vdaydeliv": "Senin",
+                                            "ddatedeliv": "2020-02-10",
+                                            "vtimedeliv": "09:00",
+                                            "vdelivto": "1",
+                                            "vdriver": "SUHEIRY NOEKMAN SIREGAR",
+                                            "vplatdriver": "BK 9196 CH",
+                                            "vrating": "4",
+                                            "ddatesampai": "2020-02-10",
+                                            "vtimesampai": "10:00",
+                                            "vkecamatanstnk": "KEC. MEDAN LABUHAN",
+                                            "vkelurahanstnk": "KEL.  MARTUBUNG",
+                                            "nflagpoleasing": "0",
+                                            "vnamacustomer": "RIZAL NABABAN",
+                                            "vktp": "1271132610850006",
+                                            "vidalamat": "1275130004",
+                                            "vkotakab": "KOTA MEDAN",
+                                            "vkecamatan": "KEC. MEDAN LABUHAN",
+                                            "vkelurahan": "KEL.  MARTUBUNG",
+                                            "Vidpos": "20252",
+                                            "vhp": "082168636108",
+                                            "vnpwp": "00.000.000.0-000.000",
+                                            "vemail": null
+                                        }
+                                    ]
+                                }
+                            },
+                            "Tidak Ada Data": {
+                                "value": {
+                                    "data": "Tidak ada data"
+                                }
+                            },
+                            "Tidak ada hak akses": {
+                                "value": {
+                                    "data": "Error 403: Permission Denied"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "401": {
+                "description": "Unauthorized : Anda tidak memiliki izin akses atau token bearer anda salah",
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "name": "Unauthorized",
+                            "message": "Your request was made with invalid credentials.",
+                            "code": 0,
+                            "status": 401
+                        }
+                    }
+                }
+            },
+            "403": {
+                "description": "Forbidden : Anda belum melakukan login atau token bearer anda salah",
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "name": "Forbidden",
+                            "message": "Login Required",
+                            "code": 0,
+                            "status": 403
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

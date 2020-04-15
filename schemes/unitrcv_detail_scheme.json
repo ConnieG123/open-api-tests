@@ -73,6 +73,18 @@
             "type": "string",
             "description": "Tanggal dan waktu perubahan data",
             "example": "2019-06-01 07:08:09"
+        },
+        "nqtykirim": {
+            "type": "string",
+            "description": "Qty unit yang dikirim"
+        },
+        "nqtyterima": {
+            "type": "string",
+            "description": "Qty unit yang diterima"
+        },
+        "vidpo": {
+            "type": "string",
+            "description": "Kode ID PO"
         }
     }
 }

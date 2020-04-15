@@ -120,6 +120,12 @@
             "Detail PO NSC": {
                 "$ref": "./schemes/ponsc_detail_scheme.json"
             },
+            "Header SPK": {
+                "$ref": "./schemes/spk_header_scheme.json"
+            },
+            "Detail SPK": {
+                "$ref": "./schemes/spk_detail_scheme.json"
+            },
             "inParamDateStartEnd": {
                 "$ref": "./schemes/input_param_date_start_end_scheme.json"
             }
@@ -203,6 +209,12 @@
         },
         "/ponsc/listdetailbysession": {
             "$ref": "./ponsc/ponsc_listdetailbysession.json"
+        },
+        "/spk/listheader": {
+            "$ref": "./spk/spk_listheader.json"
+        },
+        "/spk/listdetail": {
+            "$ref": "./spk/spk_listdetail.json"
         }
     }
 }
