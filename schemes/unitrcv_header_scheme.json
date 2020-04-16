@@ -16,6 +16,11 @@
             "description":"Tanggal surat jalan",
             "example":"2019-06-01"
         },
+        "vstatus": {
+            "type":"string",
+            "description":"Status surat jalan",
+            "example":"T"
+        },
         "vcreateby": {
             "type": "string",
             "description": "User ID yang melakukan input data pertama kali"
@@ -33,6 +38,11 @@
             "type": "string",
             "description": "Tanggal dan waktu perubahan data",
             "example": "2019-06-01 07:08:09"
+        },
+        "vidmaindealer": {
+            "type": "string",
+            "description": "Kode main dealer",
+            "example": "B10"
         }
     }
 }

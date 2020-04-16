@@ -95,7 +95,21 @@
                                             "vcreateby": "system",
                                             "dtglcreate": "2019-04-01 12:15:13",
                                             "vmodiby": "system",
-                                            "dtglmodi": "2019-04-02 00:00:08"                                            
+                                            "dtglmodi": "2019-04-02 00:00:08",
+                                            "vidpos": null,
+                                            "valamats": null,
+                                            "vidalamats": null,
+                                            "vkotas": null,
+                                            "vkecamatans": null,
+                                            "Vidpos": null,
+                                            "flongitude": null,
+                                            "flatitude": null,
+                                            "vidjob": null,
+                                            "vhps": null,
+                                            "nstatus": null,
+                                            "nidpromo": null,
+                                            "vidsalesprog": null,
+                                            "nflagtestride": null
                                         }
                                     ]
                                 }

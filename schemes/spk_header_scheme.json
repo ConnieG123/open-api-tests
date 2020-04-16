@@ -1,0 +1,290 @@
+{
+    "type": "object",
+    "properties": {
+        "viddealer": {
+            "type": "string",
+            "description": "Kode dealer 3 huruf",
+            "example": "IMA"
+        },
+        "vidspk": {
+            "type":"string",
+            "description":"Nomor SPK",
+            "example": "SPK/20/02/000300"
+        },
+        "dspk": {
+            "type":"string",
+            "description":"Tanggal spk",
+            "example":"2020-02-10"
+        },
+        "dinputspk": {
+            "type":"string",
+            "description":"Tanggal spk di input",
+            "example":"2020-02-10"
+        },
+        "vidposdealer": {
+            "type": "string",
+            "description": "Kode POS Dealer"
+        },
+        "vidkaryawan": {
+            "type": "string",
+            "description": "Kode Sales Person",
+            "example": "124773"
+        },
+        "vtipepenjualan": {
+            "type": "string",
+            "description": "Tipe Perjualan (1 = perorangan, 2 = group customer, 3 = join promotion, 4 = collective)",
+            "example": "1"
+        },
+        "vtipear": {
+            "type": "string",
+            "description": "Tipe AR (RSO / CSO)",
+            "example": "RSO"
+        },
+        "vidcustomer": {
+            "type": "string",
+            "description": "Kode Customer H1 (lihat schema Master Customer H1)",
+            "example": "CUST/IMA/018602"
+        },
+        "vidleasing": {
+            "type": "string",
+            "description": "Kode Leasing",
+            "example": "FIF"
+        },
+        "mdp": {
+            "type": "string",
+            "description": "DP",
+            "example": "3200000"
+        },
+        "vtipepajak": {
+            "type": "string",
+            "description": "Tipe Pajak (1 = Konsumen Langsung, 2 = Pemakaian, 3 = Instansi, 4 = Tidak ada no pajak)",
+            "example": "1"
+        },
+        "vnopajak": {
+            "type": "string",
+            "description": "No Pajak",
+            "example": "010.000-20.57916182"
+        },
+        "vstatus": {
+            "type": "string",
+            "description": "Status SPK (T = Aktif, F = Batal)",
+            "example": "T"
+        },
+        "vidsuratjalan": {
+            "type": "string",
+            "description": "Kode Surat Jalan",
+            "example": "SJU/20-02/000300"
+        },
+        "vnotesj": {
+            "type": "string",
+            "description": "Note di dalam surat jalan",
+            "example": "SMH dalam kondisi baik"
+        },
+        "vtandatangan": {
+            "type": "string",
+            "description": "Surat jalan ditanda tangan oleh",
+            "example": "Dian Susanty"
+        },
+        "dtglbatal": {
+            "type": "string",
+            "description": "Tanggal SPK dibatalkan",
+            "example": null
+        },
+        "valasanbatal": {
+            "type": "string",
+            "description": "Alasan SPK dibatalkan",
+            "example": null
+        },
+        "mhargajual": {
+            "type": "string",
+            "description": "Nilai total DPP sebelum diskon",
+            "example": "18364091"
+        },
+        "mppn": {
+            "type": "number",
+            "description": "Nilai total faktur dalam PPN = 10% x DPP (setelah diskon)",
+            "example": "1836409"
+        },
+        "mdppunit": {
+            "type": "number",
+            "description": "Nilai total faktur dalam DPP (setelah diskon)",
+            "example": "18909545"
+        },
+        "mdppdiskon": {
+            "type": "number",
+            "description": "Nilai diskon dalam nominal rupiah (hasil perkalian diskon persen dengan dpp)",
+            "example": "545454 artinya diskon Rp. 545.454"
+        },
+        "mtotal": {
+            "type": "number",
+            "description": "Nilai total faktur dalam nominal rupiah",
+            "example": "20200500"
+        },
+        "vidindent": {
+            "type": "string",
+            "description": "Kode Indent",
+            "example": null
+        },
+        "dtglcreate": {
+            "type": "string",
+            "format": "date-time",
+            "example": "2019-06-01 07:08:09",
+            "description":"Tanggal dan waktu pertama kali input"
+        },
+        "vmodiby": {
+            "type": "string",
+            "description":"User ID yang melakukan perubahan data terhadap faktur ini"
+        },
+        "dtglmodi": {
+            "type": "string",
+            "format": "date-time",
+            "example": "2019-06-01 07:08:09",
+            "description":"Tanggal dan waktu terjadi perubahan data"
+        },
+        "vidalamatkantor": {
+            "type": "string",
+            "description": "Kode Alamat Kantor",
+            "example": null
+        },
+        "valamatkantor": {
+            "type": "string",
+            "description": "Alamat Kantor",
+            "example": null
+        },
+        "vnamastnk": {
+            "type": "string",
+            "description": "Nama yang ada di STNK",
+            "example": "RIZAL NABABAN"
+        },
+        "vktpstnk": {
+            "type": "string",
+            "description": "KTP yang ada di STNK",
+            "example": "1271132610850006"
+        },
+        "valamatstnk": {
+            "type": "string",
+            "description": "Alamat yang ada di STNK",
+            "example": "JL KAMBES LINGKUNGAN IV"
+        },
+        "vidalamatstnk": {
+            "type": "string",
+            "description": "Kode Alamat pada STNK",
+            "example": "12.71.13.1004"
+        },
+        "vtelpstnk": {
+            "type": "string",
+            "description": "Telp pada STNK",
+            "example": "082168636108"
+        },
+        "vdaydeliv": {
+            "type": "string",
+            "description": "Hari Pengiriman",
+            "example": "Senin"
+        },
+        "ddatedeliv": {
+            "type": "string",
+            "description": "Tanggal Pengiriman",
+            "example": "2020-02-10"
+        },
+        "vtimedeliv": {
+            "type": "string",
+            "description": "Jam Pengiriman",
+            "example": "09:00"
+        },
+        "vdelivto": {
+            "type": "string",
+            "description": "Dikirim ke (1 = rumah, 2 = kantor)",
+            "example": "1"
+        },
+        "vdriver": {
+            "type": "string",
+            "description": "Driver Pengirim",
+            "example": "SUHEIRY NOEKMAN SIREGAR"
+        },
+        "vplatdriver": {
+            "type": "string",
+            "description": "No Polisi Driver Pengirim",
+            "example": "BK 9196 CH"
+        },
+        "vrating": {
+            "type": "string",
+            "description": "Customer Satisfaction Level (1 = 1 bintang, 2 = 2 bintang, 3 = 3 bintang, 4 = 4 bintang, 5 = 5 bintang)",
+            "example": "4"
+        },
+        "ddatesampai": {
+            "type": "string",
+            "description": "Tanggal Unit sampai",
+            "example": "2020-02-10"
+        },
+        "vtimesampai": {
+            "type": "string",
+            "description": "Waktu Unit sampai",
+            "example": "10:00"
+        },
+        "vkecamatanstnk": {
+            "type": "string",
+            "description": "Kecamatan yang ada di STNK",
+            "example": "KEC. MEDAN LABUHAN"
+        },
+        "vkelurahanstnk": {
+            "type": "string",
+            "description": "Kelurahan yang ada di STNK",
+            "example": "KEL.  MARTUBUNG"
+        },
+        "nflagpoleasing": {
+            "type": "string",
+            "description": "Status PO Leasing",
+            "example": "0"
+        },
+        "vnamacustomer": {
+            "type": "string",
+            "description": "Nama Customer",
+            "example": "RIZAL NABABAN"
+        },
+        "vktp": {
+            "type": "string",
+            "description": "KTP Customer",
+            "example": "1271132610850006"
+        },
+        "vidalamat": {
+            "type": "string",
+            "description": "Alamat Customer",
+            "example": "1275130004"
+        },
+        "vkotakab": {
+            "type": "string",
+            "description": "Kota Kabupaten Customer",
+            "example": "KOTA MEDAN"
+        },
+        "vkecamatan": {
+            "type": "string",
+            "description": "Kecamatan Customer",
+            "example": "KEC. MEDAN LABUHAN"
+        },
+        "vkelurahan": {
+            "type": "string",
+            "description": "Kelurahan Customer",
+            "example": "KEL.  MARTUBUNG"
+        },
+        "Vidpos": {
+            "type": "string",
+            "description": "Kode pos Customer",
+            "example": "20252"
+        },
+        "vhp": {
+            "type": "string",
+            "description": "HP Customer",
+            "example": "082168636108"
+        },
+        "vnpwp": {
+            "type": "string",
+            "description": "NPWP Customer",
+            "example": "00.000.000.0-000.000"
+        },
+        "vemail": {
+            "type": "string",
+            "description": "Email Customer",
+            "example": null
+        }
+    }
+}

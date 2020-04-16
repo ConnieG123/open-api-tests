@@ -53,10 +53,12 @@
                                             "viddealer": "BHA",
                                             "vidunitrcv": "44366/SJ-LK-1/2019",
                                             "dtglsj": "2019-07-02",
+                                            "vstatus": "T",
                                             "vcreateby": "kacab.bha",
                                             "dtglcreate": "2019-07-02 12:03:56",
                                             "vmodiby": null,
-                                            "dtglmodi": null
+                                            "dtglmodi": null,
+                                            "vidmaindealer": "B10"
                                         }
                                     ]
                                 }
