@@ -1,0 +1,83 @@
+{
+    "post": {
+        "tags": [
+            "Master"
+        ],
+        "description": "Mendapatkan data detail konsumen berdasarkan parameter No KTP",
+        "parameters": [
+            {
+                "name": "ktp",
+                "in": "body",
+                "description": "No KTP yang akan dicari",
+                "required": true,
+                "explode": false,
+                "schema": {
+                    "type": "string",
+                    "example": "120721000000001"
+                }
+            }           
+        ],
+        "responses": {
+            "200": {
+                "description": "Success",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "../dms-openapi-public.json#/components/schemas/Survey Minimal"
+                        },
+                        "examples": {
+                            "Data Tersedia": {
+                                "value": {
+                                    "data": [
+                                        {
+                                            "vnama": "HERAWATI",
+                                            "vhp": "08123456789",
+                                            "vnowa": null,
+                                            "vemail": "test@test.com",
+                                            "dtgllahir": "1985-07-11",
+                                            "vidjeniskelamin": "2",
+                                            "vktp": "1271035307750001",
+                                            "valamat": "JL PEMUDA NO 18",
+                                            "vidprovinsi": "1200",
+                                            "vidkota": "1275",
+                                            "vidalamat": "12.01.01.1001",
+                                            "Vidpos": "20123",
+                                            "vidjob": "2",
+                                            "vidalamatinstansi": "12.01.01.1001",
+                                            "vidpengeluaran": "4",
+                                            "nidpendidikan": "4",
+                                            "vidhobi": "1"
+                                        }
+                                    ]
+                                }
+                            },
+                            "Tidak Ada Data": {
+                                "value": {
+                                    "data": "Tidak ada data"
+                                }
+                            },
+                            "Tidak ada hak akses": {
+                                "value": {
+                                    "data": "Error 403: Permission Denied"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "401": {
+                "description": "Unauthorized : Anda tidak memiliki izin akses atau token bearer anda salah",
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "name": "Unauthorized",
+                            "message": "Your request was made with invalid credentials.",
+                            "code": 0,
+                            "status": 401
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -126,6 +126,9 @@
             "Detail SPK": {
                 "$ref": "./schemes/spk_detail_scheme.json"
             },
+            "Survey Minimal": {
+                "$ref": "./schemes/survey_minimal_scheme.json"
+            },
             "inParamDateStartEnd": {
                 "$ref": "./schemes/input_param_date_start_end_scheme.json"
             }
@@ -215,6 +218,12 @@
         },
         "/spk/listdetail": {
             "$ref": "./spk/spk_listdetail.json"
+        },
+        "/survey/listbyktp": {
+            "$ref": "./survey/survey_listbyktp.json"
+        },
+        "/survey/listbymesin": {
+            "$ref": "./survey/survey_listbymesin.json"
         }
     }
 }

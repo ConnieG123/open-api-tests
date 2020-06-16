@@ -1,0 +1,85 @@
+{
+    "type": "object",
+    "properties": {
+        "vnama": {
+            "type": "string",
+            "description": "Nama Konsumen",
+            "example": "HERAWATI"
+        },
+        "vhp": {
+            "type": "string",
+            "description": "No HP",
+            "example": "081361123456"
+        },
+        "vnowa": {
+            "type": "string",
+            "description": "No Whatsapp",
+            "example": "0813XXXXXXXX"
+        },
+        "vemail": {
+            "type": "string",
+            "description": "Email",
+            "example": "test@test.com"
+        },
+        "dtgllahir": {
+            "type": "string",
+            "description": "Tanggal Lahir",
+            "example": "1985-07-11"
+        },
+        "vidjeniskelamin": {
+            "type": "string",
+            "description": "Kode Jenis Kelamin. 1 = Laki-laki dan 2 = Perempuan",
+            "example": "2"
+        },
+        "vktp": {
+            "type": "string",
+            "description": "No KTP",
+            "example": "1271030000000001"
+        },
+        "valamat": {
+            "type": "string",
+            "description": "Alamat",
+            "example": "Jalan Pemuda no 18"
+        },
+        "vidprovinsi": {
+            "type": "string",
+            "description": "Kode unik master provinsi",
+            "example": "1200"
+        },
+        "vidalamat": {
+            "type": "string",
+            "description": "Kode unik master alamat",
+            "example": "12.01.01.1001"
+        },
+        "Vidpos": {
+            "type": "string",
+            "description": "Kode pos",
+            "example": "20000"
+        },
+        "vidjob": {
+            "type": "string",
+            "description": "Kode unik master pekerjaan",
+            "example": "2"
+        },
+        "vidalamatinstansi": {
+            "type": "string",
+            "description": "Kode unik master alamat tempat bekerja",
+            "example": "12.01.01.1001"
+        },
+        "vidpengeluaran": {
+            "type": "string",
+            "description": "Kode unik master pengeluaran",
+            "example": "4"
+        },
+        "nidpendidikan": {
+            "type": "string",
+            "description": "Kode unik master pendidikan",
+            "example": "4"
+        },
+        "vidhobi": {
+            "type": "string",
+            "description": "Kode unik master hobi",
+            "example": "1"
+        }
+    }
+}
