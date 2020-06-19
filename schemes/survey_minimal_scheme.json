@@ -1,6 +1,16 @@
 {
     "type": "object",
     "properties": {
+        "vengine": {
+            "type": "string",
+            "description": "Nomor Mesin",
+            "example": "JB81E1821647"
+        },
+        "vframe": {
+            "type": "string",
+            "description": "Nomor Rangka",
+            "example": "MH1JB8115CK824647"
+        },
         "vnama": {
             "type": "string",
             "description": "Nama Konsumen",
@@ -51,7 +61,7 @@
             "description": "Kode unik master alamat",
             "example": "12.01.01.1001"
         },
-        "Vidpos": {
+        "vidpos": {
             "type": "string",
             "description": "Kode pos",
             "example": "20000"
@@ -66,20 +76,35 @@
             "description": "Kode unik master alamat tempat bekerja",
             "example": "12.01.01.1001"
         },
-        "vidpengeluaran": {
+        "vidtipe": {
             "type": "string",
-            "description": "Kode unik master pengeluaran",
-            "example": "4"
+            "description": "Kode tipe Sepeda Motor, lihat api master sepeda motor",
+            "example": "CG4"
         },
-        "nidpendidikan": {
+        "vidwarna": {
             "type": "string",
-            "description": "Kode unik master pendidikan",
-            "example": "4"
+            "description": "Kode warna Sepeda Motor, lihat api master sepeda motor",
+            "example": "BK"
         },
-        "vidhobi": {
+        "vidtipegroup": {
             "type": "string",
-            "description": "Kode unik master hobi",
-            "example": "1"
+            "description": "Kode tipe group Sepeda Motor, lihat api master tipe group sepeda motor",
+            "example": "TG_000004"
+        },
+        "vidtipeseries": {
+            "type": "string",
+            "description": "Kode tipe series Sepeda Motor, lihat api master tipe series sepeda motor",
+            "example": "TS_000002"
+        },
+        "vthnproduksi": {
+            "type": "string",
+            "description": "Tahun produksi sepeda motor",
+            "example": "2014"
+        },
+        "vnopol": {
+            "type": "string",
+            "description": "Tahun produksi sepeda motor",
+            "example": "BK 1234 ABC"
         }
     }
 }

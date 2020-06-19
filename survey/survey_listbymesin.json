@@ -1,7 +1,7 @@
 {
     "post": {
         "tags": [
-            "Master"
+            "Transaksi H1"
         ],
         "description": "Mendapatkan data detail konsumen berdasarkan parameter No Mesin",
         "parameters": [
@@ -30,23 +30,28 @@
                                 "value": {
                                     "data": [
                                         {
-                                            "vnama": "HERAWATI",
+                                            "vengine": "JB81E1821647",
+                                            "vframe": "MH1JB8115CK824645",
+                                            "vnama": "BUDI SUSANTO",
                                             "vhp": "08123456789",
-                                            "vnowa": null,
-                                            "vemail": "test@test.com",
-                                            "dtgllahir": "1985-07-11",
-                                            "vidjeniskelamin": "2",
-                                            "vktp": "1271035307750001",
+                                            "vnowa": "",
+                                            "vemail": "",
+                                            "dtgllahir": "1987-01-09",
+                                            "vidjeniskelamin": "1",
+                                            "vktp": "1271210904000000",
                                             "valamat": "JL PEMUDA NO 18",
                                             "vidprovinsi": "1200",
                                             "vidkota": "1275",
-                                            "vidalamat": "12.01.01.1001",
-                                            "Vidpos": "20123",
+                                            "vidalamat": null,
+                                            "vidpos": "20132",
                                             "vidjob": "2",
-                                            "vidalamatinstansi": "12.01.01.1001",
-                                            "vidpengeluaran": "4",
-                                            "nidpendidikan": "4",
-                                            "vidhobi": "1"
+                                            "vidalamatinstansi": null,
+                                            "vidtipe": "CG4",
+                                            "vidwarna": "BG",
+                                            "vidtipegroup": "TG_000004",
+                                            "vidtipeseries": "TS_000002",
+                                            "vthnproduksi": null,
+                                            "vnopol": "BK 1234 ABC"
                                         }
                                     ]
                                 }
