@@ -218,10 +218,7 @@
         },
         "/spk/listdetail": {
             "$ref": "./spk/spk_listdetail.json"
-        },
-        "/survey/listbyktp": {
-            "$ref": "./survey/survey_listbyktp.json"
-        },
+        },       
         "/survey/listbymesin": {
             "$ref": "./survey/survey_listbymesin.json"
         }
