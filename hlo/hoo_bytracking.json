@@ -1,0 +1,92 @@
+{
+    "post": {
+        "tags": [
+            "Transaksi H23"
+        ],
+        "description": "Anda dapat mengakses data Transaksi HLO berdasarkan no tracking.",
+        "parameters": [
+            {
+                "name": "notracking",
+                "in": "body",
+                "description": "No tracking yang dimiliki konsumen",
+                "required": true,
+                "explode": false,
+                "schema": {
+                    "type": "string",
+                    "example": "005872005715"
+                }
+            }
+        ],
+        "responses": {
+            "200": {
+                "description": "Success",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "../dms-openapi-public.json#/components/schemas/Transaksi HOO Minimal"
+                        },
+                        "examples": {
+                            "Data Tersedia": {
+                                "value": {
+                                    "data": {
+                                        "header": {
+                                            "vidpo": "2020/PO/05715",
+                                            "ahass": "00587",
+                                            "vnamacustomer": "HENDRI PARDEDE",
+                                            "dtglpodealer": "2020-04-27",
+                                            "vidtipe": "DV0",
+                                            "vthnrakit": "2019",
+                                            "vtelp": "08XXXXXX4116",
+                                            "vstatus": "T"
+                                        },
+                                        "detail": [
+                                            {
+                                                "vidpart": "50270K15600ZD",
+                                                "nqty": "1",
+                                                "mhet": "58000",
+                                                "mtotal": "58000",
+                                                "detd": "2020-05-18",
+                                                "dtglinfo1": "2020-05-19",
+                                                "dtgleta1": "2020-06-15",
+                                                "dtglinfo2": "2020-06-24",
+                                                "dtgleta2": "2020-07-20",
+                                                "dsupply": null,
+                                                "dtglterima": null,
+                                                "dtglinfokons1": null,
+                                                "dtglinfokons2": null,
+                                                "dnota": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            "Tidak Ada Data": {
+                                "value": {
+                                    "data": "Tidak ada data"
+                                }
+                            },
+                            "Tidak ada hak akses": {
+                                "value": {
+                                    "data": "Error 403: Permission Denied"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "401": {
+                "description": "Unauthorized : Anda tidak memiliki izin akses atau token bearer anda salah",
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "name": "Unauthorized",
+                            "message": "Your request was made with invalid credentials.",
+                            "code": 0,
+                            "status": 401
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
