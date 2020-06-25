@@ -2,7 +2,7 @@
     "openapi": "3.0.2",
     "info": {
         "title": "Indako DMS API (publik)",
-        "version": "1.0.0",
+        "version": "1.0.2",
         "description": "Dokumentasi pemanfaatan API dari sistem Indako DMS",
         "contact": {
             "email": "darwin@indako.co.id"
@@ -114,6 +114,9 @@
             "Transaksi HLO": {
                 "$ref": "./schemes/transaksi_hoo_scheme.json"
             },
+            "Transaksi HOO Minimal": {
+                "$ref": "./schemes/transaksi_hoo_minimal_scheme.json"
+            },
             "Header PO NSC": {
                 "$ref": "./schemes/ponsc_header_scheme.json"
             },
@@ -207,6 +210,9 @@
         "/hlo/listbysession": {
             "$ref": "./hlo/hlo_listbysession.json"
         },
+        "/hoo/listbytracking": {
+            "$ref": "./hlo/hoo_bytracking.json"
+        },
         "/ponsc/listheaderbysession": {
             "$ref": "./ponsc/ponsc_listheaderbysession.json"
         },
@@ -218,7 +224,7 @@
         },
         "/spk/listdetail": {
             "$ref": "./spk/spk_listdetail.json"
-        },       
+        },
         "/survey/listbymesin": {
             "$ref": "./survey/survey_listbymesin.json"
         }

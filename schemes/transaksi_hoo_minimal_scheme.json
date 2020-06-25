@@ -1,0 +1,115 @@
+{
+    "type": "object",
+    "properties": {
+        "vidpo": {
+            "type": "string",
+            "description": "No PO",
+            "example": "2020/PO/05715"
+        },
+        "ahass": {
+            "type": "string",
+            "description": "AHASS yang melakukan hotline order",
+            "example": "00587"
+        },
+        "vnamacustomer": {
+            "type": "string",
+            "description": "Nama konsumen",
+            "example": "HENDRI PARDEDE"
+        },
+        "dtglpodealer": {
+            "type": "string",
+            "description": "Tgl PO",
+            "example": "2020-04-27"
+        },
+        "vidtipe": {
+            "type": "string",
+            "description": "Kode tipe motor terkait part",
+            "example": "DV0"
+        },
+        "vthnrakit": {
+            "type": "string",
+            "description": "Tahun kendaraan",
+            "example": "2019"
+        },
+        "vtelp": {
+            "type": "string",
+            "description": "Telp",
+            "example": "08XXXXXX4116"
+        },
+        "vstatus": {
+            "type": "string",
+            "description": "T",
+            "example": "Status T = Aktif dan F = Batal"
+        },
+        "vidpart": {
+            "type": "string",
+            "description": "Kode Part",
+            "example": "50270K15600ZD"
+        },
+        "nqty": {
+            "type": "integer",
+            "description": "Qty",
+            "example": "1"
+        },
+        "mhet": {
+            "type": "number",
+            "description": "Harga Part",
+            "example": "58000"
+        },
+        "mtotal": {
+            "type": "number",
+            "description": "Total",
+            "example": "58000"
+        },
+        "detd": {
+            "type": "string",
+            "description": "Tanggal estimasi",
+            "example": "2020-05-18"
+        },
+        "dtglinfo1": {
+            "type": "string",
+            "description": "Tanggal AHASS memberikan informasi ke konsumen bahwa terjadi perubahan tanggal estimasi pertama",
+            "example": "2020-05-19"
+        },
+        "dtgleta1": {
+            "type": "string",
+            "description": "Tanggal estimasi jika terjadi perubahan pertama",
+            "example": "2020-06-15"
+        },
+        "dtglinfo2": {
+            "type": "string",
+            "description": "Tanggal AHASS memberikan informasi ke konsumen bahwa terjadi perubahan tanggal estimasi kedua",
+            "example": "2020-06-24"
+        },
+        "dtgleta2": {
+            "type": "string",
+            "description": "Tanggal estimasi jika terjadi perubahan kedua",
+            "example": "2020-07-20"
+        },
+        "dsupply": {
+            "type": "string",
+            "description": "Tanggal pemenuhan dari main dealer",
+            "example": "2020-07-20"
+        },
+        "dtglterima": {
+            "type": "string",
+            "description": "Tanggal AHASS telah menerima part tersebut",
+            "example": "2020-07-20"
+        },
+        "dtglinfokons1": {
+            "type": "string",
+            "description": "Tanggal AHASS memberikan informasi ke konsumen bahwa part telah tersedia",
+            "example": "2020-07-20"
+        },
+        "dtglinfokons2": {
+            "type": "string",
+            "description": "Tanggal AHASS memberikan informasi ke konsumen bahwa part telah tersedia (kedua kali)",
+            "example": "2020-07-20"
+        },
+        "dnota": {
+            "type": "string",
+            "description": "Tanggal konsumen melakukan pengambilan part",
+            "example": "2020-07-20"
+        }
+    }
+}
