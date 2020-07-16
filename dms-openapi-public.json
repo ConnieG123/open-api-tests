@@ -63,6 +63,9 @@
             "Master Alamat": {
                 "$ref": "./schemes/master_alamat_scheme.json"
             },
+            "Master Dealer": {
+                "$ref": "./schemes/master_dealer_scheme.json"
+            },
             "Master Prospek": {
                 "$ref": "./schemes/master_prospek_scheme.json"
             },
@@ -152,6 +155,9 @@
         },
         "/alamat/list": {
             "$ref": "./alamat/alamat_list.json"
+        },
+        "/dealer/list": {
+            "$ref": "./dealer/dealer_list.json"
         },
         "/jasa/listbysession": {
             "$ref": "./service/service_listbysession.json"
