@@ -1,0 +1,71 @@
+{
+    "post": {
+        "tags": [
+            "Master"
+        ],
+        "description": "Anda dapat mengakses semua data master Dealer yang digunakan di sistem DMS",
+        "responses": {
+            "200": {
+                "description": "Success",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "../dms-openapi-public.json#/components/schemas/Master Dealer"
+                        },
+                        "examples": {
+                            "Data Tersedia": {
+                                "value": {
+                                    "data": [
+                                        {
+                                            "viddealer": "IMA",
+                                            "vidahmh1": "00137",
+                                            "vidahmh23": "00137",
+                                            "vnama": "INDAKO TRADING COY. MAKMUR",
+                                            "valamat": "Jl. Makmur 30",
+                                            "vidkota": "1275",
+                                            "vidpos": "20117",
+                                            "vtelpdealer": "061-615483, 6616225",
+                                            "vkotafaktur": "MEDAN",
+                                            "vidwilayah": "MEDAN",
+                                            "vstatusdealer": "H123",
+                                            "vstatus": "T",
+                                            "vsenderid": "PT. INDAKO",
+                                            "flongitude": "98.6672",
+                                            "flatitude": "3.604",
+                                            "vemailh1": "so.makmur@yahoo.co.id",
+                                            "vemailh23": "makmur@ahass-test.com",
+                                            "vemailpic": "adiikuhs@yahoo.com"
+                                        }
+                                    ]
+                                }
+                            },
+                            "Tidak Ada Data": {
+                                "value": {
+                                    "data": "Tidak ada data"
+                                }
+                            },
+                            "Tidak ada hak akses": {
+                                "value": {
+                                    "data": "Error 403: Permission Denied"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "401": {
+                "description": "Unauthorized : Anda tidak memiliki izin akses atau token bearer anda salah",
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "name": "Unauthorized",
+                            "message": "Your request was made with invalid credentials.",
+                            "code": 0,
+                            "status": 401
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

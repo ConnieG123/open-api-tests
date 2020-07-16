@@ -1,0 +1,83 @@
+{
+    "type": "object",
+    "properties": {
+        "viddealer": {
+            "type": "string",
+            "description":"Kode dealer 3 huruf"
+        },
+        "vidahmh1": {
+            "type": "string",
+            "description":"Kode dealer AHM"
+        },
+        "vidahmh23": {
+            "type": "string",
+            "description":"Kode AHASS H23"
+        },
+        "vnama": {
+            "type": "string",
+            "description":"Nama Dealer"
+        },
+        "valamat": {
+            "type": "string",
+            "description":"Alamat dealer"
+        },
+        "vidkota": {
+            "type": "string",
+            "description":"Kode koda lokasi"
+        },
+        "vidpos": {
+            "type": "string",
+            "description":"Kode pos lokasi"
+        },
+        "vtelpdealer": {
+            "type": "string",
+            "description":"Nomot telepon dealer"
+        },
+        "vkotafaktur": {
+            "type": "string",
+            "description":"Kota lokasi dealer"
+        },
+        "vidwilayah": {
+            "type": "string",
+            "description":"Kode wilayah dealer"
+        },
+        "vstatusdealer": {
+            "type": "string",
+            "description":"Status dealer berupa H1, H2 atau H23"
+        },
+        "vstatus": {
+            "type": "string",
+            "description":"Status aktif, T = masih aktif dan F = tidak aktif"
+        },
+        "vsenderid": {
+            "type": "string",
+            "description":"Sender ID SMS"
+        },
+        "flongitude": {
+            "type": "number",
+            "description":"Kordinat Longitude"
+        },
+        "flatitude": {
+            "type": "number",
+            "description":"Kordinat Latitude"
+        },
+        "vcreateby": {
+            "type": "string",
+            "description": "User ID yang melakukan input data pertama kali"
+        },
+        "dtglcreate": {
+            "type": "string",
+            "description": "Tanggal dan waktu dilakukan penginputan pertama kali",
+            "example": "2019-06-01 07:08:09"
+        },
+        "vmodiby": {
+            "type": "string",
+            "description": "User ID yang melakukan perubahan data"
+        },
+        "dtglmodi": {
+            "type": "string",
+            "description": "Tanggal dan waktu perubahan data",
+            "example": "2019-06-01 07:08:09"
+        }
+    }
+}
