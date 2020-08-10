@@ -1,6 +1,11 @@
 {
     "type": "object",
     "properties": {
+        "viddealer": {
+            "type": "string",
+            "description": "Kode dealer 3 huruf",
+            "example": "IMA"
+        },
         "vengine": {
             "type": "string",
             "description": "Nomor Mesin",
